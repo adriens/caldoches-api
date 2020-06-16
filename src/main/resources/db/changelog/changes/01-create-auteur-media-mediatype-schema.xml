@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+  <changeSet id="01" author="meilie">
+      
+    <createTable tableName="media"
+      remarks="A table to contain all medias">
+      <column name="id" type="int" autoIncrement="true">
+        <constraints nullable="false" unique="true" primaryKey="true"/>
+      </column>
+      <column name="url" type="varchar(255)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="date" type="timestamp">
+        <constraints nullable="false"/>
+      </column>
+      <column name="titre" type="varchar(255)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="auteur" type="int">
+        <constraints nullable="false"/>
+      </column>
+      <column name="media_type" type="int">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+
+    <createTable tableName="auteur"
+      remarks="A table to contain all the authors">
+      <column name="id" type="int" autoIncrement="true">
+        <constraints nullable="false" primaryKey="true"/>
+      </column>
+      <column name="nom" type="varchar(255)">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+    
+    <createTable tableName="media_type"
+      remarks="A table to contain all the media types">
+      <column name="id" type="int" autoIncrement="true">
+        <constraints nullable="false" primaryKey="true"/>
+      </column>
+      <column name="nom_type" type="varchar(255)">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+
+    <addForeignKeyConstraint baseTableName="media" baseColumnNames="auteur"
+      constraintName="auteur_fk"
+      referencedTableName="auteur" referencedColumnNames="id"/>
+    
+    <addForeignKeyConstraint baseTableName="media" baseColumnNames="media_type"
+      constraintName="type_fk"
+      referencedTableName="media_type" referencedColumnNames="id"/>
+    
+  </changeSet>
+</databaseChangeLog>

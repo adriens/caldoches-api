@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    
+  <changeSet id="04" author="meilie">
+      
+    <comment>Insertion Médias</comment>
+    
+    <insert tableName="media">
+      <column name="id" valueNumeric="1"/>
+      <column name="url" value="http://url-01.com/"/>
+      <column name="date" value="2020-01-01"/>
+      <column name="titre" value="titre01"/>
+      <column name="auteur" value="1"/>
+      <column name="media_type" value="4"/>
+    </insert>
+    
+    <insert tableName="media">
+      <column name="id" valueNumeric="2"/>
+      <column name="url" value="http://url-02.com/"/>
+      <column name="date" value="2020-02-02"/>
+      <column name="titre" value="titre02"/>
+      <column name="auteur" value="2"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <insert tableName="media">
+      <column name="id" valueNumeric="3"/>
+      <column name="url" value="http://url-03.com/"/>
+      <column name="date" value="2020-03-03"/>
+      <column name="titre" value="titre03"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="3"/>
+    </insert>
+    
+    <insert tableName="media">
+      <column name="id" valueNumeric="4"/>
+      <column name="url" value="http://url-04.com/"/>
+      <column name="date" value="2020-04-04"/>
+      <column name="titre" value="titre04"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="1"/>
+    </insert>
+    
+     <insert tableName="media">
+      <column name="id" valueNumeric="5"/>
+      <column name="url" value="http://url-05.com/"/>
+      <column name="date" value="2020-05-05"/>
+      <column name="titre" value="titre05"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="3"/>
+    </insert>
+    
+  </changeSet>
+  
+</databaseChangeLog>

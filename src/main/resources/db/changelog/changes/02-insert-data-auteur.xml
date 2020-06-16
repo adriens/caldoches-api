@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+  <changeSet id="02" author="meilie">
+      
+    <comment>Insertion Auteurs</comment>
+    
+    <insert tableName="auteur">
+      <column name="id" valueNumeric="1"/>
+      <column name="nom" value="auteur01"/>
+    </insert>
+    
+    <insert tableName="auteur">
+      <column name="id" valueNumeric="2"/>
+      <column name="nom" value="auteur02"/>
+    </insert>
+    
+    <insert tableName="auteur">
+      <column name="id" valueNumeric="3"/>
+      <column name="nom" value="auteur03"/>
+    </insert>
+    
+    <insert tableName="auteur">
+      <column name="id" valueNumeric="4"/>
+      <column name="nom" value="auteur04"/>
+    </insert>
+    
+    <insert tableName="auteur">
+      <column name="id" valueNumeric="5"/>
+      <column name="nom" value="auteur05"/>
+    </insert>
+    
+  </changeSet>
+  
+</databaseChangeLog>
