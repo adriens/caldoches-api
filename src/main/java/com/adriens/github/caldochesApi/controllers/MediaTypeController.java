@@ -11,16 +11,11 @@ import com.adriens.github.caldochesApi.services.MediaTypeService;
 
 import java.util.List;
 
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -28,25 +23,29 @@ import org.springframework.web.bind.annotation.RestController;
  * @author meilie
  */
 @RestController
-@RequestMapping("/types")
 public class MediaTypeController {
 
     @Autowired
     private MediaTypeService typeService;
 
-    @GetMapping("/get")
+    /**
+     * get the list of all media types
+     * @return the list of all media types
+     */
+    @GetMapping("/types")
     public List<MediaType> getAllMediaTypes() { 
         return typeService.retrieveMediaTypes();
     }
 
-    @GetMapping("/get/{id}")
+    /**
+     * get a media type by id
+     * @param typeId
+     * @return the media type corresponding to the id parameter
+     * @throws ResourceNotFoundException
+     */
+    @GetMapping("/types/{id}")
     public ResponseEntity<MediaType> getMediaTypeById(@PathVariable(value = "id") Long typeId) throws ResourceNotFoundException {
         return ResponseEntity.ok().body(typeService.getMediaType(typeId));
-    }
-
-    @PostMapping("/create")
-    public void createMediaType(@Valid @RequestBody MediaType type) {
-        typeService.saveMediaType(type);
     }
     
 }
