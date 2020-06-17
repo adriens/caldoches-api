@@ -43,6 +43,9 @@ and open the template in the editor.
       <column name="nom" type="varchar(255)">
         <constraints nullable="false"/>
       </column>
+      <column name="cle_auteur" type="varchar(255)">
+        <constraints nullable="false"/>
+      </column>
     </createTable>
     
     <createTable tableName="media_type"

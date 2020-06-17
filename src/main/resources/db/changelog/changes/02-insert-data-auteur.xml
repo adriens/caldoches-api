@@ -18,26 +18,31 @@ and open the template in the editor.
     <insert tableName="auteur">
       <column name="id" valueNumeric="1"/>
       <column name="nom" value="auteur01"/>
+      <column name="cle_auteur" value="auteur1"/>
     </insert>
     
     <insert tableName="auteur">
       <column name="id" valueNumeric="2"/>
       <column name="nom" value="auteur02"/>
+      <column name="cle_auteur" value="auteur2"/>
     </insert>
     
     <insert tableName="auteur">
       <column name="id" valueNumeric="3"/>
       <column name="nom" value="auteur03"/>
+      <column name="cle_auteur" value="auteur3"/>
     </insert>
     
     <insert tableName="auteur">
       <column name="id" valueNumeric="4"/>
       <column name="nom" value="auteur04"/>
+      <column name="cle_auteur" value="auteur4"/>
     </insert>
     
     <insert tableName="auteur">
       <column name="id" valueNumeric="5"/>
       <column name="nom" value="auteur05"/>
+      <column name="cle_auteur" value="auteur5"/>
     </insert>
     
   </changeSet>
