@@ -17,6 +17,12 @@ public class ErrorDetails {
     private String message;
     private String details;
 
+    /**
+     * constructor
+     * @param timestamp
+     * @param message
+     * @param details
+     */
     public ErrorDetails(Date timestamp, String message, String details) {
          super();
          this.timestamp = timestamp;
@@ -24,14 +30,26 @@ public class ErrorDetails {
          this.details = details;
     }
 
+    /**
+     * get the timestamp
+     * @return the timestamp
+     */
     public Date getTimestamp() { 
         return timestamp; 
     }
 
+    /**
+     * get the message
+     * @return the message
+     */
     public String getMessage() { 
         return message; 
     }
 
+    /**
+     * get the details
+     * @return the details
+     */
     public String getDetails() { 
         return details; 
     }

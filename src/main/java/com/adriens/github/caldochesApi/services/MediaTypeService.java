@@ -15,8 +15,18 @@ import java.util.List;
  */
 public interface MediaTypeService {
     
+    /**
+     * get the list of all mediatypes
+     * @return the list of all mediatypes
+     */
     public List<MediaType> retrieveMediaTypes();
     
+    /**
+     * get a mediatype by id
+     * @param typeId
+     * @return the mediatype corresponding to the typeId parameter
+     * @throws ResourceNotFoundException
+     */
     public MediaType getMediaType(Long typeId) throws ResourceNotFoundException;
     
     public void saveMediaType(MediaType type);

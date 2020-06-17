@@ -24,16 +24,30 @@ public class AuteurServiceImpl implements AuteurService {
     @Autowired
     private AuteurRepository auteurRepository;
     
+    /**
+     * set the repository
+     * @param auteurRepository
+     */
     public void setAuteurRepository(AuteurRepository auteurRepository) {
         this.auteurRepository = auteurRepository;
     }
 
+    /**
+     * get the list of all the authors
+     * @return the list of all the authors
+     */
     @Override
     public List<Auteur> retrieveAuteurs() {
         List<Auteur> auteurs = auteurRepository.findAll();
         return auteurs;
     }
 
+    /**
+     * get an author by id
+     * @param auteurId
+     * @return the author corresponding to the id parameter
+     * @throws ResourceNotFoundException
+     */
     @Override
     public Auteur getAuteur(Long auteurId) throws ResourceNotFoundException {
         Auteur auteur = auteurRepository.findById(auteurId).orElseThrow(

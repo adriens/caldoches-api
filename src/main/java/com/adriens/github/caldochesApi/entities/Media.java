@@ -45,10 +45,22 @@ public class Media {
     @JoinColumn(name = "media_type")
     private MediaType type;
     
+    /**
+     * constructor
+     */
     protected Media() {
         // for JPA
     }
     
+    /**
+     * constructor
+     * @param id
+     * @param url
+     * @param date
+     * @param titre
+     * @param auteur
+     * @param type
+     */
     public Media(long id, String url, Date date, String titre, Auteur auteur, MediaType type) {
         this.id = id;
         this.url = url;
@@ -59,89 +71,105 @@ public class Media {
     }
 
     /**
-     * @return the id
+     * get the media id
+     * @return the id of the media
      */
     public long getId() {
         return id;
     }
 
     /**
-     * @param id the id to set
+     * set the media id
+     * @param id the media's id to set
      */
     public void setId(long id) {
         this.id = id;
     }
 
     /**
-     * @return the url
+     * get the media url
+     * @return the url of the media
      */
     public String getUrl() {
         return url;
     }
 
     /**
-     * @param url the url to set
+     * set the media url
+     * @param url the media's url to set
      */
     public void setUrl(String url) {
         this.url = url;
     }
 
     /**
-     * @return the date
+     * get the media date
+     * @return the date of the media
      */
     public Date getDate() {
         return date;
     }
 
     /**
-     * @param date the date to set
+     * set the media date
+     * @param date the media's date to set
      */
     public void setDate(Date date) {
         this.date = date;
     }
 
     /**
-     * @return the titre
+     * get the media title
+     * @return the title of the media
      */
     public String getTitre() {
         return titre;
     }
 
     /**
-     * @param titre the titre to set
+     * set the media title
+     * @param titre the media's title to set
      */
     public void setTitre(String titre) {
         this.titre = titre;
     }
 
     /**
-     * @return the auteur
+     * get the media author
+     * @return the author of the media
      */
     public Auteur getAuteur() {
         return auteur;
     }
 
     /**
-     * @param auteur the auteur to set
+     * set the media author
+     * @param auteur the media's author to set
      */
     public void setAuteur(Auteur auteur) {
         this.auteur = auteur;
     }
 
     /**
-     * @return the type
+     * get the media type
+     * @return the type of the media
      */
     public MediaType getType() {
         return type;
     }
 
     /**
-     * @param type the type to set
+     * set the media type
+     * @param type the media's type to set
      */
     public void setType(MediaType type) {
         this.type = type;
     }
     
+    /**
+     * get the media to String
+     * @return the media as text
+     */
     @Override
     public String toString() {
         return "Media{" +

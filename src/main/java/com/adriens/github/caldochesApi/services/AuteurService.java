@@ -16,8 +16,18 @@ import java.util.List;
  */
 public interface AuteurService {
     
+    /**
+     * get the list of all the authors
+     * @return the list of all the authors
+     */
     public List<Auteur> retrieveAuteurs();
     
+    /**
+     * get an author by id
+     * @param auteurId
+     * @return the author corresponding to the auteurId parameter
+     * @throws ResourceNotFoundException
+     */
     public Auteur getAuteur(Long auteurId) throws ResourceNotFoundException;
     
     public void saveAuteur(Auteur auteur);

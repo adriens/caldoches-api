@@ -15,8 +15,18 @@ import java.util.List;
  */
 public interface MediaService {
     
+    /**
+     * get the list of all the medias
+     * @return the list of all the medias
+     */
     public List<Media> retrieveMedias();
     
+    /**
+     * get a media by id
+     * @param mediaId
+     * @return the media corresponding to the mediaId parameter
+     * @throws ResourceNotFoundException
+     */
     public Media getMedia(Long mediaId) throws ResourceNotFoundException;
     
     public void saveMedia(Media media);

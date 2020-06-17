@@ -23,16 +23,30 @@ public class MediaTypeServiceImpl implements MediaTypeService {
     @Autowired
     private MediaTypeRepository typeRepository;
     
+    /**
+     * set the repository
+     * @param typeRepository
+     */
     public void setMediaRepository(MediaTypeRepository typeRepository) {
         this.typeRepository = typeRepository;
     }
     
+    /**
+     * get all mediatypes list
+     * @return the list of all the mediatypes
+     */
     @Override
     public List<MediaType> retrieveMediaTypes() {
         List<MediaType> types = typeRepository.findAll();
         return types;
     }
 
+    /**
+     * get a mediatype by id
+     * @param typeId
+     * @return a mediatype corresponding to the typeId parameter
+     * @throws ResourceNotFoundException
+     */
     @Override
     public MediaType getMediaType(Long typeId) throws ResourceNotFoundException {
         MediaType type = typeRepository.findById(typeId).orElseThrow(
