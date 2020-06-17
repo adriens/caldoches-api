@@ -29,11 +29,32 @@ public class MediaController {
     private MediaService mediaService;
 
     /**
+     * get the list of all the medias
+     * @return the list of all the medias
+     */
+    @GetMapping("/medias")
     public List<Media> getAllMedias() { 
         return mediaService.retrieveMedias();
     }
 
     /**
+     * get the list of all the medias for an author
+     * @param cleAuteur
+     * @return the author's list of medias
+     * @throws ResourceNotFoundException
+     */
+    @GetMapping("/{cleAuteur}")
+    public ResponseEntity<List<Media>> getAllMediasByAuteur(@PathVariable(value = "cleAuteur") String cleAuteur) throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(mediaService.retrieveMediasByAuteur(cleAuteur));
+    }
+
+    /**
+     * get a media by id
+     * @param mediaId
+     * @return a media corresponding to the id parameter
+     * @throws ResourceNotFoundException
+     */
+    @GetMapping("/medias/{id}")
     public ResponseEntity<Media> getMediaById(@PathVariable(value = "id") Long mediaId) throws ResourceNotFoundException {
         return ResponseEntity.ok().body(mediaService.getMedia(mediaId));
     }
@@ -41,6 +62,25 @@ public class MediaController {
     /**
      * get the media by id for an author
      * @param cleAuteur
+     * @param mediaId
+     * @return a media corresponding to the id parameter for an author
+     * @throws ResourceNotFoundException
+     */
+    @GetMapping("/{cleAuteur}/{id}")
+    public ResponseEntity<Media> getMediaByIdByAuteur(@PathVariable(value = "cleAuteur") String cleAuteur, @PathVariable(value = "id") Long mediaId) throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(mediaService.getMediaByIdByAuteur(cleAuteur, mediaId));
+    }
+    
+    /**
+     * get a random media for an author
+     * @param cleAuteur
+     * @return a random media for an author
+     * @throws ResourceNotFoundException
+     */
+    @GetMapping("/{cleAuteur}/random")
+    public ResponseEntity<Media> getRandomMediaByAuteur(@PathVariable(value = "cleAuteur") String cleAuteur) throws ResourceNotFoundException {
+        List<Media> medias = mediaService.retrieveMediasByAuteur(cleAuteur);
+        return ResponseEntity.ok().body(mediaService.getRandomMediaByAuteur(cleAuteur));
     }
 
 }
