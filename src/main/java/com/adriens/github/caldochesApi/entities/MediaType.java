@@ -31,7 +31,7 @@ public class MediaType {
     /**
      * constructor
      */
-    protected MediaType() {
+    public MediaType() {
         // for JPA
     }
     
@@ -83,9 +83,9 @@ public class MediaType {
      */
     @Override
     public String toString() {
-        return "MediaType{" +
-                "id: " +this.id+
-                ", nomType: " +this.nomType+
+        return "MediaType{" + 
+                "id: " +id+ 
+                ", nomType: " +nomType+ 
                 "}";
     }
     
