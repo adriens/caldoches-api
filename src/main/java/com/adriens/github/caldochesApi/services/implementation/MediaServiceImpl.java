@@ -11,6 +11,8 @@ import com.adriens.github.caldochesApi.exception.ResourceNotFoundException;
 import com.adriens.github.caldochesApi.repositories.MediaRepository;
 
 import java.util.List;
+import java.util.Random;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -56,9 +58,57 @@ public class MediaServiceImpl implements MediaService {
         return media;
     }
     
+    /**
+     * get all medias for an author
+     * @param cleAuteur
+     * @return a medias list for the author corresponding to the cleAuteur parameter
+     * @throws com.adriens.github.caldochesApi.exception.ResourceNotFoundException
+     */
     @Override
     public List<Media> retrieveMediasByAuteur(String cleAuteur) throws ResourceNotFoundException {
         List<Media> medias = mediaRepository.findByAuteur(cleAuteur);
+        if (medias.isEmpty()) {
+            throw new ResourceNotFoundException("Aucun média trouvé avec l'auteur :: " + cleAuteur);
+        }
+        return medias;
+    }
+
+    /**
+     * get a media by id for an author
+     * @param cleAuteur
+     * @param mediaId
+     * @return the media corresponding to the mediaId parameter for the author corresponding to the cleAuteur parameter
+     * @throws ResourceNotFoundException
+     */
+    @Override
+    public Media getMediaByIdByAuteur(String cleAuteur, Long mediaId) throws ResourceNotFoundException {
+        Media media = mediaRepository.findByIdByAuteur(cleAuteur, mediaId);
+        if (media == null) {
+            throw new ResourceNotFoundException("Aucun média trouvé avec l'id :: " + mediaId + " pour l'auteur :: " + cleAuteur);
+        }
+        return media;
+    }
+
+    /**
+     * get a random media for an author
+     * @param cleAuteur
+     * @return a random media for the author corresponding to the cleAuteur parameter
+     * @throws ResourceNotFoundException
+     */
+    @Override
+    public Media getRandomMediaByAuteur(String cleAuteur) throws ResourceNotFoundException {
+        int listSize = 0;
+        List<Media> medias = mediaRepository.findByAuteur(cleAuteur);
+        
+        if (medias.isEmpty()) {
+            throw new ResourceNotFoundException("Aucun média trouvé pour l'auteur :: " + cleAuteur);
+        } else {
+            listSize = medias.size();
+            Random random = new Random();
+            int randomValue = random.nextInt(listSize);
+            System.out.println(randomValue);
+            return medias.get(randomValue);
+        }
     }
     
 }
