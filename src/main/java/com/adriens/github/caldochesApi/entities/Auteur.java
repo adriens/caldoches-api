@@ -30,10 +30,20 @@ public class Auteur {
     @Column(nullable = false)
     private String cleAuteur;
     
+    @Column(nullable = true)
+    private String urlFb;
+    
+    @Column(nullable = true)
+    private String urlInsta;
+    
+    @Column(nullable = true)
+    private String urlYt;
+    
+    
     /**
      * constructor
      */
-    protected Auteur() {
+    public Auteur() {
         // for JPA
     }
     
@@ -96,6 +106,54 @@ public class Auteur {
     public void setCleAuteur(String cleAuteur) {
         this.cleAuteur = cleAuteur;
     }
+
+    /**
+     * get the author facebook url
+     * @return the facebook url of the author
+     */
+    public String getUrlFb() {
+        return urlFb;
+    }
+
+    /**
+     * set the author facebook url
+     * @param urlFb the author's facebook url to set
+     */
+    public void setUrlFb(String urlFb) {
+        this.urlFb = urlFb;
+    }
+
+    /**
+     * get the author instagram url
+     * @return the instagram url of the author
+     */
+    public String getUrlInsta() {
+        return urlInsta;
+    }
+
+    /**
+     * set the author instagram url
+     * @param urlInsta the author's instagram url to set
+     */
+    public void setUrlInsta(String urlInsta) {
+        this.urlInsta = urlInsta;
+    }
+
+    /**
+     * get the author youtube url
+     * @return the youtube url of the author
+     */
+    public String getUrlYt() {
+        return urlYt;
+    }
+
+    /**
+     * set the author youtube url
+     * @param urlYt the author's youtube url to set
+     */
+    public void setUrlYt(String urlYt) {
+        this.urlYt = urlYt;
+    }
     
     /**
      * get the author to String
@@ -103,7 +161,14 @@ public class Auteur {
      */
     @Override
     public String toString() {
-        return "Auteur{id: "+id+", nom: "+nom+"}";
+        return "Auteur{" + 
+                "id: " +id+ 
+                ", nom: " +nom+ 
+                ", cleAuteur: " +cleAuteur+
+                ", urlFb: " +urlFb+
+                ", urlInsta: " +urlInsta+
+                ", urlYt: " +urlYt+
+                "}";
     }
 
 }
