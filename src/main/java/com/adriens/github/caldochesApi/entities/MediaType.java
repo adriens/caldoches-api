@@ -28,43 +28,59 @@ public class MediaType {
     @Column(nullable = false)
     private String nomType;
     
+    /**
+     * constructor
+     */
     protected MediaType() {
         // for JPA
     }
     
+    /**
+     * constructor
+     * @param id
+     * @param nomType
+     */
     public MediaType(long id, String nomType){
         this.id = id;
         this.nomType = nomType;
     }
 
     /**
-     * @return the id
+     * get the mediatype id
+     * @return the id of the mediatype
      */
     public long getId() {
         return id;
     }
 
     /**
-     * @param id the id to set
+     * set the mediatype id
+     * @param id the mediatype's id to set
      */
     public void setId(long id) {
         this.id = id;
     }
 
     /**
-     * @return the nomType
+     * get the mediatype nomtype
+     * @return the name of the mediatype
      */
     public String getNomType() {
         return nomType;
     }
 
     /**
-     * @param nomType the nomType to set
+     * set the mediatype nomtype
+     * @param nomType the mediatype's name to set
      */
     public void setNomType(String nomType) {
         this.nomType = nomType;
     }
     
+    /**
+     * get the mediatype to String
+     * @return the mediatype as text
+     */
     @Override
     public String toString() {
         return "MediaType{" +
