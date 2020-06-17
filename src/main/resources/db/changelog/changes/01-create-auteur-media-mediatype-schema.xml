@@ -27,6 +27,12 @@ and open the template in the editor.
       <column name="titre" type="varchar(255)">
         <constraints nullable="false"/>
       </column>
+      <column name="description" type="varchar(255)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="keywords" type="clob">
+        <constraints nullable="false"/>
+      </column>
       <column name="auteur" type="int">
         <constraints nullable="false"/>
       </column>
