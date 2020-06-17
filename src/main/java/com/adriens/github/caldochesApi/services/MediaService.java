@@ -22,6 +22,14 @@ public interface MediaService {
     public List<Media> retrieveMedias();
     
     /**
+     * get the list of all the medias for an author
+     * @param cleAuteur
+     * @return the list of all the medias corresponding to the author corresponding to the cleAuteur parameter
+     * @throws com.adriens.github.caldochesApi.exception.ResourceNotFoundException
+     */
+    public List<Media> retrieveMediasByAuteur(String cleAuteur) throws ResourceNotFoundException;
+
+    /**
      * get a media by id
      * @param mediaId
      * @return the media corresponding to the mediaId parameter
@@ -30,5 +38,19 @@ public interface MediaService {
     public Media getMedia(Long mediaId) throws ResourceNotFoundException;
 
     /**
+     * get a media by id for an author
+     * @param cleAuteur
+     * @param mediaId
+     * @return the media corresponding to the mediaId parameter for the author corresponding to the cleAuteur parameter
+     * @throws ResourceNotFoundException
+     */
+    public Media getMediaByIdByAuteur(String cleAuteur, Long mediaId) throws ResourceNotFoundException;
     
+    /**
+     * get a random media for an author
+     * @param cleAuteur
+     * @return a random media for the author corresponding to the cleAuteur parameter
+     * @throws ResourceNotFoundException
+     */
+    public Media getRandomMediaByAuteur(String cleAuteur) throws ResourceNotFoundException;
 }
