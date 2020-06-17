@@ -30,6 +30,4 @@ public interface AuteurService {
      */
     public Auteur getAuteur(Long auteurId) throws ResourceNotFoundException;
     
-    public void saveAuteur(Auteur auteur);
-    
 }

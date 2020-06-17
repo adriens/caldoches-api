@@ -9,7 +9,6 @@ import com.adriens.github.caldochesApi.entities.Auteur;
 import com.adriens.github.caldochesApi.exception.ResourceNotFoundException;
 import com.adriens.github.caldochesApi.repositories.AuteurRepository;
 import com.adriens.github.caldochesApi.services.AuteurService;
-
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -54,11 +53,6 @@ public class AuteurServiceImpl implements AuteurService {
             () -> new ResourceNotFoundException("Aucun auteur trouvé avec l'id :: " + auteurId)
         );
         return auteur;
-    }
-
-    @Override
-    public void saveAuteur(Auteur auteur) {
-        auteurRepository.save(auteur);
     }
     
 }

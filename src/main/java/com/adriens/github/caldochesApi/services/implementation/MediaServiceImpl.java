@@ -55,10 +55,10 @@ public class MediaServiceImpl implements MediaService {
         );
         return media;
     }
-
+    
     @Override
-    public void saveMedia(Media media) {
-        mediaRepository.save(media);
+    public List<Media> retrieveMediasByAuteur(String cleAuteur) throws ResourceNotFoundException {
+        List<Media> medias = mediaRepository.findByAuteur(cleAuteur);
     }
     
 }

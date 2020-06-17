@@ -28,7 +28,7 @@ public interface MediaService {
      * @throws ResourceNotFoundException
      */
     public Media getMedia(Long mediaId) throws ResourceNotFoundException;
-    
-    public void saveMedia(Media media);
+
+    /**
     
 }

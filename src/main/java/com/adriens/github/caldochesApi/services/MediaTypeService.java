@@ -29,6 +29,4 @@ public interface MediaTypeService {
      */
     public MediaType getMediaType(Long typeId) throws ResourceNotFoundException;
     
-    public void saveMediaType(MediaType type);
-    
 }

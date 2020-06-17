@@ -54,10 +54,5 @@ public class MediaTypeServiceImpl implements MediaTypeService {
         );
         return type;
     }
-
-    @Override
-    public void saveMediaType(MediaType type) {
-        typeRepository.save(type);
-    }
     
 }
