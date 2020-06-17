@@ -37,6 +37,12 @@ public class Media {
     @Column(nullable = false)
     private String titre;
     
+    @Column(nullable = false)
+    private String description;
+    
+    @Column(nullable = false)
+    private String keywords;
+    
     @ManyToOne
     @JoinColumn(name = "auteur")
     private Auteur auteur;
@@ -48,7 +54,7 @@ public class Media {
     /**
      * constructor
      */
-    protected Media() {
+    public Media() {
         // for JPA
     }
     
@@ -58,14 +64,18 @@ public class Media {
      * @param url
      * @param date
      * @param titre
+     * @param description
+     * @param keywords
      * @param auteur
      * @param type
      */
-    public Media(long id, String url, Date date, String titre, Auteur auteur, MediaType type) {
+    public Media(long id, String url, Date date, String titre, String description, String keywords, Auteur auteur, MediaType type) {
         this.id = id;
         this.url = url;
         this.date = date;
         this.titre = titre;
+        this.description = description;
+        this.keywords = keywords;
         this.auteur = auteur;
         this.type = type;
     }
@@ -133,6 +143,38 @@ public class Media {
     public void setTitre(String titre) {
         this.titre = titre;
     }
+    
+    /**
+     * get the media description
+     * @return the description of the media
+     */
+    public String getDescription() {
+        return description;
+    }
+
+    /**
+     * set the media description
+     * @param description the media's description to set
+     */
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    /**
+     * get the media keywords
+     * @return the keywords of the media
+     */
+    public String getKeywords() {
+        return keywords;
+    }
+
+    /**
+     * set the media keywords
+     * @param keywords the media's keywords to set
+     */
+    public void setKeywords(String keywords) {
+        this.keywords = keywords;
+    }
 
     /**
      * get the media author
@@ -177,6 +219,8 @@ public class Media {
                 ", url: " +this.url+ 
                 ", date: " +this.date+ 
                 ", titre: " +this.titre+ 
+                ", description: " +this.description+
+                ", keywords: " +this.keywords+
                 ", auteur: " +this.auteur+ 
                 ", mediaType: " +this.type+ 
                 "}";
