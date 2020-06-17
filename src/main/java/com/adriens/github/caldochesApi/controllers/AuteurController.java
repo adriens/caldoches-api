@@ -35,20 +35,21 @@ public class AuteurController {
     private AuteurService auteurService;
 
     /**
+     * get the list of all the authors
      * @return authors list
      */
-    @GetMapping("/get")
+    @GetMapping("/auteurs")
     public List<Auteur> getAllAuteurs() { 
         return auteurService.retrieveAuteurs();
     }
 
     /**
-     *
-     * @param id
-     * @return an author response
+     * get an author by id
+     * @param auteurId
+     * @return the author corresponding to the id parameter
      * @throws ResourceNotFoundException
      */
-    @GetMapping("/get/{id}")
+    @GetMapping("/auteurs/{id}")
     public ResponseEntity<Auteur> getAuteurById(@PathVariable(value = "id") Long auteurId) throws ResourceNotFoundException {
         return ResponseEntity.ok().body(auteurService.getAuteur(auteurId));
     }
