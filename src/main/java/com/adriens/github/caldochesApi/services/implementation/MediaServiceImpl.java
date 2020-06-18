@@ -106,7 +106,6 @@ public class MediaServiceImpl implements MediaService {
             listSize = medias.size();
             Random random = new Random();
             int randomValue = random.nextInt(listSize);
-            System.out.println(randomValue);
             return medias.get(randomValue);
         }
     }
