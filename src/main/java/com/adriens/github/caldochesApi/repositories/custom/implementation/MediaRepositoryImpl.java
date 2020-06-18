@@ -36,10 +36,10 @@ public class MediaRepositoryImpl implements MediaRepositoryCustom {
     @Override
     public List<Media> findByAuteur(String cleAuteur) {
         Query query = entityManager.createNativeQuery(
-            "SELECT M.ID, M.URL, M.DATE, M.TITRE, M.AUTEUR, M.MEDIA_TYPE "
+            "SELECT * "
             + "FROM MEDIA AS M, AUTEUR AS A "
             + "WHERE A.ID = M.AUTEUR "
-            + "AND A.CLE_AUTEUR = ?1", 
+            + "AND A.CLE_AUTEUR = ?1",
             Media.class);
         
         query.setParameter(1, cleAuteur);
@@ -56,7 +56,7 @@ public class MediaRepositoryImpl implements MediaRepositoryCustom {
     @Override
     public Media findByIdByAuteur(String cleAuteur, Long mediaId) {
         Query query = entityManager.createNativeQuery(
-        "SELECT M.ID, M.URL, M.DATE, M.TITRE, M.AUTEUR, M.MEDIA_TYPE "
+        "SELECT * "
         + "FROM MEDIA AS M, AUTEUR AS A "
         + "WHERE A.ID = M.AUTEUR "
         + "AND A.CLE_AUTEUR = ?1 "
