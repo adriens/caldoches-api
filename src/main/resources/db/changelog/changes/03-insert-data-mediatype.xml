@@ -22,7 +22,7 @@ and open the template in the editor.
     
     <insert tableName="media_type">
       <column name="id" valueNumeric="2"/>
-      <column name="nom_type" value="vidéo"/>
+      <column name="nom_type" value="video"/>
     </insert>
     
     <insert tableName="media_type">
@@ -32,7 +32,7 @@ and open the template in the editor.
     
     <insert tableName="media_type">
       <column name="id" valueNumeric="4"/>
-      <column name="nom_type" value="gif animé"/>
+      <column name="nom_type" value="gifanime"/>
     </insert>
     
   </changeSet>
