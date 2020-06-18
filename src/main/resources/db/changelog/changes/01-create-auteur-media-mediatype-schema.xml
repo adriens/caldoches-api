@@ -52,13 +52,13 @@ and open the template in the editor.
       <column name="cle_auteur" type="varchar(255)">
         <constraints nullable="false"/>
       </column>
-      <column name="urlfb" type="varchar(255)">
+      <column name="url_fb" type="varchar(255)">
         <constraints nullable="true"/>
       </column>
-      <column name="urlinsta" type="varchar(255)">
+      <column name="url_insta" type="varchar(255)">
         <constraints nullable="true"/>
       </column>
-      <column name="urlyt" type="varchar(255)">
+      <column name="url_yt" type="varchar(255)">
         <constraints nullable="true"/>
       </column>
     </createTable>
