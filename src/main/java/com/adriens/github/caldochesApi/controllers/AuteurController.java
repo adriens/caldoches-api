@@ -44,7 +44,7 @@ public class AuteurController {
      * @throws ResourceNotFoundException
      */
     @GetMapping("/auteurs/{id}")
-    public ResponseEntity<Auteur> getAuteurById(@PathVariable(value = "id") Long auteurId) throws ResourceNotFoundException {
+    public ResponseEntity<Auteur> getAuteurById(@PathVariable(value = "id") Integer auteurId) throws ResourceNotFoundException {
         return ResponseEntity.ok().body(auteurService.getAuteur(auteurId));
     }
 

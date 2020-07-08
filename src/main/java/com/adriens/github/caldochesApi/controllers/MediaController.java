@@ -55,7 +55,7 @@ public class MediaController {
      * @throws ResourceNotFoundException
      */
     @GetMapping("/medias/{id}")
-    public ResponseEntity<Media> getMediaById(@PathVariable(value = "id") long mediaId) throws ResourceNotFoundException {
+    public ResponseEntity<Media> getMediaById(@PathVariable(value = "id") Integer mediaId) throws ResourceNotFoundException {
         return ResponseEntity.ok().body(mediaService.getMedia(mediaId));
     }
 
@@ -67,7 +67,7 @@ public class MediaController {
      * @throws ResourceNotFoundException
      */
     @GetMapping("/medias/auteur/{cleAuteur}/{id}")
-    public ResponseEntity<Media> getMediaByIdByAuteur(@PathVariable(value = "cleAuteur") String cleAuteur, @PathVariable(value = "id") long mediaId) throws ResourceNotFoundException {
+    public ResponseEntity<Media> getMediaByIdByAuteur(@PathVariable(value = "cleAuteur") String cleAuteur, @PathVariable(value = "id") Integer mediaId) throws ResourceNotFoundException {
         return ResponseEntity.ok().body(mediaService.getMediaByIdByAuteur(cleAuteur, mediaId));
     }
     

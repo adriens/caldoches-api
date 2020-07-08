@@ -50,7 +50,7 @@ public class MediaTypeServiceImpl implements MediaTypeService {
      * @throws ResourceNotFoundException
      */
     @Override
-    public MediaType getMediaType(Long typeId) throws ResourceNotFoundException {
+    public MediaType getMediaType(Integer typeId) throws ResourceNotFoundException {
         MediaType type = typeRepository.findById(typeId).orElseThrow(
             () -> new ResourceNotFoundException("Aucun type de média trouvé avec l'id :: " + typeId)
         );

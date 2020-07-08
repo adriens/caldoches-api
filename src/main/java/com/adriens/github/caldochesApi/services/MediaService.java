@@ -35,7 +35,7 @@ public interface MediaService {
      * @return the media corresponding to the mediaId parameter
      * @throws ResourceNotFoundException
      */
-    public Media getMedia(Long mediaId) throws ResourceNotFoundException;
+    public Media getMedia(Integer mediaId) throws ResourceNotFoundException;
 
     /**
      * get a media by id for an author
@@ -44,7 +44,7 @@ public interface MediaService {
      * @return the media corresponding to the mediaId parameter for the author corresponding to the cleAuteur parameter
      * @throws ResourceNotFoundException
      */
-    public Media getMediaByIdByAuteur(String cleAuteur, Long mediaId) throws ResourceNotFoundException;
+    public Media getMediaByIdByAuteur(String cleAuteur, Integer mediaId) throws ResourceNotFoundException;
     
     /**
      * get a random media for an author

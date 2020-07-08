@@ -16,6 +16,6 @@ import org.springframework.stereotype.Repository;
  * @author meilie
  */
 @Repository
-public interface MediaRepository extends JpaRepository<Media,Long>, MediaRepositoryCustom {
+public interface MediaRepository extends JpaRepository<Media,Integer>, MediaRepositoryCustom {
     
 }

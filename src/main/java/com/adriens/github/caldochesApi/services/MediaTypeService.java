@@ -27,6 +27,6 @@ public interface MediaTypeService {
      * @return the mediatype corresponding to the typeId parameter
      * @throws ResourceNotFoundException
      */
-    public MediaType getMediaType(Long typeId) throws ResourceNotFoundException;
+    public MediaType getMediaType(Integer typeId) throws ResourceNotFoundException;
     
 }

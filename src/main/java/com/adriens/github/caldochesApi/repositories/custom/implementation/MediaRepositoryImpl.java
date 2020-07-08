@@ -54,7 +54,7 @@ public class MediaRepositoryImpl implements MediaRepositoryCustom {
      * @return the media corresponding to the mediaId parameter for the author corresponding to the cleAuteur parameter
      */
     @Override
-    public Media findByIdByAuteur(String cleAuteur, Long mediaId) {
+    public Media findByIdByAuteur(String cleAuteur, Integer mediaId) {
         Query query = entityManager.createNativeQuery(
         "SELECT * "
         + "FROM MEDIA AS M, AUTEUR AS A "

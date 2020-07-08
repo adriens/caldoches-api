@@ -12,7 +12,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 /**
  *
  * @author meilie
@@ -23,7 +22,7 @@ public class MediaType {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Integer id;
     
     @Column(nullable = false)
     private String nomType;
@@ -37,11 +36,9 @@ public class MediaType {
     
     /**
      * constructor
-     * @param id
      * @param nomType
      */
-    public MediaType(long id, String nomType){
-        this.id = id;
+    public MediaType(String nomType){
         this.nomType = nomType;
     }
 
@@ -49,7 +46,7 @@ public class MediaType {
      * get the mediatype id
      * @return the id of the mediatype
      */
-    public long getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -57,7 +54,7 @@ public class MediaType {
      * set the mediatype id
      * @param id the mediatype's id to set
      */
-    public void setId(long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

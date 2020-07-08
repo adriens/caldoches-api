@@ -22,7 +22,7 @@ public class Auteur {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Integer id;
     
     @Column(nullable = false)
     private String nom;
@@ -49,12 +49,10 @@ public class Auteur {
     
     /**
      * constructor
-     * @param id
      * @param nom
      * @param cleAuteur
      */
-    public Auteur(long id, String nom, String cleAuteur) {
-        this.id = id;
+    public Auteur(String nom, String cleAuteur) {
         this.nom = nom;
         this.cleAuteur = cleAuteur;
     }
@@ -63,7 +61,7 @@ public class Auteur {
      * get the author id
      * @return the id of the author
      */
-    public long getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -71,7 +69,7 @@ public class Auteur {
      * set the author id
      * @param id the author's id to set
      */
-    public void setId(long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

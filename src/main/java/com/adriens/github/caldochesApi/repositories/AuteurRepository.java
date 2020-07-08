@@ -15,6 +15,6 @@ import org.springframework.stereotype.Repository;
  * @author meilie
  */
 @Repository
-public interface AuteurRepository extends JpaRepository<Auteur,Long>{
+public interface AuteurRepository extends JpaRepository<Auteur,Integer>{
     
 }

@@ -28,6 +28,6 @@ public interface AuteurService {
      * @return the author corresponding to the auteurId parameter
      * @throws ResourceNotFoundException
      */
-    public Auteur getAuteur(Long auteurId) throws ResourceNotFoundException;
+    public Auteur getAuteur(Integer auteurId) throws ResourceNotFoundException;
     
 }

@@ -26,7 +26,7 @@ public class Media {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Integer id;
     
     @Column(nullable = false)
     private String url;
@@ -37,7 +37,7 @@ public class Media {
     @Column(nullable = false)
     private String titre;
     
-    @Column(nullable = false)
+    @Column(nullable = true)
     private String description;
     
     @Column(nullable = false)
@@ -60,7 +60,6 @@ public class Media {
     
     /**
      * constructor
-     * @param id
      * @param url
      * @param date
      * @param titre
@@ -69,8 +68,7 @@ public class Media {
      * @param auteur
      * @param type
      */
-    public Media(long id, String url, Date date, String titre, String description, String keywords, Auteur auteur, MediaType type) {
-        this.id = id;
+    public Media(String url, Date date, String titre, String description, String keywords, Auteur auteur, MediaType type) {
         this.url = url;
         this.date = date;
         this.titre = titre;
@@ -84,7 +82,7 @@ public class Media {
      * get the media id
      * @return the id of the media
      */
-    public long getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -92,7 +90,7 @@ public class Media {
      * set the media id
      * @param id the media's id to set
      */
-    public void setId(long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

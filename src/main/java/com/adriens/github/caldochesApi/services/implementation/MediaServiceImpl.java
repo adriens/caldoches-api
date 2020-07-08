@@ -51,7 +51,7 @@ public class MediaServiceImpl implements MediaService {
      * @throws ResourceNotFoundException
      */
     @Override
-    public Media getMedia(Long mediaId) throws ResourceNotFoundException {
+    public Media getMedia(Integer mediaId) throws ResourceNotFoundException {
         Media media = mediaRepository.findById(mediaId).orElseThrow(
             () -> new ResourceNotFoundException("Aucun média trouvé avec l'id :: " + mediaId)
         );
@@ -81,7 +81,7 @@ public class MediaServiceImpl implements MediaService {
      * @throws ResourceNotFoundException
      */
     @Override
-    public Media getMediaByIdByAuteur(String cleAuteur, Long mediaId) throws ResourceNotFoundException {
+    public Media getMediaByIdByAuteur(String cleAuteur, Integer mediaId) throws ResourceNotFoundException {
         Media media = mediaRepository.findByIdByAuteur(cleAuteur, mediaId);
         if (media == null) {
             throw new ResourceNotFoundException("Aucun média trouvé avec l'id :: " + mediaId + " pour l'auteur :: " + cleAuteur);

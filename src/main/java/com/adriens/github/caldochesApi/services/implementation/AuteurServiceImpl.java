@@ -50,7 +50,7 @@ public class AuteurServiceImpl implements AuteurService {
      * @throws ResourceNotFoundException
      */
     @Override
-    public Auteur getAuteur(Long auteurId) throws ResourceNotFoundException {
+    public Auteur getAuteur(Integer auteurId) throws ResourceNotFoundException {
         Auteur auteur = auteurRepository.findById(auteurId).orElseThrow(
             () -> new ResourceNotFoundException("Aucun auteur trouvé avec l'id :: " + auteurId)
         );

@@ -28,6 +28,6 @@ public interface MediaRepositoryCustom {
      * @param mediaId
      * @return the media corresponding to the mediaId parameter for the author corresponding to the cleAuteur parameter
      */
-    public Media findByIdByAuteur(String cleAuteur, Long mediaId);
+    public Media findByIdByAuteur(String cleAuteur, Integer mediaId);
     
 }
