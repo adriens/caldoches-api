@@ -31,6 +31,9 @@ public class Auteur {
     private String cleAuteur;
     
     @Column(nullable = true)
+    private String urlWeb;
+    
+    @Column(nullable = true)
     private String urlFb;
     
     @Column(nullable = true)
@@ -38,6 +41,9 @@ public class Auteur {
     
     @Column(nullable = true)
     private String urlYt;
+    
+    @Column(nullable = true)
+    private String urlTwit;
     
     
     /**
@@ -104,6 +110,22 @@ public class Auteur {
     public void setCleAuteur(String cleAuteur) {
         this.cleAuteur = cleAuteur;
     }
+    
+    /**
+     * get the author web url
+     * @return the web url of the author
+     */
+    public String getUrlWeb() {
+        return urlWeb;
+    }
+
+    /**
+     * set the author web url
+     * @param urlWeb the author's web url to set
+     */
+    public void setUrlWeb(String urlWeb) {
+        this.urlWeb = urlWeb;
+    }
 
     /**
      * get the author facebook url
@@ -152,6 +174,22 @@ public class Auteur {
     public void setUrlYt(String urlYt) {
         this.urlYt = urlYt;
     }
+
+    /**
+     * get the author twitter url
+     * @return the twitter url of the author
+     */
+    public String getUrlTwit() {
+        return urlTwit;
+    }
+
+    /**
+     * set the author twitter url
+     * @param urlTwit the author's twitter url to set
+     */
+    public void setUrlTwit(String urlTwit) {
+        this.urlTwit = urlTwit;
+    }
     
     /**
      * get the author to String
@@ -163,9 +201,11 @@ public class Auteur {
                 "id: " +id+ 
                 ", nom: " +nom+ 
                 ", cleAuteur: " +cleAuteur+
+                ", urlWeb: " +urlWeb+
                 ", urlFb: " +urlFb+
                 ", urlInsta: " +urlInsta+
                 ", urlYt: " +urlYt+
+                ", urlTwit: " +urlTwit+
                 "}";
     }
 
