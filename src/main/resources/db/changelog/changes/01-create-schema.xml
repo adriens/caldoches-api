@@ -28,7 +28,7 @@ and open the template in the editor.
         <constraints nullable="false"/>
       </column>
       <column name="description" type="varchar(255)">
-        <constraints nullable="false"/>
+        <constraints nullable="true"/>
       </column>
       <column name="keywords" type="clob">
         <constraints nullable="false"/>
@@ -52,6 +52,9 @@ and open the template in the editor.
       <column name="cle_auteur" type="varchar(255)">
         <constraints nullable="false"/>
       </column>
+      <column name="url_web" type="varchar(255)">
+        <constraints nullable="true"/>
+      </column>
       <column name="url_fb" type="varchar(255)">
         <constraints nullable="true"/>
       </column>
@@ -59,6 +62,9 @@ and open the template in the editor.
         <constraints nullable="true"/>
       </column>
       <column name="url_yt" type="varchar(255)">
+        <constraints nullable="true"/>
+      </column>
+      <column name="url_twit" type="varchar(255)">
         <constraints nullable="true"/>
       </column>
     </createTable>
@@ -72,6 +78,53 @@ and open the template in the editor.
         <constraints nullable="false"/>
       </column>
     </createTable>
+    
+    <createTable tableName="expression"
+      remarks="A table to contain all expressions">
+      <column name="id" type="int" autoIncrement="true">
+        <constraints nullable="false" unique="true" primaryKey="true"/>
+      </column>
+      <column name="texte" type="varchar(255)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="points" type="int">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+
+    <createTable tableName="tag"
+      remarks="A table to contain all the tags">
+      <column name="id" type="int" autoIncrement="true">
+        <constraints nullable="false" primaryKey="true"/>
+      </column>
+      <column name="nom" type="varchar(255)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="definition" type="varchar(255)">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+    
+    <createTable tableName="exptag"
+      remarks="A table to contain all the associations between expressions and tags">
+      <column name="id"  type="int" autoIncrement="true">
+        <constraints nullable="false" primaryKey="true"/>
+      </column>
+      <column name="exp" type="int">
+        <constraints nullable="false"/>
+      </column>
+      <column name="tag" type="int">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+
+    <addForeignKeyConstraint baseTableName="exptag" baseColumnNames="exp"
+      constraintName="exp_fk"
+      referencedTableName="expression" referencedColumnNames="id"/>
+    
+    <addForeignKeyConstraint baseTableName="exptag" baseColumnNames="tag"
+      constraintName="tag_fk"
+      referencedTableName="tag" referencedColumnNames="id"/>
 
     <addForeignKeyConstraint baseTableName="media" baseColumnNames="auteur"
       constraintName="auteur_fk"
