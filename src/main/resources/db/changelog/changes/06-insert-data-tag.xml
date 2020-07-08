@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    
+  <changeSet id="06" author="meilie">
+      
+    <comment>Insertion Expressions</comment>
+    
+    <insert tableName="tag">
+      <column name="id" valueNumeric="1"/>
+      <column name="nom" value="surprise"/>
+      <column name="definition" value="surprise"/>
+    </insert>
+    
+    <insert tableName="tag">
+      <column name="id" valueNumeric="2"/>
+      <column name="nom" value="insulte"/>
+      <column name="definition" value="insulte"/>
+    </insert>
+    
+    <insert tableName="tag">
+      <column name="id" valueNumeric="3"/>
+      <column name="nom" value="bonjour"/>
+      <column name="definition" value="bonjour"/>
+    </insert>
+    
+    <insert tableName="tag">
+      <column name="id" valueNumeric="4"/>
+      <column name="nom" value="aurevoir"/>
+      <column name="definition" value="au revoir"/>
+    </insert>
+    
+    <insert tableName="tag">
+      <column name="id" valueNumeric="5"/>
+      <column name="nom" value="merci"/>
+      <column name="definition" value="merci"/>
+    </insert>
+    
+    <insert tableName="tag">
+      <column name="id" valueNumeric="6"/>
+      <column name="nom" value="approbation"/>
+      <column name="definition" value="approbation"/>
+    </insert>
+    
+    <insert tableName="tag">
+      <column name="id" valueNumeric="7"/>
+      <column name="nom" value="desapprobation"/>
+      <column name="definition" value="désapprobation"/>
+    </insert>
+    
+    <insert tableName="tag">
+      <column name="id" valueNumeric="8"/>
+      <column name="nom" value="amour"/>
+      <column name="definition" value="amour"/>
+    </insert>
+    
+    <insert tableName="tag">
+      <column name="id" valueNumeric="9"/>
+      <column name="nom" value="joie"/>
+      <column name="definition" value="joie"/>
+    </insert>
+    
+    <insert tableName="tag">
+      <column name="id" valueNumeric="10"/>
+      <column name="nom" value="colere"/>
+      <column name="definition" value="colère"/>
+    </insert>
+    
+    <insert tableName="tag">
+      <column name="id" valueNumeric="11"/>
+      <column name="nom" value="tristesse"/>
+      <column name="definition" value="tristesse"/>
+    </insert>
+    
+    <insert tableName="tag">
+      <column name="id" valueNumeric="12"/>
+      <column name="nom" value="crainte"/>
+      <column name="definition" value="crainte"/>
+    </insert>
+    
+    <insert tableName="tag">
+      <column name="id" valueNumeric="13"/>
+      <column name="nom" value="honte"/>
+      <column name="definition" value="honte"/>
+    </insert>
+    
+  </changeSet>
+  
+</databaseChangeLog>

@@ -17,32 +17,43 @@ and open the template in the editor.
     
     <insert tableName="auteur">
       <column name="id" valueNumeric="1"/>
-      <column name="nom" value="auteur01"/>
-      <column name="cle_auteur" value="auteur1"/>
+      <column name="nom" value="François Ollivaud"/>
+      <column name="cle_auteur" value="ollivaud"/>
+      <column name="url_web" value="https://fr.wikipedia.org/wiki/Personnalit%C3%A9s_de_Nouvelle-Cal%C3%A9donie#Cin%C3%A9ma,_t%C3%A9l%C3%A9vision,_radio,_spectacle"/>
     </insert>
     
     <insert tableName="auteur">
       <column name="id" valueNumeric="2"/>
-      <column name="nom" value="auteur02"/>
-      <column name="cle_auteur" value="auteur2"/>
+      <column name="nom" value="Francky Lewis"/>
+      <column name="cle_auteur" value="lewis"/>
+      <column name="url_twit" value="https://twitter.com/FranckyLewis"/>
     </insert>
     
     <insert tableName="auteur">
       <column name="id" valueNumeric="3"/>
-      <column name="nom" value="auteur03"/>
-      <column name="cle_auteur" value="auteur3"/>
+      <column name="nom" value="Kingtäz"/>
+      <column name="cle_auteur" value="kingtaz"/>
+      <column name="url_web" value="https://fr.wikipedia.org/wiki/Personnalit%C3%A9s_de_Nouvelle-Cal%C3%A9donie#Cin%C3%A9ma,_t%C3%A9l%C3%A9vision,_radio,_spectacle"/>
+      <column name="url_fb" value="https://www.facebook.com/kingtazNC/"/>
+      <column name="url_yt" value="https://www.youtube.com/user/kingtaz31"/>
+      <column name="url_insta" value="https://www.instagram.com/kingtaznc/?hl=fr"/>
     </insert>
     
     <insert tableName="auteur">
       <column name="id" valueNumeric="4"/>
-      <column name="nom" value="auteur04"/>
-      <column name="cle_auteur" value="auteur4"/>
+      <column name="nom" value="Armagz - Esteban"/>
+      <column name="cle_auteur" value="armagz"/>
+      <column name="url_web" value="https://fr.wikipedia.org/wiki/Personnalit%C3%A9s_de_Nouvelle-Cal%C3%A9donie#Cin%C3%A9ma,_t%C3%A9l%C3%A9vision,_radio,_spectacle"/>
+      <column name="url_yt" value="https://www.youtube.com/user/estebandenoumea"/>
+      <column name="url_fb" value="https://www.facebook.com/pg/armagzcvup/"/>      
     </insert>
     
     <insert tableName="auteur">
       <column name="id" valueNumeric="5"/>
-      <column name="nom" value="auteur05"/>
-      <column name="cle_auteur" value="auteur5"/>
+      <column name="nom" value="John Gabilou"/>
+      <column name="cle_auteur" value="gabilou"/>
+      <column name="url_web" value="https://fr.wikipedia.org/wiki/Jean_Gabilou"/>
+      <column name="url_fb" value="https://www.facebook.com/JohnGabilou/"/>
     </insert>
     
   </changeSet>

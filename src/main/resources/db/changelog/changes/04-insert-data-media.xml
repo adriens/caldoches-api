@@ -17,49 +17,167 @@ and open the template in the editor.
     
     <insert tableName="media">
       <column name="id" valueNumeric="1"/>
-      <column name="url" value="http://url-01.com/"/>
-      <column name="date" value="2020-01-01"/>
-      <column name="titre" value="titre01"/>
+      <column name="url" value="https://youtu.be/cg7hrkemai4"/>
+      <column name="date" value="2000-01-01"/>
+      <column name="titre" value="La Tribu de Fifils"/>
+      <column name="description" value="Extrait de son album &quot;An 2000 en liberté&quot;"/>
+      <column name="keywords" value="tribu dana faubourg vdt"/>
       <column name="auteur" value="1"/>
-      <column name="media_type" value="4"/>
-    </insert>
-    
-    <insert tableName="media">
-      <column name="id" valueNumeric="2"/>
-      <column name="url" value="http://url-02.com/"/>
-      <column name="date" value="2020-02-02"/>
-      <column name="titre" value="titre02"/>
-      <column name="auteur" value="2"/>
       <column name="media_type" value="2"/>
     </insert>
     
     <insert tableName="media">
+      <column name="id" valueNumeric="2"/>
+      <column name="url" value="https://youtu.be/_S813Sbp-IM"/>
+      <column name="date" value="2000-01-01"/>
+      <column name="titre" value="La Bancoule à Mamie"/>
+      <column name="description" value="Extrait de son album &quot;An 2000 en liberté&quot;"/>
+      <column name="keywords" value="ver bancoule asticot farino fogliani zoreil"/>
+      <column name="auteur" value="1"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <insert tableName="media">
       <column name="id" valueNumeric="3"/>
-      <column name="url" value="http://url-03.com/"/>
-      <column name="date" value="2020-03-03"/>
-      <column name="titre" value="titre03"/>
-      <column name="auteur" value="3"/>
-      <column name="media_type" value="3"/>
+      <column name="url" value="https://youtu.be/3Nl5Fo_bT04"/>
+      <column name="date" value="1992-01-01"/>
+      <column name="titre" value="Notre Caillou"/>
+      <column name="description" value="Extrait de son album &quot;Kons Sensus&quot;"/>
+      <column name="keywords" value="caledonie caillou cocotier niaouli lagon picot dawa chasse"/>
+      <column name="auteur" value="1"/>
+      <column name="media_type" value="2"/>
     </insert>
     
     <insert tableName="media">
       <column name="id" valueNumeric="4"/>
-      <column name="url" value="http://url-04.com/"/>
-      <column name="date" value="2020-04-04"/>
-      <column name="titre" value="titre04"/>
-      <column name="auteur" value="3"/>
-      <column name="media_type" value="1"/>
+      <column name="url" value="https://youtu.be/qcOMiuRkzHU"/>
+      <column name="date" value="1992-01-01"/>
+      <column name="titre" value="C'est toi mon amour"/>
+      <column name="description" value="Extrait de la compilation &quot;Les accords du père François&quot;"/>
+      <column name="keywords" value="amour flamme bougna cochon igname divorce"/>
+      <column name="auteur" value="1"/>
+      <column name="media_type" value="2"/>
     </insert>
     
-     <insert tableName="media">
+    <insert tableName="media">
       <column name="id" valueNumeric="5"/>
-      <column name="url" value="http://url-05.com/"/>
-      <column name="date" value="2020-05-05"/>
-      <column name="titre" value="titre05"/>
-      <column name="auteur" value="5"/>
-      <column name="media_type" value="3"/>
+      <column name="url" value="https://www.facebook.com/kingtazNC/videos/893274671099277/"/>
+      <column name="date" value="2020-05-29"/>
+      <column name="titre" value="Kingtäz Classics - Alice et le chat feinteur (Parodie Alice au pays des merveilles)"/>
+      <column name="description" value='Parodie spécialement dédiée à ma petite Alice née lundi après-midi'/>
+      <column name="keywords" value="dessin anime alice disney parodie tiktok sao"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
     </insert>
     
+    <insert tableName="media">
+      <column name="id" valueNumeric="6"/>
+      <column name="url" value="https://www.facebook.com/kingtazNC/videos/2065294666832542/"/>
+      <column name="date" value="2017-10-25"/>
+      <column name="titre" value="Kingtäz - Le Camp Ouest"/>
+      <column name="description" value="Le Camp Ouest ! Mieux vaut pas être incarcéré là bas ..."/>
+      <column name="keywords" value="sketch audio camp ouest zoreil cannabis taureau brochette poulet kfc"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <insert tableName="media">
+      <column name="id" valueNumeric="7"/>
+      <column name="url" value="https://www.facebook.com/kingtazNC/videos/1916505638378113/"/>
+      <column name="date" value="2017-06-30"/>
+      <column name="titre" value="Kingtäz - L'entretien d'embauche"/>
+      <column name="description" value="SKETCH AUDIO - L'entretien d'embauche"/>
+      <column name="keywords" value="sketch audio entretien embauche"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <insert tableName="media">
+      <column name="id" valueNumeric="8"/>
+      <column name="url" value="https://www.facebook.com/kingtazNC/videos/1916505638378113/"/>
+      <column name="date" value="2019-08-01"/>
+      <column name="titre" value="Kingtäz - Un Zoreil à Bourail EPISODE 0"/>
+      <column name="description" value="Un Zoreil à Bourail - Episode 0 (Prequel)"/>
+      <column name="keywords" value="parodie retour vers le futur zoreil foire bourail"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <insert tableName="media">
+      <column name="id" valueNumeric="9"/>
+      <column name="url" value="https://www.facebook.com/kingtazNC/videos/1916505638378113/"/>
+      <column name="date" value="2019-08-01"/>
+      <column name="titre" value="Kingtäz - Un Zoreil à Bourail EPISODE 1"/>
+      <column name="description" value="Un Zoreil à Bourail - Episode 1 (Avec les voix de Dany &amp; Kingtäz)"/>
+      <column name="keywords" value="parodie retour vers le futur zoreil foire bourail"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <insert tableName="media">
+      <column name="id" valueNumeric="10"/>
+      <column name="url" value="https://www.facebook.com/armagzcvup/videos/1234063209995527/"/>
+      <column name="date" value="2017-01-15"/>
+      <column name="titre" value="Les cars."/>
+      <column name="description" value="CETTE VIDEO EST POUR CARSUD ET KARUIA! Toujours en retard mais jamais à l'heure!"/>
+      <column name="keywords" value="sketch carsud karuia retard"/>
+      <column name="auteur" value="4"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <insert tableName="media">
+      <column name="id" valueNumeric="11"/>
+      <column name="url" value="https://www.facebook.com/kingtazNC/videos/1916505638378113/"/>
+      <column name="date" value="2019-08-01"/>
+      <column name="titre" value="Tuto Gomen - Siri"/>
+      <column name="description" value="Héé looonculéé ! Le cousin de Gomen qui se met à faire des vidéos! Aujourd'hui il parle de Siri...enfin il parle à Siri! xD"/>
+      <column name="keywords" value="sketch iphone siri"/>
+      <column name="auteur" value="4"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <insert tableName="media">
+      <column name="id" valueNumeric="12"/>
+      <column name="url" value="https://youtu.be/QNdpuL5bf24"/>
+      <column name="date" value="2017-12-27"/>
+      <column name="titre" value="ARMAGZ - LES PAPAS EN NC (LTOM)"/>
+      <column name="description" value="La bande, dorénavant je ferais une chronique vidéo pour l'émission 'Les témoins d'Outre-Mer' ( LTOM ) !"/>
+      <column name="keywords" value="sketch papa caldoche"/>
+      <column name="auteur" value="4"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <insert tableName="media">
+      <column name="id" valueNumeric="13"/>
+      <column name="url" value="https://youtu.be/1WYRpObqspk"/>
+      <column name="date" value="2017-05-07"/>
+      <column name="titre" value="ARMAGZ - LA L"/>
+      <column name="description" value="Haa la filière L x) ..."/>
+      <column name="keywords" value="sketch fillère L profs clochards"/>
+      <column name="auteur" value="4"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <insert tableName="media">
+      <column name="id" valueNumeric="14"/>
+      <column name="url" value="https://youtu.be/XGBHJDHsEE4"/>
+      <column name="date" value="2011-05-10"/>
+      <column name="titre" value="Frankie Lewis - L'anniversaire de Momo"/>
+      <column name="keywords" value="canette fm anniversaire momo brasserie biere number one"/>
+      <column name="auteur" value="1"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <insert tableName="media">
+      <column name="id" valueNumeric="15"/>
+      <column name="url" value="https://youtu.be/sivHX5APJhU"/>
+      <column name="date" value="2020-01-01"/>
+      <column name="titre" value="Frankie Lewis - Le corbeau et le renard"/>
+      <column name="keywords" value=""/>
+      <column name="auteur" value="1"/>
+      <column name="media_type" value="2"/>
+    </insert>
+ 
   </changeSet>
   
 </databaseChangeLog>
