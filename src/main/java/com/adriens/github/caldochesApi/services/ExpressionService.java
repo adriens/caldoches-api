@@ -28,5 +28,30 @@ public interface ExpressionService {
      * @throws ResourceNotFoundException
      */
     public Expression getExpression(Integer expressionId) throws ResourceNotFoundException;
+ 
+    /**
+     * get the list of all the expressions for a tag
+     * @param cleTag
+     * @return the list of all the expressions corresponding to the tag corresponding to the cleTag parameter
+     * @throws com.adriens.github.caldochesApi.exception.ResourceNotFoundException
+     */
+    public List<Expression> getExpressionsByTag(String cleTag) throws ResourceNotFoundException;
+    
+    /**
+     * get an expression by id for a tag key
+     * @param cleTag
+     * @param expId
+     * @return the expression corresponding to the expId parameter for the tag corresponding to the cleTag parameter
+     * @throws ResourceNotFoundException
+     */
+    public Expression getExpressionByIdByTag(String cleTag, Integer expId) throws ResourceNotFoundException;
+    
+    /**
+     * get a random expression for a tag key
+     * @param cleTag
+     * @return a random expression for the tag corresponding to the cleTag parameter
+     * @throws ResourceNotFoundException
+     */
+    public Expression getRandomExpressionByTag(String cleTag) throws ResourceNotFoundException;
     
 }

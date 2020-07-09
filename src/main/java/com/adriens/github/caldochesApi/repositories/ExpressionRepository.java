@@ -6,6 +6,8 @@
 package com.adriens.github.caldochesApi.repositories;
 
 import com.adriens.github.caldochesApi.entities.Expression;
+import com.adriens.github.caldochesApi.repositories.custom.ExpressionRepositoryCustom;
+
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -15,6 +17,6 @@ import org.springframework.stereotype.Repository;
  * @author meilie
  */
 @Repository
-public interface ExpressionRepository extends JpaRepository<Expression,Integer>{
+public interface ExpressionRepository extends JpaRepository<Expression,Integer>, ExpressionRepositoryCustom {
     
 }

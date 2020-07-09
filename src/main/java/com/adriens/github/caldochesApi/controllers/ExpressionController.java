@@ -47,5 +47,38 @@ public class ExpressionController {
     public ResponseEntity<Expression> getExpressionById(@PathVariable(value = "id") Integer expressionId) throws ResourceNotFoundException {
         return ResponseEntity.ok().body(expressionService.getExpression(expressionId));
     }
-
+    
+    /**
+     * get the list of all the expressions for a tag
+     * @param cleTag
+     * @return the expression's list of a tag
+     * @throws ResourceNotFoundException
+     */
+    @GetMapping("/expressions/tag/{cleTag}")
+    public ResponseEntity<List<Expression>> getExpressionByTag(@PathVariable(value = "cleTag") String cleTag) throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(expressionService.getExpressionsByTag(cleTag));
+    }
+    
+    /**
+     * get the expression by id for a tag key
+     * @param cleTag
+     * @param expId
+     * @return an expression corresponding to the expId parameter for a tag with cleTag key
+     * @throws ResourceNotFoundException
+     */
+    @GetMapping("/expressions/tag/{cleTag}/{id}")
+    public ResponseEntity<Expression> getExpressionByIdByTag(@PathVariable(value = "cleTag") String cleTag, @PathVariable(value = "id") Integer expId) throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(expressionService.getExpressionByIdByTag(cleTag, expId));
+    }
+    
+    /**
+     * get a random expression for a tag key
+     * @param cleTag
+     * @return a random expression for a tag
+     * @throws ResourceNotFoundException
+     */
+    @GetMapping("/expressions/tag/{cleTag}/random")
+    public ResponseEntity<Expression> getRandomMediaByAuteur(@PathVariable(value = "cleTag") String cleTag) throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(expressionService.getRandomExpressionByTag(cleTag));
+    }
 }
