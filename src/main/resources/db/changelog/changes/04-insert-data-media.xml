@@ -164,7 +164,7 @@ and open the template in the editor.
       <column name="date" value="2011-05-10"/>
       <column name="titre" value="Frankie Lewis - L'anniversaire de Momo"/>
       <column name="keywords" value="canette fm anniversaire momo brasserie biere number one"/>
-      <column name="auteur" value="1"/>
+      <column name="auteur" value="2"/>
       <column name="media_type" value="2"/>
     </insert>
 
@@ -174,7 +174,7 @@ and open the template in the editor.
       <column name="date" value="2020-01-01"/>
       <column name="titre" value="Frankie Lewis - Le corbeau et le renard"/>
       <column name="keywords" value=""/>
-      <column name="auteur" value="1"/>
+      <column name="auteur" value="2"/>
       <column name="media_type" value="2"/>
     </insert>
  
