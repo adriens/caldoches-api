@@ -15,8 +15,18 @@ import java.util.List;
  */
 public interface ExpressionService {
     
-    public List<Expression> retrieveExpressions();
+    /**
+     * get the list of all the expressions
+     * @return the list of all the expressions
+     */
+    public List<Expression> getExpressions();
     
+    /**
+     * get a expression by id
+     * @param expressionId
+     * @return the expression corresponding to the expressionId parameter
+     * @throws ResourceNotFoundException
+     */
     public Expression getExpression(Integer expressionId) throws ResourceNotFoundException;
     
 }

@@ -34,18 +34,18 @@ public class MediaController {
      */
     @GetMapping("/medias")
     public List<Media> getAllMedias() { 
-        return mediaService.retrieveMedias();
+        return mediaService.getMedias();
     }
 
     /**
      * get the list of all the medias for an author
      * @param cleAuteur
-     * @return the author's list of medias
+     * @return the media's list for an author
      * @throws ResourceNotFoundException
      */
     @GetMapping("/medias/auteur/{cleAuteur}")
     public ResponseEntity<List<Media>> getAllMediasByAuteur(@PathVariable(value = "cleAuteur") String cleAuteur) throws ResourceNotFoundException {
-        return ResponseEntity.ok().body(mediaService.retrieveMediasByAuteur(cleAuteur));
+        return ResponseEntity.ok().body(mediaService.getMediasByAuteur(cleAuteur));
     }
 
     /**
@@ -79,7 +79,6 @@ public class MediaController {
      */
     @GetMapping("/medias/auteur/{cleAuteur}/random")
     public ResponseEntity<Media> getRandomMediaByAuteur(@PathVariable(value = "cleAuteur") String cleAuteur) throws ResourceNotFoundException {
-        List<Media> medias = mediaService.retrieveMediasByAuteur(cleAuteur);
         return ResponseEntity.ok().body(mediaService.getRandomMediaByAuteur(cleAuteur));
     }
 

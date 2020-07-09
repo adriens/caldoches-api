@@ -29,18 +29,18 @@ public class TagController {
     private TagService tagService;
 
     /**
-     * get the list of all the authors
-     * @return authors list
+     * get the list of all the tags
+     * @return tags list
      */
     @GetMapping("/tags")
     public List<Tag> getAllTags() { 
-        return tagService.retrieveTags();
+        return tagService.getTags();
     }
 
     /**
-     * get an author by id
+     * get an tag by id
      * @param tagId
-     * @return the author corresponding to the id parameter
+     * @return the tag corresponding to the id parameter
      * @throws ResourceNotFoundException
      */
     @GetMapping("/tags/{id}")

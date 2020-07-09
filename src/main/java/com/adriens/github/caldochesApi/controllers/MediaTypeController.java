@@ -34,7 +34,7 @@ public class MediaTypeController {
      */
     @GetMapping("/types")
     public List<MediaType> getAllMediaTypes() { 
-        return typeService.retrieveMediaTypes();
+        return typeService.getMediaTypes();
     }
 
     /**

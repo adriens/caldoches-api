@@ -38,7 +38,7 @@ public class MediaTypeServiceImpl implements MediaTypeService {
      * @return the list of all the mediatypes
      */
     @Override
-    public List<MediaType> retrieveMediaTypes() {
+    public List<MediaType> getMediaTypes() {
         List<MediaType> types = typeRepository.findAll();
         return types;
     }

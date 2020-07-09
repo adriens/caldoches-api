@@ -38,7 +38,7 @@ public class AuteurServiceImpl implements AuteurService {
      * @return the list of all the authors
      */
     @Override
-    public List<Auteur> retrieveAuteurs() {
+    public List<Auteur> getAuteurs() {
         List<Auteur> auteurs = auteurRepository.findAll();
         return auteurs;
     }
@@ -50,7 +50,7 @@ public class AuteurServiceImpl implements AuteurService {
      * @throws ResourceNotFoundException
      */
     @Override
-    public Auteur getAuteur(Integer auteurId) throws ResourceNotFoundException {
+    public Auteur getAuteurById(Integer auteurId) throws ResourceNotFoundException {
         Auteur auteur = auteurRepository.findById(auteurId).orElseThrow(
             () -> new ResourceNotFoundException("Aucun auteur trouvé avec l'id :: " + auteurId)
         );

@@ -29,18 +29,18 @@ public class ExpressionController {
     private ExpressionService expressionService;
 
     /**
-     * get the list of all the authors
-     * @return authors list
+     * get the list of all the expressions
+     * @return expressions list
      */
     @GetMapping("/expressions")
     public List<Expression> getAllExpressions() { 
-        return expressionService.retrieveExpressions();
+        return expressionService.getExpressions();
     }
 
     /**
-     * get an author by id
+     * get an expression by id
      * @param expressionId
-     * @return the author corresponding to the id parameter
+     * @return the expression corresponding to the id parameter
      * @throws ResourceNotFoundException
      */
     @GetMapping("/expressions/{id}")

@@ -34,19 +34,19 @@ public class ExpressionServiceImpl implements ExpressionService {
     }
 
     /**
-     * get the list of all the authors
-     * @return the list of all the authors
+     * get the list of all the expressions
+     * @return the list of all the expressions
      */
     @Override
-    public List<Expression> retrieveExpressions() {
+    public List<Expression> getExpressions() {
         List<Expression> exps = expRepository.findAll();
         return exps;
     }
 
     /**
-     * get an author by id
+     * get an expression by id
      * @param expressionId
-     * @return the author corresponding to the id parameter
+     * @return the expression corresponding to the id parameter
      * @throws ResourceNotFoundException
      */
     @Override

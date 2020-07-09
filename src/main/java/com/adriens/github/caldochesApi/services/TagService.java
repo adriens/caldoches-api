@@ -15,8 +15,18 @@ import java.util.List;
  */
 public interface TagService {
     
-    public List<Tag> retrieveTags();
+    /**
+     * get the list of all the tags
+     * @return the list of all the tags
+     */
+    public List<Tag> getTags();
     
-    public Tag getTag(Integer idTag) throws ResourceNotFoundException;
+    /**
+     * get an tag by id
+     * @param tagId
+     * @return the tag corresponding to the tagId parameter
+     * @throws ResourceNotFoundException
+     */
+    public Tag getTagById(Integer tagId) throws ResourceNotFoundException;
     
 }

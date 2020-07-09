@@ -39,7 +39,7 @@ public class MediaServiceImpl implements MediaService {
      * @return the list of all the medias
      */
     @Override
-    public List<Media> retrieveMedias() {
+    public List<Media> getMedias() {
         List<Media> medias = mediaRepository.findAll();
         return medias;
     }
@@ -65,7 +65,7 @@ public class MediaServiceImpl implements MediaService {
      * @throws com.adriens.github.caldochesApi.exception.ResourceNotFoundException
      */
     @Override
-    public List<Media> retrieveMediasByAuteur(String cleAuteur) throws ResourceNotFoundException {
+    public List<Media> getMediasByAuteur(String cleAuteur) throws ResourceNotFoundException {
         List<Media> medias = mediaRepository.findByAuteur(cleAuteur);
         if (medias.isEmpty()) {
             throw new ResourceNotFoundException("Aucun média trouvé avec l'auteur :: " + cleAuteur);
