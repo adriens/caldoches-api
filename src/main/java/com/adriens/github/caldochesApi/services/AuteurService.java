@@ -30,4 +30,12 @@ public interface AuteurService {
      */
     public Auteur getAuteurById(Integer auteurId) throws ResourceNotFoundException;
     
+    /**
+     * get an author by key
+     * @param cleAuteur
+     * @return the author corresponding to the cleAuteur parameter
+     * @throws ResourceNotFoundException
+     */
+    public Auteur getAuteurByKey(String cleAuteur) throws ResourceNotFoundException;
+    
 }

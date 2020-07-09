@@ -57,4 +57,19 @@ public class AuteurServiceImpl implements AuteurService {
         return auteur;
     }
     
+    /**
+     * get an author by key
+     * @param cleAuteur
+     * @return the author corresponding to the cleAuteur parameter
+     * @throws ResourceNotFoundException
+     */
+    @Override
+    public Auteur getAuteurByKey(String cleAuteur) throws ResourceNotFoundException {
+        Auteur auteur = auteurRepository.findByKey(cleAuteur);
+        if (auteur == null) {
+            throw new ResourceNotFoundException("Aucun auteur trouvé avec la clé :: " + cleAuteur);
+        }
+        return auteur;
+    }
+    
 }

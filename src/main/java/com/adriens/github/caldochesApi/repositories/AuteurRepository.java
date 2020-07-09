@@ -6,6 +6,7 @@
 package com.adriens.github.caldochesApi.repositories;
 
 import com.adriens.github.caldochesApi.entities.Auteur;
+import com.adriens.github.caldochesApi.repositories.custom.AuteurRepositoryCustom;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -15,6 +16,6 @@ import org.springframework.stereotype.Repository;
  * @author meilie
  */
 @Repository
-public interface AuteurRepository extends JpaRepository<Auteur,Integer>{
+public interface AuteurRepository extends JpaRepository<Auteur,Integer>, AuteurRepositoryCustom {
     
 }

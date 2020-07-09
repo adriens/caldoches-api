@@ -49,4 +49,15 @@ public class AuteurController {
         return ResponseEntity.ok().body(auteurService.getAuteurById(auteurId));
     }
     
+    /**
+     * get an author by cleAuteur
+     * @param cleAuteur
+     * @return the author corresponding to the id parameter
+     * @throws ResourceNotFoundException
+     */
+    @GetMapping("/auteurs/key/{cleAuteur}")
+    public ResponseEntity<Auteur> getAuteurByKey(@PathVariable(value = "cleAuteur") String cleAuteur) throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(auteurService.getAuteurByKey(cleAuteur));
+    }
+
 }
