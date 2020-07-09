@@ -52,7 +52,7 @@ API de gestion des expressions caldoches à nous les mecs du caillou
 
 `/auteurs`
 `/auteurs/3`
-`/auteurs/3`
+`/auteurs/key/ollivaud`
 
 `/types` 
 `/types/2`
@@ -65,7 +65,7 @@ API de gestion des expressions caldoches à nous les mecs du caillou
 
 `/tags`
 `/tags/3`
-`/tags/3`
+`/tags/key/bonjour`
 
 `/expressions`
 `/expressions/11`
