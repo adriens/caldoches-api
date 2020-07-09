@@ -27,7 +27,7 @@ public class AuteurController {
     
     @Autowired
     private AuteurService auteurService;
-
+    
     /**
      * get the list of all the authors
      * @return authors list

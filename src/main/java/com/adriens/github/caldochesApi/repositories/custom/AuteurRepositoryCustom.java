@@ -7,8 +7,6 @@ package com.adriens.github.caldochesApi.repositories.custom;
 
 import com.adriens.github.caldochesApi.entities.Auteur;
 
-import java.util.List;
-
 /**
  *
  * @author meilie
