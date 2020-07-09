@@ -64,61 +64,73 @@ public class Expression implements Serializable {
     }
     
     /**
-     * @return the id
+     * get the expression id
+     * @return the id of the expression
      */
     public Integer getId() {
         return id;
     }
 
     /**
-     * @param id the id to set
+     * set the expression id
+     * @param id the expression's id to set
      */
     public void setId(Integer id) {
         this.id = id;
     }
 
     /**
-     * @return the texte
+     * get the expression text
+     * @return the text of the expression
      */
     public String getTexte() {
         return texte;
     }
 
     /**
-     * @param texte the texte to set
+     * set the expression text
+     * @param texte the expression's text to set
      */
     public void setTexte(String texte) {
         this.texte = texte;
     }
 
     /**
-     * @return the points
+     * get the expression points
+     * @return the points of the expression
      */
     public int getPoints() {
         return points;
     }
 
     /**
-     * @param points the points to set
+     * set the expression points
+     * @param points the expression's points to set
      */
     public void setPoints(int points) {
         this.points = points;
     }
 
     /**
-     * @return the tags
+     * get the expression tag's list
+     * @return the tag's list of the expression
      */
     public List<Tag> getTags() {
         return tags;
     }
 
     /**
-     * @param tags the tags to set
+     * set the expression tag's list
+     * @param tags the expression's tag's list to set
      */
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
     
+    /**
+     * get the expression to String
+     * @return the expression as text
+     */
     @Override
     public String toString() {
         

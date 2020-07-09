@@ -56,61 +56,73 @@ public class Tag implements Serializable {
     }
 
     /**
-     * @return the id
+     * get the tag id
+     * @return the id of the tag
      */
     public Integer getId() { 
         return id; 
     }
 
     /**
-     * @param id the id to set
+     * set the tag id
+     * @param id the tag's id to set
      */
     public void setId(Integer id) { 
         this.id = id; 
     }
 
     /**
-     * @return the nom
+     * get the tag name
+     * @return the name of the tag
      */
     public String getNom() { 
         return nom; 
     }
 
     /**
-     * @param nom the nom to set
+     * set the tag name
+     * @param nom the tag's name to set
      */
     public void setNom(String nom) { 
         this.nom = nom; 
     }
 
     /**
-     * @return the definition
+     * get the tag definition
+     * @return the definition of the tag
      */
     public String getDefinition() { 
         return definition; 
     }
 
     /**
-     * @param definition the definition to set
+     * set the tag definition
+     * @param definition the tag's definition to set
      */
     public void setDefinition(String definition) { 
         this.definition = definition; 
     }
 
     /**
-     * @return the exps
+     * get the tag expression's list
+     * @return the expression's list of the tag
      */
     public List<Expression> getExps() {
         return exps;
     }
 
     /**
-     * @param exps the exps to set
+     * set the tag expression's list
+     * @param exps the tag's expression's list to set
      */
     public void setExps(List<Expression> exps) {
         this.exps = exps;
     }
 
+    /**
+     * get the tag to String
+     * @return the tag as text
+     */
     @Override
     public String toString() {
         
