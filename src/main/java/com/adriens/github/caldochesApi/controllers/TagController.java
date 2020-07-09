@@ -45,7 +45,18 @@ public class TagController {
      */
     @GetMapping("/tags/{id}")
     public ResponseEntity<Tag> getTagById(@PathVariable(value = "id") Integer tagId) throws ResourceNotFoundException {
-        return ResponseEntity.ok().body(tagService.getTag(tagId));
+        return ResponseEntity.ok().body(tagService.getTagById(tagId));
+    }
+    
+    /**
+     * get an tag by key
+     * @param cleTag
+     * @return the tag corresponding to the cleTag parameter
+     * @throws ResourceNotFoundException
+     */
+    @GetMapping("/tags/key/{cleTag}")
+    public ResponseEntity<Tag> getTagByKey(@PathVariable(value = "cleTag") String cleTag) throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(tagService.getTagByKey(cleTag));
     }
 
 }

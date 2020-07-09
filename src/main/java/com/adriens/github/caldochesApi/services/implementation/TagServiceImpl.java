@@ -34,27 +34,39 @@ public class TagServiceImpl implements TagService {
     }
 
     /**
-     * get the list of all the authors
-     * @return the list of all the authors
+     * get the list of all the tags
+     * @return the list of all the tags
      */
     @Override
-    public List<Tag> retrieveTags() {
+    public List<Tag> getTags() {
         List<Tag> tags = tagRepository.findAll();
         System.out.println(tags);
         return tags;
     }
 
     /**
-     * get an author by id
+     * get an tag by id
      * @param tagId
-     * @return the author corresponding to the id parameter
+     * @return the tag corresponding to the id parameter
      * @throws ResourceNotFoundException
      */
     @Override
-    public Tag getTag(Integer tagId) throws ResourceNotFoundException {
+    public Tag getTagById(Integer tagId) throws ResourceNotFoundException {
         Tag tag = tagRepository.findById(tagId).orElseThrow(
             () -> new ResourceNotFoundException("Aucun tag trouvé avec l'id :: " + tagId)
         );
+        return tag;
+    }
+    
+    /**
+     * get an tag by key
+     * @param cleTag
+     * @return the tag corresponding to the cleTag parameter
+     * @throws ResourceNotFoundException
+     */
+    @Override
+    public Tag getTagByKey(String cleTag) throws ResourceNotFoundException {
+        Tag tag = tagRepository.findByKey(cleTag);
         return tag;
     }
     

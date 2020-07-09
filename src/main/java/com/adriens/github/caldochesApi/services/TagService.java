@@ -29,4 +29,12 @@ public interface TagService {
      */
     public Tag getTagById(Integer tagId) throws ResourceNotFoundException;
     
+    /**
+     * get an tag by key
+     * @param cleTag
+     * @return the tag corresponding to the cleTag parameter
+     * @throws ResourceNotFoundException
+     */
+    public Tag getTagByKey(String cleTag) throws ResourceNotFoundException;
+    
 }
