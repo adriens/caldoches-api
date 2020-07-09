@@ -1,4 +1,4 @@
-# caldoches-api
+# Kalolo-api
 API de gestion des expressions caldoches à nous les mecs du caillou
 
 ## Démarrer le service
