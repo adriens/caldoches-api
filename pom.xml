@@ -23,6 +23,7 @@
             
             <persistence.version>2.5.2</persistence.version>
             <javax.persistence.version>2.1.0</javax.persistence.version>
+            <springdoc-openapi.version>1.2.32</springdoc-openapi.version>
 	</properties>
 
 	<dependencies>        
@@ -56,6 +57,12 @@
                         <artifactId>junit-vintage-engine</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+            
+            <dependency>            
+                <groupId>org.springdoc</groupId>            
+                <artifactId>springdoc-openapi-ui</artifactId>            
+                <version>${springdoc-openapi.version}</version>        
             </dependency>
             
             <dependency>
