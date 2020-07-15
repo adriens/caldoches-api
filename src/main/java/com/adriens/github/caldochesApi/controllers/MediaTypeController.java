@@ -31,9 +31,10 @@ public class MediaTypeController {
     /**
      * get the list of all media types
      * @return the list of all media types
+     * @throws ResourceNotFoundException
      */
     @GetMapping("/types")
-    public List<MediaType> getAllMediaTypes() { 
+    public List<MediaType> getAllMediaTypes() throws ResourceNotFoundException { 
         return typeService.getMediaTypes();
     }
 
@@ -43,7 +44,7 @@ public class MediaTypeController {
      * @return the media type corresponding to the id parameter
      * @throws ResourceNotFoundException
      */
-    @GetMapping("/types/{id}")
+    @GetMapping("/types/type/{id}")
     public ResponseEntity<MediaType> getMediaTypeById(@PathVariable(value = "id") Integer typeId) throws ResourceNotFoundException {
         return ResponseEntity.ok().body(typeService.getMediaType(typeId));
     }
