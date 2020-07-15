@@ -19,7 +19,7 @@ public interface MediaTypeService {
      * get the list of all mediatypes
      * @return the list of all mediatypes
      */
-    public List<MediaType> getMediaTypes();
+    public List<MediaType> getMediaTypes() throws ResourceNotFoundException;
     
     /**
      * get a mediatype by id

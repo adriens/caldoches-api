@@ -38,9 +38,11 @@ public class MediaTypeServiceImpl implements MediaTypeService {
      * @return the list of all the mediatypes
      */
     @Override
-    public List<MediaType> getMediaTypes() {
+    public List<MediaType> getMediaTypes() throws ResourceNotFoundException {
         List<MediaType> types = typeRepository.findAll();
-        return types;
+        
+        if (types.isEmpty()) throw new ResourceNotFoundException("Aucun type de média enregistré");
+        else return types;
     }
 
     /**
