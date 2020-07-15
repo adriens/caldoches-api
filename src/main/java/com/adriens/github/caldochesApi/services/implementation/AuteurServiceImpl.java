@@ -11,6 +11,7 @@ import com.adriens.github.caldochesApi.repositories.AuteurRepository;
 import com.adriens.github.caldochesApi.services.AuteurService;
 
 import java.util.List;
+import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -38,9 +39,11 @@ public class AuteurServiceImpl implements AuteurService {
      * @return the list of all the authors
      */
     @Override
-    public List<Auteur> getAuteurs() {
+    public List<Auteur> getAuteurs() throws ResourceNotFoundException{
         List<Auteur> auteurs = auteurRepository.findAll();
-        return auteurs;
+        
+        if (auteurs.isEmpty()) throw new ResourceNotFoundException("Aucun auteur enregistré");
+        else return auteurs;
     }
 
     /**
@@ -55,6 +58,21 @@ public class AuteurServiceImpl implements AuteurService {
             () -> new ResourceNotFoundException("Aucun auteur trouvé avec l'id :: " + auteurId)
         );
         return auteur;
+    }
+    
+    @Override
+    public Auteur getRandomAuteur() throws ResourceNotFoundException {
+        int listSize = 0;
+        List<Auteur> auteurs = auteurRepository.findAll();
+        
+        if (auteurs.isEmpty()) {
+            throw new ResourceNotFoundException("Aucun auteur enregistré");
+        } else {
+            listSize = auteurs.size();
+            Random random = new Random();
+            int randomValue = random.nextInt(listSize);
+            return auteurs.get(randomValue);
+        }
     }
     
     /**
