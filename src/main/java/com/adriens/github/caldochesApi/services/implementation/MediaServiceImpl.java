@@ -39,9 +39,11 @@ public class MediaServiceImpl implements MediaService {
      * @return the list of all the medias
      */
     @Override
-    public List<Media> getMedias() {
+    public List<Media> getMedias() throws ResourceNotFoundException {
         List<Media> medias = mediaRepository.findAll();
-        return medias;
+        
+        if (medias.isEmpty()) throw new ResourceNotFoundException("Aucun media enregistré");
+        else return medias;
     }
 
     /**
@@ -71,6 +73,21 @@ public class MediaServiceImpl implements MediaService {
             throw new ResourceNotFoundException("Aucun média trouvé avec l'auteur :: " + cleAuteur);
         }
         return medias;
+    }
+    
+    @Override
+    public Media getRandomMedia() throws ResourceNotFoundException {
+        int listSize = 0;
+        List<Media> medias = mediaRepository.findAll();
+        
+        if (medias.isEmpty()) {
+            throw new ResourceNotFoundException("Aucun media enregistré");
+        } else {
+            listSize = medias.size();
+            Random random = new Random();
+            int randomValue = random.nextInt(listSize);
+            return medias.get(randomValue);
+        }
     }
 
     /**
