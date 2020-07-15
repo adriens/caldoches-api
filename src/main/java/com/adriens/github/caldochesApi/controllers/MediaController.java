@@ -31,10 +31,32 @@ public class MediaController {
     /**
      * get the list of all the medias
      * @return the list of all the medias
+     * @throws ResourceNotFoundException
      */
     @GetMapping("/medias")
-    public List<Media> getAllMedias() { 
+    public List<Media> getAllMedias() throws ResourceNotFoundException { 
         return mediaService.getMedias();
+    }
+    
+    /**
+     * get a media by id
+     * @param mediaId
+     * @return a media corresponding to the id parameter
+     * @throws ResourceNotFoundException
+     */
+    @GetMapping("/medias/media/{id}")
+    public ResponseEntity<Media> getMediaById(@PathVariable(value = "id") Integer mediaId) throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(mediaService.getMedia(mediaId));
+    }
+    
+    /**
+     * get a random media
+     * @return a random media
+     * @throws ResourceNotFoundException
+     */
+    @GetMapping("/medias/random")
+    public ResponseEntity<Media> getRandomMedia() throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(mediaService.getRandomMedia());
     }
 
     /**
@@ -49,24 +71,13 @@ public class MediaController {
     }
 
     /**
-     * get a media by id
-     * @param mediaId
-     * @return a media corresponding to the id parameter
-     * @throws ResourceNotFoundException
-     */
-    @GetMapping("/medias/{id}")
-    public ResponseEntity<Media> getMediaById(@PathVariable(value = "id") Integer mediaId) throws ResourceNotFoundException {
-        return ResponseEntity.ok().body(mediaService.getMedia(mediaId));
-    }
-
-    /**
      * get the media by id for an author
      * @param cleAuteur
      * @param mediaId
      * @return a media corresponding to the id parameter for an author
      * @throws ResourceNotFoundException
      */
-    @GetMapping("/medias/auteur/{cleAuteur}/{id}")
+    @GetMapping("/medias/auteur/{cleAuteur}/media/{id}")
     public ResponseEntity<Media> getMediaByIdByAuteur(@PathVariable(value = "cleAuteur") String cleAuteur, @PathVariable(value = "id") Integer mediaId) throws ResourceNotFoundException {
         return ResponseEntity.ok().body(mediaService.getMediaByIdByAuteur(cleAuteur, mediaId));
     }
