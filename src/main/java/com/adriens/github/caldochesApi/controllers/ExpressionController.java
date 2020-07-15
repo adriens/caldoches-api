@@ -31,9 +31,10 @@ public class ExpressionController {
     /**
      * get the list of all the expressions
      * @return expressions list
+     * @throws ResourceNotFoundException
      */
     @GetMapping("/expressions")
-    public List<Expression> getAllExpressions() { 
+    public List<Expression> getAllExpressions() throws ResourceNotFoundException { 
         return expressionService.getExpressions();
     }
 
@@ -46,6 +47,15 @@ public class ExpressionController {
     @GetMapping("/expressions/{id}")
     public ResponseEntity<Expression> getExpressionById(@PathVariable(value = "id") Integer expressionId) throws ResourceNotFoundException {
         return ResponseEntity.ok().body(expressionService.getExpression(expressionId));
+    }
+    
+    /**
+     * get a random media
+     * @return a random media
+     */
+    @GetMapping("/expressions/random")
+    public ResponseEntity<Expression> getRandomExpression() throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(expressionService.getRandomExpression());
     }
     
     /**
