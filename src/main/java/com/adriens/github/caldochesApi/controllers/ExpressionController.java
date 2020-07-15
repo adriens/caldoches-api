@@ -44,7 +44,7 @@ public class ExpressionController {
      * @return the expression corresponding to the id parameter
      * @throws ResourceNotFoundException
      */
-    @GetMapping("/expressions/{id}")
+    @GetMapping("/expressions/expression/{id}")
     public ResponseEntity<Expression> getExpressionById(@PathVariable(value = "id") Integer expressionId) throws ResourceNotFoundException {
         return ResponseEntity.ok().body(expressionService.getExpression(expressionId));
     }
@@ -76,7 +76,7 @@ public class ExpressionController {
      * @return an expression corresponding to the expId parameter for a tag with cleTag key
      * @throws ResourceNotFoundException
      */
-    @GetMapping("/expressions/tag/{cleTag}/{id}")
+    @GetMapping("/expressions/tag/{cleTag}/expression/{id}")
     public ResponseEntity<Expression> getExpressionByIdByTag(@PathVariable(value = "cleTag") String cleTag, @PathVariable(value = "id") Integer expId) throws ResourceNotFoundException {
         return ResponseEntity.ok().body(expressionService.getExpressionByIdByTag(cleTag, expId));
     }
