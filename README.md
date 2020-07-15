@@ -9,41 +9,47 @@ API de gestion des expressions caldoches à nous les mecs du caillou
 
 `/auteurs` : La liste de tous les auteurs
 
-`/auteurs/{id}` : L'auteur d'identifiant {id}
+`/auteurs/random` : Un auteur au hasard
 
-`/auteurs/key/{id}` : L'auteur d'identifiant {cleAuteur}
+`/auteurs/auteur/{idAuteur}` : L'auteur d'identifiant {idAuteur}
+
+`/auteurs/{cleAuteur}` : L'auteur d'identifiant {cleAuteur}
 
 
 `/types` : La liste de tous les types de média
 
-`/types/{id}` : Le type de média d'identifiant {id}
+`/types/type/{idType}` : Le type de média d'identifiant {idType}
 
 
 `/medias` : La liste de tous les médias
 
-`/medias/{id}` : Le média d'identifiant {id}
+`/medias/media/{idMedia}` : Le média d'identifiant {idMedia}
+
+`/medias/random` : Un média au hasard
 
 `/medias/auteur/{cleAuteur}` : La liste de tous les médias de l'auteur {cleAuteur}
 
-`/medias/auteur/{cleAuteur}/{id}` : Le média d'identifiant {id} de l'auteur {cleAuteur}
+`/medias/auteur/{cleAuteur}/media/{idMedia}` : Le média d'identifiant {idMedia} de l'auteur {cleAuteur}
 
 `/medias/auteur/{cleAuteur}/random` : Un média au hasard de l'auteur {cleAuteur}
 
 
 `/tags` : La liste de tous les tags
 
-`/tags/{id}` : Le tag d'identifiant {id}
+`/tags/tag/{idTag}` : Le tag d'identifiant {idTag}
 
-`/tags/key/{id}` : Le tags d'identifiant {cleTag}
+`/tags/{cleTag}` : Le tag d'identifiant {cleTag}
 
 
 `/expressions` : La liste de toutes les expressions
 
-`/expressions/{id}` : L'expression d'identifiant {id}
+`/expressions/expression/{idExpression}` : L'expression d'identifiant {idExpression}
+
+`/expressions/random` : Une expression au hasard
 
 `/expressions/tag/{cleTag}` : La liste de toutes les expressions ayant pour tag {cleTag}
 
-`/expressions/tag/{cleTag}/{id}` : L'expression d'identifiant {id} ayant pour tag {cleTag}
+`/expressions/tag/{cleTag}/expression/{idExpression}` : L'expression d'identifiant {idExpression} ayant pour tag {cleTag}
 
 `/expressions/tag/{cleTag}/random` : Un expression au hasard ayant pour tag {cleTag}
 
