@@ -19,7 +19,7 @@ public interface ExpressionService {
      * get the list of all the expressions
      * @return the list of all the expressions
      */
-    public List<Expression> getExpressions();
+    public List<Expression> getExpressions() throws ResourceNotFoundException;
     
     /**
      * get a expression by id
@@ -29,6 +29,12 @@ public interface ExpressionService {
      */
     public Expression getExpression(Integer expressionId) throws ResourceNotFoundException;
  
+    /**
+     * get a random expression
+     * @return a random expression
+     */
+    public Expression getRandomExpression() throws ResourceNotFoundException;
+    
     /**
      * get the list of all the expressions for a tag
      * @param cleTag

@@ -39,9 +39,11 @@ public class ExpressionServiceImpl implements ExpressionService {
      * @return the list of all the expressions
      */
     @Override
-    public List<Expression> getExpressions() {
+    public List<Expression> getExpressions() throws ResourceNotFoundException {
         List<Expression> exps = expRepository.findAll();
-        return exps;
+        
+        if (exps.isEmpty()) throw new ResourceNotFoundException("Aucune expression enregistrée");
+        else return exps;
     }
 
     /**
@@ -56,6 +58,21 @@ public class ExpressionServiceImpl implements ExpressionService {
             () -> new ResourceNotFoundException("Aucune expression trouvée avec l'id :: " + expressionId)
         );
         return exp;
+    }
+    
+    @Override
+    public Expression getRandomExpression() throws ResourceNotFoundException {
+        int listSize = 0;
+        List<Expression> exps = expRepository.findAll();
+        
+        if (exps.isEmpty()) {
+            throw new ResourceNotFoundException("Aucune expression enregistrée");
+        } else {
+            listSize = exps.size();
+            Random random = new Random();
+            int randomValue = random.nextInt(listSize);
+            return exps.get(randomValue);
+        }
     }
     
     /**
