@@ -38,10 +38,11 @@ public class TagServiceImpl implements TagService {
      * @return the list of all the tags
      */
     @Override
-    public List<Tag> getTags() {
+    public List<Tag> getTags() throws ResourceNotFoundException {
         List<Tag> tags = tagRepository.findAll();
-        System.out.println(tags);
-        return tags;
+        
+        if (tags.isEmpty()) throw new ResourceNotFoundException("Aucun tag enregistré");
+        else return tags;
     }
 
     /**

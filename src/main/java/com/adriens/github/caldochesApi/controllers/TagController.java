@@ -31,9 +31,10 @@ public class TagController {
     /**
      * get the list of all the tags
      * @return tags list
+     * @throws ResourceNotFoundException
      */
     @GetMapping("/tags")
-    public List<Tag> getAllTags() { 
+    public List<Tag> getAllTags() throws ResourceNotFoundException { 
         return tagService.getTags();
     }
 
@@ -43,7 +44,7 @@ public class TagController {
      * @return the tag corresponding to the id parameter
      * @throws ResourceNotFoundException
      */
-    @GetMapping("/tags/{id}")
+    @GetMapping("/tags/tag/{id}")
     public ResponseEntity<Tag> getTagById(@PathVariable(value = "id") Integer tagId) throws ResourceNotFoundException {
         return ResponseEntity.ok().body(tagService.getTagById(tagId));
     }
@@ -54,7 +55,7 @@ public class TagController {
      * @return the tag corresponding to the cleTag parameter
      * @throws ResourceNotFoundException
      */
-    @GetMapping("/tags/key/{cleTag}")
+    @GetMapping("/tags/{cleTag}")
     public ResponseEntity<Tag> getTagByKey(@PathVariable(value = "cleTag") String cleTag) throws ResourceNotFoundException {
         return ResponseEntity.ok().body(tagService.getTagByKey(cleTag));
     }
