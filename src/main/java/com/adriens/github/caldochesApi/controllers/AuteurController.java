@@ -31,9 +31,10 @@ public class AuteurController {
     /**
      * get the list of all the authors
      * @return authors list
+     * @throws ResourceNotFoundException
      */
     @GetMapping("/auteurs")
-    public List<Auteur> getAllAuteurs() { 
+    public List<Auteur> getAllAuteurs() throws ResourceNotFoundException { 
         return auteurService.getAuteurs();
     }
 
@@ -44,7 +45,7 @@ public class AuteurController {
      * @throws ResourceNotFoundException
      */
     
-    @GetMapping("/auteurs/{id}")
+    @GetMapping("/auteurs/auteur/{id}")
     public ResponseEntity<Auteur> getAuteurById(@PathVariable(value = "id") Integer auteurId) throws ResourceNotFoundException {
         return ResponseEntity.ok().body(auteurService.getAuteurById(auteurId));
     }
@@ -55,9 +56,20 @@ public class AuteurController {
      * @return the author corresponding to the id parameter
      * @throws ResourceNotFoundException
      */
-    @GetMapping("/auteurs/key/{cleAuteur}")
+    @GetMapping("/auteurs/{cleAuteur}")
     public ResponseEntity<Auteur> getAuteurByKey(@PathVariable(value = "cleAuteur") String cleAuteur) throws ResourceNotFoundException {
         return ResponseEntity.ok().body(auteurService.getAuteurByKey(cleAuteur));
+    }
+    
+    /**
+     * get a random author
+     * @return a random author
+     * @throws ResourceNotFoundException
+     */
+    
+    @GetMapping("/auteurs/random")
+    public ResponseEntity<Auteur> getRandomAuteur() throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(auteurService.getRandomAuteur());
     }
 
 }
