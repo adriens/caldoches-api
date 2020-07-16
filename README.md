@@ -7,6 +7,11 @@ API de gestion des expressions caldoches à nous les mecs du caillou
 
 ## Endpoints
 
+
+`/` : Documentation Swagger
+
+
+
 `/auteurs` : La liste de tous les auteurs
 
 `/auteurs/random` : Un auteur au hasard
@@ -16,9 +21,11 @@ API de gestion des expressions caldoches à nous les mecs du caillou
 `/auteurs/{cleAuteur}` : L'auteur d'identifiant {cleAuteur}
 
 
+
 `/types` : La liste de tous les types de média
 
 `/types/type/{idType}` : Le type de média d'identifiant {idType}
+
 
 
 `/medias` : La liste de tous les médias
@@ -34,11 +41,13 @@ API de gestion des expressions caldoches à nous les mecs du caillou
 `/medias/auteur/{cleAuteur}/random` : Un média au hasard de l'auteur {cleAuteur}
 
 
+
 `/tags` : La liste de tous les tags
 
 `/tags/tag/{idTag}` : Le tag d'identifiant {idTag}
 
 `/tags/{cleTag}` : Le tag d'identifiant {cleTag}
+
 
 
 `/expressions` : La liste de toutes les expressions
@@ -54,27 +63,55 @@ API de gestion des expressions caldoches à nous les mecs du caillou
 `/expressions/tag/{cleTag}/random` : Un expression au hasard ayant pour tag {cleTag}
 
 
+
 ## Exemples d'appels
 
 `/auteurs`
-`/auteurs/3`
-`/auteurs/key/ollivaud`
+
+`/auteurs/random`
+
+`/auteurs/auteur/3`
+
+`/auteurs/ollivaud`
+
+
 
 `/types` 
-`/types/2`
+
+`/types/type/2`
+
+
 
 `/medias`
-`/medias/11`
+
+`/medias/random`
+
+`/medias/media/11`
+
 `/medias/auteur/kingtaz`
-`/medias/auteur/kingtaz/8`
+
+`/medias/auteur/kingtaz/media/8`
+
 `/medias/auteur/kingtaz/random`
 
+
+
 `/tags`
-`/tags/3`
-`/tags/key/bonjour`
+
+`/tags/tag/3`
+
+`/tags/bonjour`
+
+
 
 `/expressions`
-`/expressions/11`
+
+`/expressions/random`
+
+`/expressions/expression/11`
+
 `/expressions/tag/joie`
-`/expressions/tag/joie/113`
+
+`/expressions/tag/joie/expression/113`
+
 `/expressions/tag/joie/random`
