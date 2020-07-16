@@ -10,6 +10,7 @@ import com.adriens.github.caldochesApi.exception.ResourceNotFoundException;
 import com.adriens.github.caldochesApi.services.AuteurService;
 
 import java.util.List;
+import java.util.Objects;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -27,6 +28,8 @@ public class AuteurController {
     
     @Autowired
     private AuteurService auteurService;
+    
+    private Auteur lastRandomAuteur = new Auteur();
     
     /**
      * get the list of all the authors
@@ -53,7 +56,7 @@ public class AuteurController {
     /**
      * get an author by cleAuteur
      * @param cleAuteur
-     * @return the author corresponding to the id parameter
+     * @return the author corresponding to the cleAuteur parameter
      * @throws ResourceNotFoundException
      */
     @GetMapping("/auteurs/{cleAuteur}")
@@ -69,7 +72,11 @@ public class AuteurController {
     
     @GetMapping("/auteurs/random")
     public ResponseEntity<Auteur> getRandomAuteur() throws ResourceNotFoundException {
-        return ResponseEntity.ok().body(auteurService.getRandomAuteur());
+        Auteur auteur = auteurService.getRandomAuteur();
+        if(lastRandomAuteur.getId()!=null) 
+            while(Objects.equals(auteur.getId(), lastRandomAuteur.getId())) { auteur = auteurService.getRandomAuteur(); }
+        lastRandomAuteur = auteur;
+        return ResponseEntity.ok().body(auteur);
     }
 
 }

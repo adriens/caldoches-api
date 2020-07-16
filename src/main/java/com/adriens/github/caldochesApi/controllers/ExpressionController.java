@@ -10,6 +10,7 @@ import com.adriens.github.caldochesApi.exception.ResourceNotFoundException;
 import com.adriens.github.caldochesApi.services.ExpressionService;
 
 import java.util.List;
+import java.util.Objects;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -27,6 +28,8 @@ public class ExpressionController {
     
     @Autowired
     private ExpressionService expressionService;
+    
+    private Expression lastRandomExpression = new Expression();
 
     /**
      * get the list of all the expressions
@@ -50,18 +53,23 @@ public class ExpressionController {
     }
     
     /**
-     * get a random media
-     * @return a random media
+     * get a random expression
+     * @return a random expression
+     * @throws ResourceNotFoundException
      */
     @GetMapping("/expressions/random")
     public ResponseEntity<Expression> getRandomExpression() throws ResourceNotFoundException {
-        return ResponseEntity.ok().body(expressionService.getRandomExpression());
+        Expression exp = expressionService.getRandomExpression();
+        if(lastRandomExpression.getId()!=null) 
+            while(Objects.equals(exp.getId(), lastRandomExpression.getId())) { exp = expressionService.getRandomExpression(); }
+        lastRandomExpression = exp;
+        return ResponseEntity.ok().body(exp);
     }
     
     /**
      * get the list of all the expressions for a tag
      * @param cleTag
-     * @return the expression's list of a tag
+     * @return the expression's list for a tag
      * @throws ResourceNotFoundException
      */
     @GetMapping("/expressions/tag/{cleTag}")
@@ -89,6 +97,10 @@ public class ExpressionController {
      */
     @GetMapping("/expressions/tag/{cleTag}/random")
     public ResponseEntity<Expression> getRandomMediaByAuteur(@PathVariable(value = "cleTag") String cleTag) throws ResourceNotFoundException {
-        return ResponseEntity.ok().body(expressionService.getRandomExpressionByTag(cleTag));
+        Expression exp = expressionService.getRandomExpressionByTag(cleTag);
+        if(lastRandomExpression.getId()!=null) 
+            while(Objects.equals(exp.getId(), lastRandomExpression.getId())) { exp = expressionService.getRandomExpressionByTag(cleTag); }
+        lastRandomExpression = exp;
+        return ResponseEntity.ok().body(exp);
     }
 }

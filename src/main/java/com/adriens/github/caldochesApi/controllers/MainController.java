@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.view.RedirectView;
 
 /**
- *
+ * Redirect to Swagger documentation
  * @author meilie
  */
 @RestController
