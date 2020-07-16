@@ -42,17 +42,6 @@ public class MediaController {
     }
     
     /**
-     * get a media by id
-     * @param idMedia
-     * @return a media corresponding to the id parameter
-     * @throws ResourceNotFoundException
-     */
-    @GetMapping("/medias/media/{idMedia}")
-    public ResponseEntity<Media> getMediaById(@PathVariable(value = "idMedia") Integer idMedia) throws ResourceNotFoundException {
-        return ResponseEntity.ok().body(mediaService.getMedia(idMedia));
-    }
-    
-    /**
      * get a random media
      * @return a random media
      * @throws ResourceNotFoundException
@@ -64,6 +53,17 @@ public class MediaController {
             while(Objects.equals(media.getId(), lastRandomMedia.getId())) { media = mediaService.getRandomMedia(); }
         lastRandomMedia = media;
         return ResponseEntity.ok().body(media);
+    }
+    
+    /**
+     * get a media by id
+     * @param idMedia
+     * @return a media corresponding to the id parameter
+     * @throws ResourceNotFoundException
+     */
+    @GetMapping("/medias/media/{idMedia}")
+    public ResponseEntity<Media> getMediaById(@PathVariable(value = "idMedia") Integer idMedia) throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(mediaService.getMedia(idMedia));
     }
 
     /**
