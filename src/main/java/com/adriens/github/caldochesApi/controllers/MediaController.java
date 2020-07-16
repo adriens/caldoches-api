@@ -10,6 +10,7 @@ import com.adriens.github.caldochesApi.exception.ResourceNotFoundException;
 import com.adriens.github.caldochesApi.services.MediaService;
 
 import java.util.List;
+import java.util.Objects;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -27,6 +28,8 @@ public class MediaController {
     
     @Autowired
     private MediaService mediaService;
+    
+    private Media lastRandomMedia = new Media();
 
     /**
      * get the list of all the medias
@@ -56,13 +59,17 @@ public class MediaController {
      */
     @GetMapping("/medias/random")
     public ResponseEntity<Media> getRandomMedia() throws ResourceNotFoundException {
-        return ResponseEntity.ok().body(mediaService.getRandomMedia());
+        Media media = mediaService.getRandomMedia();
+        if(lastRandomMedia.getId()!=null) 
+            while(Objects.equals(media.getId(), lastRandomMedia.getId())) { media = mediaService.getRandomMedia(); }
+        lastRandomMedia = media;
+        return ResponseEntity.ok().body(media);
     }
 
     /**
      * get the list of all the medias for an author
      * @param cleAuteur
-     * @return the media's list for an author
+     * @return the media's list for an author corresponding to the cleAuteur parameter
      * @throws ResourceNotFoundException
      */
     @GetMapping("/medias/auteur/{cleAuteur}")
@@ -74,7 +81,7 @@ public class MediaController {
      * get the media by id for an author
      * @param cleAuteur
      * @param mediaId
-     * @return a media corresponding to the id parameter for an author
+     * @return a media corresponding to the id parameter for an author corresponding to the cleAuteur parameter
      * @throws ResourceNotFoundException
      */
     @GetMapping("/medias/auteur/{cleAuteur}/media/{id}")
@@ -85,12 +92,16 @@ public class MediaController {
     /**
      * get a random media for an author
      * @param cleAuteur
-     * @return a random media for an author
+     * @return a random media for an author corresponding to the cleAuteur parameter
      * @throws ResourceNotFoundException
      */
     @GetMapping("/medias/auteur/{cleAuteur}/random")
     public ResponseEntity<Media> getRandomMediaByAuteur(@PathVariable(value = "cleAuteur") String cleAuteur) throws ResourceNotFoundException {
-        return ResponseEntity.ok().body(mediaService.getRandomMediaByAuteur(cleAuteur));
+        Media media = mediaService.getRandomMediaByAuteur(cleAuteur);
+        if(lastRandomMedia.getId()!=null) 
+            while(Objects.equals(media.getId(), lastRandomMedia.getId())) { media = mediaService.getRandomMediaByAuteur(cleAuteur); }
+        lastRandomMedia = media;
+        return ResponseEntity.ok().body(media);
     }
 
 }
