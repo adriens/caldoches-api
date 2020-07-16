@@ -29,7 +29,7 @@ public class AuteurRepositoryImpl implements AuteurRepositoryCustom {
     EntityManager entityManager;
     
     /**
-     * get the author by key 
+     * get the author by cleAteur key 
      * @param cleAuteur
      * @return the author corresponding to the cleAuteur parameter
      */
@@ -44,11 +44,8 @@ public class AuteurRepositoryImpl implements AuteurRepositoryCustom {
         query.setParameter(1, cleAuteur);
         
         List<Auteur> auteurs = query.getResultList();
-        if (auteurs.isEmpty()) {
-            return null;
-        } else {
-            return auteurs.get(0);
-        }
+        if (auteurs.isEmpty()) return null;
+        else return auteurs.get(0);
     }
     
 }

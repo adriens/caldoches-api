@@ -37,6 +37,7 @@ public class MediaServiceImpl implements MediaService {
     /**
      * get all medias list
      * @return the list of all the medias
+     * @throws ResourceNotFoundException
      */
     @Override
     public List<Media> getMedias() throws ResourceNotFoundException {
@@ -48,14 +49,14 @@ public class MediaServiceImpl implements MediaService {
 
     /**
      * get a media by id
-     * @param mediaId
+     * @param idMedia
      * @return a media corresponding to the mediaId parameter
      * @throws ResourceNotFoundException
      */
     @Override
-    public Media getMedia(Integer mediaId) throws ResourceNotFoundException {
-        Media media = mediaRepository.findById(mediaId).orElseThrow(
-            () -> new ResourceNotFoundException("Aucun média trouvé avec l'id :: " + mediaId)
+    public Media getMedia(Integer idMedia) throws ResourceNotFoundException {
+        Media media = mediaRepository.findById(idMedia).orElseThrow(
+            () -> new ResourceNotFoundException("Aucun média trouvé avec l'id :: " + idMedia)
         );
         return media;
     }
@@ -69,10 +70,8 @@ public class MediaServiceImpl implements MediaService {
     @Override
     public List<Media> getMediasByAuteur(String cleAuteur) throws ResourceNotFoundException {
         List<Media> medias = mediaRepository.findByAuteur(cleAuteur);
-        if (medias.isEmpty()) {
-            throw new ResourceNotFoundException("Aucun média trouvé avec l'auteur :: " + cleAuteur);
-        }
-        return medias;
+        if (medias.isEmpty()) throw new ResourceNotFoundException("Aucun média trouvé avec l'auteur :: " + cleAuteur);
+        else return medias;
     }
     
     @Override
@@ -80,9 +79,8 @@ public class MediaServiceImpl implements MediaService {
         int listSize = 0;
         List<Media> medias = mediaRepository.findAll();
         
-        if (medias.isEmpty()) {
-            throw new ResourceNotFoundException("Aucun media enregistré");
-        } else {
+        if (medias.isEmpty()) throw new ResourceNotFoundException("Aucun media enregistré");
+        else {
             listSize = medias.size();
             Random random = new Random();
             int randomValue = random.nextInt(listSize);
@@ -93,17 +91,15 @@ public class MediaServiceImpl implements MediaService {
     /**
      * get a media by id for an author
      * @param cleAuteur
-     * @param mediaId
+     * @param idMedia
      * @return the media corresponding to the mediaId parameter for the author corresponding to the cleAuteur parameter
      * @throws ResourceNotFoundException
      */
     @Override
-    public Media getMediaByIdByAuteur(String cleAuteur, Integer mediaId) throws ResourceNotFoundException {
-        Media media = mediaRepository.findByIdByAuteur(cleAuteur, mediaId);
-        if (media == null) {
-            throw new ResourceNotFoundException("Aucun média trouvé avec l'id :: " + mediaId + " pour l'auteur :: " + cleAuteur);
-        }
-        return media;
+    public Media getMediaByIdByAuteur(String cleAuteur, Integer idMedia) throws ResourceNotFoundException {
+        Media media = mediaRepository.findByIdByAuteur(cleAuteur, idMedia);
+        if (media == null) throw new ResourceNotFoundException("Aucun média trouvé avec l'id :: " + idMedia + " pour l'auteur :: " + cleAuteur);
+        else return media;
     }
 
     /**
@@ -114,12 +110,11 @@ public class MediaServiceImpl implements MediaService {
      */
     @Override
     public Media getRandomMediaByAuteur(String cleAuteur) throws ResourceNotFoundException {
-        int listSize = 0;
+        int listSize;
         List<Media> medias = mediaRepository.findByAuteur(cleAuteur);
         
-        if (medias.isEmpty()) {
-            throw new ResourceNotFoundException("Aucun média trouvé pour l'auteur :: " + cleAuteur);
-        } else {
+        if (medias.isEmpty()) throw new ResourceNotFoundException("Aucun média trouvé pour l'auteur :: " + cleAuteur);
+        else {
             listSize = medias.size();
             Random random = new Random();
             int randomValue = random.nextInt(listSize);

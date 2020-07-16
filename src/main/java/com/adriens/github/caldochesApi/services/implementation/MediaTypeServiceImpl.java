@@ -36,6 +36,7 @@ public class MediaTypeServiceImpl implements MediaTypeService {
     /**
      * get all mediatypes list
      * @return the list of all the mediatypes
+     * @throws ResourceNotFoundException
      */
     @Override
     public List<MediaType> getMediaTypes() throws ResourceNotFoundException {

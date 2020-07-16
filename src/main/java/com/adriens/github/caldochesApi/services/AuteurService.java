@@ -19,6 +19,7 @@ public interface AuteurService {
     /**
      * get the list of all the authors
      * @return the list of all the authors
+     * @throws ResourceNotFoundException
      */
     public List<Auteur> getAuteurs() throws ResourceNotFoundException;
     
@@ -33,6 +34,7 @@ public interface AuteurService {
     /**
      * get a random author
      * @return a random author
+     * @throws ResourceNotFoundException
      */
     public Auteur getRandomAuteur() throws ResourceNotFoundException;
     

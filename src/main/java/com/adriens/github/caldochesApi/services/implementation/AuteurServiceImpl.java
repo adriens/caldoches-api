@@ -37,6 +37,7 @@ public class AuteurServiceImpl implements AuteurService {
     /**
      * get the list of all the authors
      * @return the list of all the authors
+     * @throws ResourceNotFoundException
      */
     @Override
     public List<Auteur> getAuteurs() throws ResourceNotFoundException{
@@ -62,7 +63,7 @@ public class AuteurServiceImpl implements AuteurService {
     
     @Override
     public Auteur getRandomAuteur() throws ResourceNotFoundException {
-        int listSize = 0;
+        int listSize;
         List<Auteur> auteurs = auteurRepository.findAll();
         
         if (auteurs.isEmpty()) {
@@ -84,9 +85,8 @@ public class AuteurServiceImpl implements AuteurService {
     @Override
     public Auteur getAuteurByKey(String cleAuteur) throws ResourceNotFoundException {
         Auteur auteur = auteurRepository.findByKey(cleAuteur);
-        if (auteur == null) {
-            throw new ResourceNotFoundException("Aucun auteur trouvé avec la clé :: " + cleAuteur);
-        }
+        
+        if (auteur == null) throw new ResourceNotFoundException("Aucun auteur trouvé avec la clé :: " + cleAuteur);
         return auteur;
     }
     

@@ -44,9 +44,9 @@ public class MediaTypeController {
      * @return the media type corresponding to the id parameter
      * @throws ResourceNotFoundException
      */
-    @GetMapping("/types/type/{id}")
-    public ResponseEntity<MediaType> getMediaTypeById(@PathVariable(value = "id") Integer typeId) throws ResourceNotFoundException {
-        return ResponseEntity.ok().body(typeService.getMediaType(typeId));
+    @GetMapping("/types/type/{idType}")
+    public ResponseEntity<MediaType> getMediaTypeById(@PathVariable(value = "idType") Integer idType) throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(typeService.getMediaType(idType));
     }
     
 }

@@ -36,11 +36,11 @@ public class TagServiceImpl implements TagService {
     /**
      * get the list of all the tags
      * @return the list of all the tags
+     * @throws ResourceNotFoundException
      */
     @Override
     public List<Tag> getTags() throws ResourceNotFoundException {
         List<Tag> tags = tagRepository.findAll();
-        
         if (tags.isEmpty()) throw new ResourceNotFoundException("Aucun tag enregistré");
         else return tags;
     }
@@ -68,6 +68,7 @@ public class TagServiceImpl implements TagService {
     @Override
     public Tag getTagByKey(String cleTag) throws ResourceNotFoundException {
         Tag tag = tagRepository.findByKey(cleTag);
+        if (tag == null) throw new ResourceNotFoundException("Aucun tag trouvé avec la clé :: " + cleTag);
         return tag;
     }
     

@@ -44,9 +44,9 @@ public class TagController {
      * @return the tag corresponding to the id parameter
      * @throws ResourceNotFoundException
      */
-    @GetMapping("/tags/tag/{id}")
-    public ResponseEntity<Tag> getTagById(@PathVariable(value = "id") Integer tagId) throws ResourceNotFoundException {
-        return ResponseEntity.ok().body(tagService.getTagById(tagId));
+    @GetMapping("/tags/tag/{idTag}")
+    public ResponseEntity<Tag> getTagById(@PathVariable(value = "idTag") Integer idTag) throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(tagService.getTagById(idTag));
     }
     
     /**

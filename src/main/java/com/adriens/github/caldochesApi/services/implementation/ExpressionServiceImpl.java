@@ -37,6 +37,7 @@ public class ExpressionServiceImpl implements ExpressionService {
     /**
      * get the list of all the expressions
      * @return the list of all the expressions
+     * @throws ResourceNotFoundException
      */
     @Override
     public List<Expression> getExpressions() throws ResourceNotFoundException {
@@ -48,26 +49,25 @@ public class ExpressionServiceImpl implements ExpressionService {
 
     /**
      * get an expression by id
-     * @param expressionId
+     * @param idExpression
      * @return the expression corresponding to the id parameter
      * @throws ResourceNotFoundException
      */
     @Override
-    public Expression getExpression(Integer expressionId) throws ResourceNotFoundException {
-        Expression exp = expRepository.findById(expressionId).orElseThrow(
-            () -> new ResourceNotFoundException("Aucune expression trouvée avec l'id :: " + expressionId)
+    public Expression getExpression(Integer idExpression) throws ResourceNotFoundException {
+        Expression exp = expRepository.findById(idExpression).orElseThrow(
+            () -> new ResourceNotFoundException("Aucune expression trouvée avec l'id :: " + idExpression)
         );
         return exp;
     }
     
     @Override
     public Expression getRandomExpression() throws ResourceNotFoundException {
-        int listSize = 0;
+        int listSize;
         List<Expression> exps = expRepository.findAll();
         
-        if (exps.isEmpty()) {
-            throw new ResourceNotFoundException("Aucune expression enregistrée");
-        } else {
+        if (exps.isEmpty()) throw new ResourceNotFoundException("Aucune expression enregistrée");
+        else {
             listSize = exps.size();
             Random random = new Random();
             int randomValue = random.nextInt(listSize);
@@ -79,31 +79,27 @@ public class ExpressionServiceImpl implements ExpressionService {
      * get all expressions for a tag
      * @param cleTag
      * @return a expression's list for the tag corresponding to the cleTag parameter
-     * @throws com.adriens.github.caldochesApi.exception.ResourceNotFoundException
+     * @throws ResourceNotFoundException
      */
     @Override
     public List<Expression> getExpressionsByTag(String cleTag) throws ResourceNotFoundException {
         List<Expression> exps = expRepository.findByTag(cleTag);
-        if (exps.isEmpty()) {
-            throw new ResourceNotFoundException("Aucune expression trouvée avec le tag :: " + cleTag);
-        }
-        return exps;
+        if (exps.isEmpty()) throw new ResourceNotFoundException("Aucune expression trouvée avec le tag :: " + cleTag);
+        else return exps;
     }
     
     /**
-     * get a media by id for an author
-     * @param cleAuteur
-     * @param mediaId
-     * @return the media corresponding to the mediaId parameter for the author corresponding to the cleAuteur parameter
+     * get an expression by idExpression for a tag key
+     * @param cleTag
+     * @param idExpression
+     * @return the expression corresponding to the idExpression parameter for the tag corresponding to the cleTag parameter
      * @throws ResourceNotFoundException
      */
     @Override
-    public Expression getExpressionByIdByTag(String cleTag, Integer expId) throws ResourceNotFoundException {
-        Expression exp = expRepository.findByIdByTag(cleTag, expId);
-        if (exp == null) {
-            throw new ResourceNotFoundException("Aucune expression trouvée avec l'id :: " + expId + " pour le tag :: " + cleTag);
-        }
-        return exp;
+    public Expression getExpressionByIdByTag(String cleTag, Integer idExpression) throws ResourceNotFoundException {
+        Expression exp = expRepository.findByIdByTag(cleTag, idExpression);
+        if (exp == null) throw new ResourceNotFoundException("Aucune expression trouvée avec l'id :: " + idExpression + " pour le tag :: " + cleTag);
+        else return exp;
     }
 
     /**
@@ -114,12 +110,11 @@ public class ExpressionServiceImpl implements ExpressionService {
      */
     @Override
     public Expression getRandomExpressionByTag(String cleTag) throws ResourceNotFoundException {
-        int listSize = 0;
+        int listSize;
         List<Expression> exps = expRepository.findByTag(cleTag);
         
-        if (exps.isEmpty()) {
-            throw new ResourceNotFoundException("Aucune expression trouvée pour le tag :: " + cleTag);
-        } else {
+        if (exps.isEmpty()) throw new ResourceNotFoundException("Aucune expression trouvée pour le tag :: " + cleTag);
+        else {
             listSize = exps.size();
             Random random = new Random();
             int randomValue = random.nextInt(listSize);

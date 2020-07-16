@@ -18,6 +18,7 @@ public interface MediaService {
     /**
      * get the list of all the medias
      * @return the list of all the medias
+     * @throws ResourceNotFoundException
      */
     public List<Media> getMedias() throws ResourceNotFoundException;
 
@@ -32,6 +33,7 @@ public interface MediaService {
     /**
      * get a random media
      * @return a random media
+     * @throws ResourceNotFoundException
      */
     public Media getRandomMedia() throws ResourceNotFoundException;
     

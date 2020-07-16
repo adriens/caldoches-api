@@ -18,7 +18,8 @@ public interface MediaTypeService {
     /**
      * get the list of all mediatypes
      * @return the list of all mediatypes
-     */
+     * @throws ResourceNotFoundException
+    */
     public List<MediaType> getMediaTypes() throws ResourceNotFoundException;
     
     /**

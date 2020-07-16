@@ -49,7 +49,7 @@ public class Auteur {
     /**
      * constructor
      */
-    public Auteur() {
+    public Auteur() { 
         // for JPA
     }
     

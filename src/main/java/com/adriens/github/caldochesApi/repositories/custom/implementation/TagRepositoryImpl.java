@@ -44,11 +44,8 @@ public class TagRepositoryImpl implements TagRepositoryCustom {
         query.setParameter(1, cleTag);
         
         List<Tag> tags = query.getResultList();
-        if (tags.isEmpty()) {
-            return null;
-        } else {
-            return tags.get(0);
-        }
+        if (tags.isEmpty()) return null;
+        else return tags.get(0);
     }
     
 }

@@ -29,9 +29,9 @@ public class ExpressionRepositoryImpl implements ExpressionRepositoryCustom {
     EntityManager entityManager;
     
     /**
-     * get the media list for an author
-     * @param cleAuteur
-     * @return the media list corresponding to the cleAuteur parameter
+     * get the expression list for a tag key
+     * @param cleTag
+     * @return the expression list for a tag corresponding to the cleTag parameter
      */
     @Override
     public List<Expression> findByTag(String cleTag) {
@@ -49,13 +49,13 @@ public class ExpressionRepositoryImpl implements ExpressionRepositoryCustom {
     }
 
     /**
-     * get a media by id for an author
-     * @param cleAuteur
-     * @param mediaId
-     * @return the media corresponding to the mediaId parameter for the author corresponding to the cleAuteur parameter
+     * get an expression by id for a tag key
+     * @param cleTag
+     * @param idExpression
+     * @return the media corresponding to the idExpression parameter for the tag corresponding to the cleTag parameter
      */
     @Override
-    public Expression findByIdByTag(String cleTag, Integer expId) {
+    public Expression findByIdByTag(String cleTag, Integer idExpression) {
         Query query = entityManager.createNativeQuery(
         "SELECT * "
         + "FROM EXPRESSION AS E, TAG AS T, EXPTAG AS ET "
@@ -66,14 +66,11 @@ public class ExpressionRepositoryImpl implements ExpressionRepositoryCustom {
         Expression.class);
 
         query.setParameter(1, cleTag);
-        query.setParameter(2, expId);
+        query.setParameter(2, idExpression);
 
         List<Expression> exps = query.getResultList();
-        if (exps.isEmpty()) {
-            return null;
-        } else {
-            return exps.get(0);
-        }
+        if (exps.isEmpty()) return null;
+        else return exps.get(0);
     }
     
 }

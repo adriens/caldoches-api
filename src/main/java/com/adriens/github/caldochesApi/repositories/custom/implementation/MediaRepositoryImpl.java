@@ -67,11 +67,8 @@ public class MediaRepositoryImpl implements MediaRepositoryCustom {
         query.setParameter(2, mediaId);
 
         List<Media> medias = query.getResultList();
-        if (medias.isEmpty()) {
-            return null;
-        } else {
-            return medias.get(0);
-        }
+        if (medias.isEmpty()) return null;
+        else return medias.get(0);
     }
     
 }

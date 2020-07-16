@@ -40,29 +40,6 @@ public class AuteurController {
     public List<Auteur> getAllAuteurs() throws ResourceNotFoundException { 
         return auteurService.getAuteurs();
     }
-
-    /**
-     * get an author by id
-     * @param auteurId
-     * @return the author corresponding to the id parameter
-     * @throws ResourceNotFoundException
-     */
-    
-    @GetMapping("/auteurs/auteur/{id}")
-    public ResponseEntity<Auteur> getAuteurById(@PathVariable(value = "id") Integer auteurId) throws ResourceNotFoundException {
-        return ResponseEntity.ok().body(auteurService.getAuteurById(auteurId));
-    }
-    
-    /**
-     * get an author by cleAuteur
-     * @param cleAuteur
-     * @return the author corresponding to the cleAuteur parameter
-     * @throws ResourceNotFoundException
-     */
-    @GetMapping("/auteurs/{cleAuteur}")
-    public ResponseEntity<Auteur> getAuteurByKey(@PathVariable(value = "cleAuteur") String cleAuteur) throws ResourceNotFoundException {
-        return ResponseEntity.ok().body(auteurService.getAuteurByKey(cleAuteur));
-    }
     
     /**
      * get a random author
@@ -79,4 +56,27 @@ public class AuteurController {
         return ResponseEntity.ok().body(auteur);
     }
 
+    /**
+     * get an author by id
+     * @param idAuteur
+     * @return the author corresponding to the id parameter
+     * @throws ResourceNotFoundException
+     */
+    
+    @GetMapping("/auteurs/auteur/{idAuteur}")
+    public ResponseEntity<Auteur> getAuteurById(@PathVariable(value = "idAuteur") Integer idAuteur) throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(auteurService.getAuteurById(idAuteur));
+    }
+    
+    /**
+     * get an author by cleAuteur
+     * @param cleAuteur
+     * @return the author corresponding to the cleAuteur parameter
+     * @throws ResourceNotFoundException
+     */
+    @GetMapping("/auteurs/{cleAuteur}")
+    public ResponseEntity<Auteur> getAuteurByKey(@PathVariable(value = "cleAuteur") String cleAuteur) throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(auteurService.getAuteurByKey(cleAuteur));
+    }
+    
 }

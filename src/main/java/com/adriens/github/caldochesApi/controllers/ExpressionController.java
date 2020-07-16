@@ -43,13 +43,13 @@ public class ExpressionController {
 
     /**
      * get an expression by id
-     * @param expressionId
+     * @param idExpression
      * @return the expression corresponding to the id parameter
      * @throws ResourceNotFoundException
      */
-    @GetMapping("/expressions/expression/{id}")
-    public ResponseEntity<Expression> getExpressionById(@PathVariable(value = "id") Integer expressionId) throws ResourceNotFoundException {
-        return ResponseEntity.ok().body(expressionService.getExpression(expressionId));
+    @GetMapping("/expressions/expression/{idExpression}")
+    public ResponseEntity<Expression> getExpressionById(@PathVariable(value = "idExpression") Integer idExpression) throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(expressionService.getExpression(idExpression));
     }
     
     /**
@@ -80,13 +80,13 @@ public class ExpressionController {
     /**
      * get the expression by id for a tag key
      * @param cleTag
-     * @param expId
+     * @param idExpression
      * @return an expression corresponding to the expId parameter for a tag with cleTag key
      * @throws ResourceNotFoundException
      */
-    @GetMapping("/expressions/tag/{cleTag}/expression/{id}")
-    public ResponseEntity<Expression> getExpressionByIdByTag(@PathVariable(value = "cleTag") String cleTag, @PathVariable(value = "id") Integer expId) throws ResourceNotFoundException {
-        return ResponseEntity.ok().body(expressionService.getExpressionByIdByTag(cleTag, expId));
+    @GetMapping("/expressions/tag/{cleTag}/expression/{idExpression}")
+    public ResponseEntity<Expression> getExpressionByIdByTag(@PathVariable(value = "cleTag") String cleTag, @PathVariable(value = "idExpression") Integer idExpression) throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(expressionService.getExpressionByIdByTag(cleTag, idExpression));
     }
     
     /**

@@ -18,7 +18,8 @@ public interface TagService {
     /**
      * get the list of all the tags
      * @return the list of all the tags
-     */
+     * @throws ResourceNotFoundException
+    */
     public List<Tag> getTags() throws ResourceNotFoundException;
     
     /**
