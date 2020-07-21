@@ -15,6 +15,7 @@ and open the template in the editor.
       
     <comment>Insertion Médias</comment>
     
+    <!-- oliveaud -->
     <insert tableName="media">
       <column name="id" valueNumeric="1"/>
       <column name="url" value="https://youtu.be/cg7hrkemai4"/>
@@ -22,10 +23,11 @@ and open the template in the editor.
       <column name="titre" value="La Tribu de Fifils"/>
       <column name="description" value="Extrait de son album &quot;An 2000 en liberté&quot;"/>
       <column name="keywords" value="tribu dana faubourg vdt"/>
-      <column name="auteur" value="1"/>
+      <column name="auteur" value="1"/> 
       <column name="media_type" value="2"/>
     </insert>
     
+    <!-- oliveaud -->
     <insert tableName="media">
       <column name="id" valueNumeric="2"/>
       <column name="url" value="https://youtu.be/_S813Sbp-IM"/>
@@ -37,6 +39,7 @@ and open the template in the editor.
       <column name="media_type" value="2"/>
     </insert>
 
+    <!-- oliveaud -->
     <insert tableName="media">
       <column name="id" valueNumeric="3"/>
       <column name="url" value="https://youtu.be/3Nl5Fo_bT04"/>
@@ -48,6 +51,7 @@ and open the template in the editor.
       <column name="media_type" value="2"/>
     </insert>
     
+    <!-- oliveaud -->
     <insert tableName="media">
       <column name="id" valueNumeric="4"/>
       <column name="url" value="https://youtu.be/qcOMiuRkzHU"/>
@@ -59,8 +63,75 @@ and open the template in the editor.
       <column name="media_type" value="2"/>
     </insert>
     
+        <!-- oliveaud -->
     <insert tableName="media">
       <column name="id" valueNumeric="5"/>
+      <column name="url" value="https://youtu.be/5dm8b-Xm3C0?list=RD5dm8b-Xm3C0"/>
+      <column name="date" value="2019-08-18"/>
+      <column name="titre" value="Les zoreils"/>
+      <column name="description" value="Extrait de son album &quot;Kons Sensus&quot;"/>
+      <column name="auteur" value="1"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <!-- oliveaud -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="6"/>
+      <column name="url" value="https://youtu.be/QDmQbScJ1Sw"/>
+      <column name="date" value="2011-11-06"/>
+      <column name="titre" value="Air Kanin Air Kanaky International"/>
+      <column name="description" value="Extrait de la compilation &quot;Les accords du père François&quot;"/>
+      <column name="auteur" value="1"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <!-- oliveaud -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="7"/>
+      <column name="url" value="https://youtu.be/NEHJnzSo8Kw"/>
+      <column name="date" value="2011-03-09"/>
+      <column name="titre" value="Le Tourisme Vert"/>
+      <column name="description" value="Extrait de la compilation &quot;Les accords du père François&quot;"/>
+      <column name="auteur" value="1"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <!-- oliveaud -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="8"/>
+      <column name="url" value="https://youtu.be/Ap7R01LV_vY"/>
+      <column name="date" value="2012-02-15"/>
+      <column name="titre" value="An 2000, c'est la Boulette"/>
+      <column name="description" value="Extrait de son album &quot;An 2000 en liberté&quot;"/>
+      <column name="auteur" value="1"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <!-- oliveaud -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="9"/>
+      <column name="url" value="https://youtu.be/s4cJ0fDtgDo"/>
+      <column name="date" value="2011-09-11"/>
+      <column name="titre" value="Le Loulou Garou"/>
+      <column name="description" value="Extrait de la compilation &quot;Les accords du père François&quot;"/>
+      <column name="auteur" value="1"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <!-- oliveaud -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="10"/>
+      <column name="url" value="https://youtu.be/xZxvT9dC-uQ"/>
+      <column name="date" value="2012-02-16"/>
+      <column name="titre" value="Revue de Presse"/>
+      <column name="description" value="Extrait de la compilation &quot;Les accords du père François&quot;"/>
+      <column name="auteur" value="1"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="11"/>
       <column name="url" value="https://www.facebook.com/kingtazNC/videos/893274671099277/"/>
       <column name="date" value="2020-05-29"/>
       <column name="titre" value="Kingtäz Classics - Alice et le chat feinteur (Parodie Alice au pays des merveilles)"/>
@@ -70,8 +141,9 @@ and open the template in the editor.
       <column name="media_type" value="2"/>
     </insert>
     
+    <!-- kingtaz -->
     <insert tableName="media">
-      <column name="id" valueNumeric="6"/>
+      <column name="id" valueNumeric="12"/>
       <column name="url" value="https://www.facebook.com/kingtazNC/videos/2065294666832542/"/>
       <column name="date" value="2017-10-25"/>
       <column name="titre" value="Kingtäz - Le Camp Ouest"/>
@@ -81,8 +153,9 @@ and open the template in the editor.
       <column name="media_type" value="2"/>
     </insert>
     
+    <!-- kingtaz -->
     <insert tableName="media">
-      <column name="id" valueNumeric="7"/>
+      <column name="id" valueNumeric="13"/>
       <column name="url" value="https://www.facebook.com/kingtazNC/videos/1916505638378113/"/>
       <column name="date" value="2017-06-30"/>
       <column name="titre" value="Kingtäz - L'entretien d'embauche"/>
@@ -92,9 +165,10 @@ and open the template in the editor.
       <column name="media_type" value="2"/>
     </insert>
     
+    <!-- kingtaz -->
     <insert tableName="media">
-      <column name="id" valueNumeric="8"/>
-      <column name="url" value="https://www.facebook.com/kingtazNC/videos/1916505638378113/"/>
+      <column name="id" valueNumeric="14"/>
+      <column name="url" value="https://youtu.be/KNZF4hjEDI0"/>
       <column name="date" value="2019-08-01"/>
       <column name="titre" value="Kingtäz - Un Zoreil à Bourail EPISODE 0"/>
       <column name="description" value="Un Zoreil à Bourail - Episode 0 (Prequel)"/>
@@ -103,9 +177,10 @@ and open the template in the editor.
       <column name="media_type" value="2"/>
     </insert>
     
+    <!-- kingtaz -->
     <insert tableName="media">
-      <column name="id" valueNumeric="9"/>
-      <column name="url" value="https://www.facebook.com/kingtazNC/videos/1916505638378113/"/>
+      <column name="id" valueNumeric="15"/>
+      <column name="url" value="https://youtu.be/APNXweghLuI"/>
       <column name="date" value="2019-08-01"/>
       <column name="titre" value="Kingtäz - Un Zoreil à Bourail EPISODE 1"/>
       <column name="description" value="Un Zoreil à Bourail - Episode 1 (Avec les voix de Dany &amp; Kingtäz)"/>
@@ -114,8 +189,577 @@ and open the template in the editor.
       <column name="media_type" value="2"/>
     </insert>
     
+    <!-- kingtaz -->
     <insert tableName="media">
-      <column name="id" valueNumeric="10"/>
+      <column name="id" valueNumeric="16"/>
+      <column name="url" value="https://youtu.be/D7lyCqh1K6k"/>
+      <column name="date" value="2019-08-01"/>
+      <column name="titre" value="Kingtäz - Un Zoreil à Bourail EPISODE 2"/>
+      <column name="description" value="Un Zoreil à Bourail - Episode 2 (Avec les voix de Dany &amp; Kingtäz)"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="17"/>
+      <column name="url" value="https://youtu.be/_w71rWC-vSM"/>
+      <column name="date" value="2019-08-01"/>
+      <column name="titre" value="Kingtäz - Un Zoreil à Bourail EPISODE 3"/>
+      <column name="description" value="Un Zoreil à Bourail - Episode 3 (Avec les voix de Dany &amp; Kingtäz)"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="18"/>
+      <column name="url" value="https://youtu.be/EMXqMkVoONM"/>
+      <column name="date" value="2019-08-14"/>
+      <column name="titre" value="Kingtäz - Un ZOREIL A BOURAIL - EP.1 (ORIGINAL)"/>
+      <column name="description" value="AVEC DANY BANREU"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="19"/>
+      <column name="url" value="https://youtu.be/12ztWg0II7E"/>
+      <column name="date" value="2011-05-24"/>
+      <column name="titre" value="Le seigneur des anneaux Parodie Caldoche"/>
+      <column name="description" value="Parodie avec des expressions, et des accents de Nouvelle-Calédonie ! Juste un petit délire au passage, j'avais rien à foutre une apres-midi, donc voilà ce que ça donne ! Enjoy ! :D"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="20"/>
+      <column name="url" value="https://youtu.be/ZoZ732q17ZM"/>
+      <column name="date" value="2011-05-26"/>
+      <column name="titre" value="Kingtäz - Parodie Seigneur des anneaux 2"/>
+      <column name="description" value="Ma deuxieme parodie du seigneur des anneaux version caldoche ! La suite arrive, donc après je vais tout racoller les videos, comme ça ça feras une histoire de 10 minutes environ ! Faites tourner SVP !!!"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="21"/>
+      <column name="url" value="https://youtu.be/mJVaaAHCUcM"/>
+      <column name="date" value="2011-05-26"/>
+      <column name="titre" value="Kingtäz - Parodie Seigneur des Anneaux N. 3 !!!!"/>
+      <column name="description" value="Suite à un bon succes des 2 premieres vidéos, voici la 3ème en cadeau !!! Continuez à faire tourner ça fais plaisir !!! By DJ Kingtäz ;)"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="22"/>
+      <column name="url" value="https://youtu.be/nDHgCEdtcPI"/>
+      <column name="date" value="2011-05-28"/>
+      <column name="titre" value="Kingtäz - Le seigneur des anneaux caldoche parodie N.4"/>
+      <column name="description" value="Voici la numéro 4 !!!"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="23"/>
+      <column name="url" value="https://youtu.be/9M9iSPMAkEA"/>
+      <column name="date" value="2011-05-31"/>
+      <column name="titre" value="Kingtäz - Parodie Harry Potter Caldoche"/>
+      <column name="description" value="Voilà, à la demande de beaucoup que je change de film pour tester un coup, une parodie de harry potter 1, qui dure déjà 4:30 (beaucoup plus long) à vous de dire si c'est toujours choc ! Faites tourner la bande !! :)"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="24"/>
+      <column name="url" value="https://youtu.be/AYd8LaHSTb4"/>
+      <column name="date" value="2011-05-31"/>
+      <column name="titre" value="Kingtäz - Parodie Seigneur des Anneaux EXTRA"/>
+      <column name="description" value="Petit Extra très court des parodies du seigneur des anneaux by Quentin Joubert / DJ Kingtäz.  Enjoy !"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="25"/>
+      <column name="url" value="https://youtu.be/Vrmr0Fqw0Pk"/>
+      <column name="date" value="2011-06-09"/>
+      <column name="titre" value="Kingtäz - Esther Parodie"/>
+      <column name="description" value="Une ptite nouvelle en attendant la prochaine ! By Kingtäz - Quentin Joubert"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="26"/>
+      <column name="url" value="https://youtu.be/jPCLEJe4-xs"/>
+      <column name="date" value="2011-07-11"/>
+      <column name="titre" value="Kingtäz - Pirates des Caraïbes Parodie (Juillet 2011)"/>
+      <column name="description" value="Et voilà une petite de pirates des caraïbes ! La suite pour bientôt que je ferais en direct de la Malaisie dans quelques semaines !"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="27"/>
+      <column name="url" value="https://youtu.be/lA2QVFAc3AM"/>
+      <column name="date" value="2011-07-17"/>
+      <column name="titre" value="Kingtäz - Parodie Interview David Guetta"/>
+      <column name="description" value="Petite parodie d'une interview de David Guetta .... Ouais ouais, il est un peu débile .... ENJOY !!!! :D"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="28"/>
+      <column name="url" value="https://youtu.be/hSPFlf369JM"/>
+      <column name="date" value="2011-08-05"/>
+      <column name="titre" value="Kingtäz - Parodie Twilight (5 AOÛT 2011)"/>
+      <column name="description" value="Voici la parodie de Twilight finie ! Merci pour votre patience, et faites tourner comme les autres ! À très bientôt avec une nouvelle parodie, qui seras enregistrée directement à Nouméa cette fois ci !"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="29"/>
+      <column name="url" value="https://youtu.be/QiRZ3cSwMA8"/>
+      <column name="date" value="2011-11-22"/>
+      <column name="titre" value="Kingtäz - Le GPS Calédonien (Original)"/>
+      <column name="description" value="Petit sketch sur un improbable GPS Calédonien .... Vos avis ?? Faut en faire un pour de vrai ou quoi ?! ;)"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="30"/>
+      <column name="url" value="https://youtu.be/mHdciWbv_kw"/>
+      <column name="date" value="2011-12-16"/>
+      <column name="titre" value="Kingtäz - Parodie Aladdin"/>
+      <column name="description" value="Il ne faut pas croire que tout le monde il est gentil dans les Disney's .... La preuve !!!"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="31"/>
+      <column name="url" value="https://youtu.be/9vJe2KJAOvg"/>
+      <column name="date" value="2012-01-11"/>
+      <column name="titre" value="Kingtäz - Parodie Le Roi Lion"/>
+      <column name="description" value="Faite en peu de temps, par manque de temps entre autre ... Mais bon ! Enjoy quand même !! :)"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="32"/>
+      <column name="url" value="https://youtu.be/7j6R0MmIiGQ"/>
+      <column name="date" value="2012-01-13"/>
+      <column name="titre" value="Quentin Joubert (Kingtäz) presents - Kingtäz Airlines"/>
+      <column name="description" value="Pour suivre la lignée du GPS Calédonien ... Voici Kingtäz Airlines ! Enjoy ! :)"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="33"/>
+      <column name="url" value="https://youtu.be/lH5eOxdxbpE"/>
+      <column name="date" value="2012-03-20"/>
+      <column name="titre" value="Kingtäz presents MC Neketch !"/>
+      <column name="description" value="Petit délire d'un week end ... Partagez !!!"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="34"/>
+      <column name="url" value="https://youtu.be/AiRqvgQYQY"/>
+      <column name="date" value="2012-05-08"/>
+      <column name="titre" value="Kingtäz - Parodie &quot;Le Rite&quot;"/>
+      <column name="description" value="Petite parodie du film &quot;The Rite&quot; avec Anthony Hopkins ! Parodie du 8 Mai 2012."/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="35"/>
+      <column name="url" value="https://youtu.be/gyZGFdyZITY"/>
+      <column name="date" value="2012-06-18"/>
+      <column name="titre" value="Kingtäz - Parodie Twilight II"/>
+      <column name="description" value="Après un petit moment d'absence, je suis de retour avec une nouvelle vidéo sur Twilight !"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="36"/>
+      <column name="url" value="https://youtu.be/wgPmNL8pMzQ"/>
+      <column name="date" value="2012-10-09"/>
+      <column name="titre" value="Kingtäz 2012 - Parodie Seigneur des Anneaux (Remasterisé)"/>
+      <column name="description" value="Premier Remastering ! Enjoy, et faites tourner cette nouvelle version inédite !"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="37"/>
+      <column name="url" value="https://youtu.be/h37NNATblaY"/>
+      <column name="date" value="2012-12-12"/>
+      <column name="titre" value="Kingtäz - Parodie Journal TV NC 1ère"/>
+      <column name="description" value="Ahouuuu Nathalie Déléléïpé !"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="38"/>
+      <column name="url" value="https://youtu.be/6uUspLx03F8"/>
+      <column name="date" value="2012-12-12"/>
+      <column name="titre" value="Kingtäz - Parodie Fast and Furious"/>
+      <column name="description" value="Ahouka Mr Propre !!!"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="39"/>
+      <column name="url" value="https://youtu.be/-rON7PwCrqM"/>
+      <column name="date" value="2013-04-29"/>
+      <column name="titre" value="Kingtäz L'auto-stop (Zombieland)"/>
+      <column name="description" value="Nouvelle parodie !! Cette fois ci sur le film ZOMBIELAND !!!"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="40"/>
+      <column name="url" value="https://youtu.be/_J5yJADqo9Q"/>
+      <column name="date" value="2013-05-15"/>
+      <column name="titre" value="Manifestation contre la vie chère à Nouméa !! GROS BORDEL !!"/>
+      <column name="description" value="Avouez que vous y avez cru hein !!! Enjoy la nouvelle parodie !! Featuring MATTHIEU LARROUY"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="41"/>
+      <column name="url" value="https://youtu.be/H-CjZdqu0QQ"/>
+      <column name="date" value="2014-09-18"/>
+      <column name="titre" value="Kingtäz Carglass Calédonie"/>
+      <column name="description" value="Petite pub de Carglass qui devrait ressembler à ça en Calédonie …"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="42"/>
+      <column name="url" value="https://youtu.be/BUq5OcOzwkM"/>
+      <column name="date" value="2014-11-17"/>
+      <column name="titre" value="Kingtäz - François Hollande 2014"/>
+      <column name="description" value="François Hollande s'est bien acclimaté !!! ^^"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="43"/>
+      <column name="url" value="https://youtu.be/c2a-3baSd80"/>
+      <column name="date" value="2015-03-28"/>
+      <column name="titre" value="Kingtäz Interview Jackie Chan"/>
+      <column name="description" value="Même Jackie Chan a réagit sur les vidéos de Bastons en NC !!! Abusé ................. ;)"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="44"/>
+      <column name="url" value="https://youtu.be/FE49QyrOLC0"/>
+      <column name="date" value="2015-05-01"/>
+      <column name="titre" value="Kingtäz Anniversary #1"/>
+      <column name="description" value="Pour fêter les 4 ans de kingtäz Productions, voici 4 parodies remasterisées &amp; inédite toutes les semaines du mois de Mai 2015 !"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="45"/>
+      <column name="url" value="https://youtu.be/1ebyO4r5xoM"/>
+      <column name="date" value="2015-05-06"/>
+      <column name="titre" value="Kingtäz - Sex Academy (Parodie Caldoche)"/>
+      <column name="description" value="Enjoy !"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="46"/>
+      <column name="url" value="https://youtu.be/E_21QRNIpc8"/>
+      <column name="date" value="2015-05-09"/>
+      <column name="titre" value="Kingtäz - Hotel Aïta Le Luxe (SKECTH CALDOCHE) 2015"/>
+      <column name="description" value="Cette vidéo est spécialement dédicassée à Anaïs Valin qui nous a quitté le 4/05/2015. En souvenir de nos années à Escoffier !"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="47"/>
+      <column name="url" value="https://youtu.be/K7eTdnw0NyE"/>
+      <column name="date" value="2016-11-29"/>
+      <column name="titre" value="Kingtäz - Le blanc trop intégré *Part 1* (Scary Movie 3)"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="48"/>
+      <column name="url" value="https://youtu.be/aXg1II_RgSk"/>
+      <column name="date" value="2016-03-17"/>
+      <column name="titre" value="Kingtäz - Pub Samsung 2016"/>
+      <column name="description" value="Ka Bourre Toiiiiiiiiiiiiiiii"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="49"/>
+      <column name="url" value="https://youtu.be/uBpCJ-n2_eU"/>
+      <column name="date" value="2016-11-29"/>
+      <column name="titre" value="Kingtäz - Les Météos du Monde (Parodie)"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="50"/>
+      <column name="url" value="https://youtu.be/zpM3ROLVFH4"/>
+      <column name="date" value="2016-11-29"/>
+      <column name="titre" value="Kingtäz - L'université des Monstres Halloween"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="51"/>
+      <column name="url" value="https://youtu.be/dod52EH7QAw"/>
+      <column name="date" value="2016-11-29"/>
+      <column name="titre" value="Kingtäz - Le blanc trop intégré Part 2 (Scary Movie 3)"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="52"/>
+      <column name="url" value="https://youtu.be/GpX7DfOUNoc"/>
+      <column name="date" value="2017-05-25"/>
+      <column name="titre" value="Kingtäz - TON NOM !"/>
+      <column name="description" value="Ton nom en Lifou ! AWEEEE"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="53"/>
+      <column name="url" value="https://youtu.be/hmL24bJM3r0"/>
+      <column name="date" value="2017-05-25"/>
+      <column name="titre" value="Kingtäz - Parodie Batman VS Superman"/>
+      <column name="description" value="C'est pas facile d'être un super-héros en fait ... :p"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="54"/>
+      <column name="url" value="https://youtu.be/byug4sW1w2Y"/>
+      <column name="date" value="2017-05-25"/>
+      <column name="titre" value="Kingtäz - Parodie Le Roi Lion (Avec Dany Banreu)"/>
+      <column name="description" value="La fête des pères, ben y'a aussi chez les lions !"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="55"/>
+      <column name="url" value="https://youtu.be/KWKlD720fRQ"/>
+      <column name="date" value="2017-11-26"/>
+      <column name="titre" value="PARODIE LA BELLE &amp; LA BÊTE – Kingtäz"/>
+      <column name="description" value="Détournement de La Belle &amp; la Bête en version NOUVELLE-CALÉDONIE !"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="56"/>
+      <column name="url" value="https://youtu.be/Bu6Q8i7UMOg"/>
+      <column name="date" value="2017-12-05"/>
+      <column name="titre" value="Kingtäz La foire de Bourail (Sketch audio illustré)"/>
+      <column name="description" value="Kingtäz - SKETCH AUDIO ILLUSTRÉ - LA FOIRE DE BOURAIL (avec mon con d'zoreil encore ...) Illustrations par Flo Kämô !"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="57"/>
+      <column name="url" value="https://youtu.be/MlPD_tEPy60"/>
+      <column name="date" value="2019-02-12"/>
+      <column name="titre" value="KINGTÄZ - PARODIE TITANIC (2019)"/>
+      <column name="description" value="Détournement du film Titanic, en version Calédonienne !  (Donc cherchez pas si vous comprenez pas tout, venez plutôt en vacances chez nous !)"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="58"/>
+      <column name="url" value="https://youtu.be/yM4dqF60XDc"/>
+      <column name="date" value="2019-04-28"/>
+      <column name="titre" value="KINGTÄZ - PARODIE FRÈRE DES OURS (2019)"/>
+      <column name="description" value="Les préjugés c'est pas bien ..... ;)"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="59"/>
+      <column name="url" value="https://youtu.be/LA81qmazxNE"/>
+      <column name="date" value="2019-05-27"/>
+      <column name="titre" value="Kingtäz - Parodie Simpsons (Milakulo le recherché)"/>
+      <column name="description" value="Ceci est un message du gouvernement de Springfield :D"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="60"/>
+      <column name="url" value="https://youtu.be/4kn5qfeTsBA"/>
+      <column name="date" value="2019-08-01"/>
+      <column name="titre" value="Kingtäz - Harry Tripotteur et la Rentrée Magique (2016)"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="61"/>
+      <column name="url" value="https://youtu.be/q66KxA2kiAc"/>
+      <column name="date" value="2019-08-01"/>
+      <column name="titre" value="D&amp;K - Parodie Age de Glace (2016)"/>
+      <column name="description" value="By Dany &amp; Kingtäz"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="62"/>
+      <column name="url" value="https://youtu.be/E5_aaSDjv3I"/>
+      <column name="date" value="2019-08-01"/>
+      <column name="titre" value="D&amp;K - Parodie Aladdin (2016)"/>
+      <column name="description" value="By Dany &amp; Kingtäz"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="63"/>
+      <column name="url" value="https://youtu.be/Xr4V2fTDDUk"/>
+      <column name="date" value="2019-08-01"/>
+      <column name="titre" value="D&amp;K - Parodie Kuzco"/>
+      <column name="description" value="By Dany &amp; Kingtäz"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="64"/>
+      <column name="url" value="https://youtu.be/epmypoMVZg8"/>
+      <column name="date" value="2019-11-14"/>
+      <column name="titre" value="Kingtäz - Parodie Jurassic Park"/>
+      <column name="description" value="Qui l'eu cru ! Les dinosaures savaient parler ... (et cracher)"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="65"/>
+      <column name="url" value="https://youtu.be/Z6zHzqfGHf0"/>
+      <column name="date" value="2019-09-04"/>
+      <column name="titre" value="Kingtäz - LES ZÉLUS (SAISON 2) INTRO"/>
+      <column name="description" value="RDV sur www.nci.nc !"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="66"/>
+      <column name="url" value="https://youtu.be/ZiAqacr1eN4"/>
+      <column name="date" value="2020-01-14"/>
+      <column name="titre" value="KINGTÄZ - LES ZÉLUS SAISON 2"/>
+      <column name="description" value="Reprise de la série avec une saison 2 pour l'année 2020 ! :)"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- kingtaz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="67"/>
+      <column name="url" value="https://youtu.be/WKfxZorlr9s"/>
+      <column name="date" value="2020-01-23"/>
+      <column name="titre" value="KINGTÄZ - LES ZÉLUS - SAISON 2.EP.01"/>
+      <column name="description" value="On va pas en faire tout un silip de cette histoire non plus hein ... :)"/>
+      <column name="auteur" value="3"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    
+    <!-- armagz -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="68"/>
       <column name="url" value="https://www.facebook.com/armagzcvup/videos/1234063209995527/"/>
       <column name="date" value="2017-01-15"/>
       <column name="titre" value="Les cars."/>
@@ -125,8 +769,9 @@ and open the template in the editor.
       <column name="media_type" value="2"/>
     </insert>
     
+    <!-- armagz -->
     <insert tableName="media">
-      <column name="id" valueNumeric="11"/>
+      <column name="id" valueNumeric="69"/>
       <column name="url" value="https://www.facebook.com/kingtazNC/videos/1916505638378113/"/>
       <column name="date" value="2019-08-01"/>
       <column name="titre" value="Tuto Gomen - Siri"/>
@@ -136,8 +781,9 @@ and open the template in the editor.
       <column name="media_type" value="2"/>
     </insert>
     
+    <!-- armagz -->
     <insert tableName="media">
-      <column name="id" valueNumeric="12"/>
+      <column name="id" valueNumeric="70"/>
       <column name="url" value="https://youtu.be/QNdpuL5bf24"/>
       <column name="date" value="2017-12-27"/>
       <column name="titre" value="ARMAGZ - LES PAPAS EN NC (LTOM)"/>
@@ -147,8 +793,9 @@ and open the template in the editor.
       <column name="media_type" value="2"/>
     </insert>
     
+    <!-- armagz -->
     <insert tableName="media">
-      <column name="id" valueNumeric="13"/>
+      <column name="id" valueNumeric="71"/>
       <column name="url" value="https://youtu.be/1WYRpObqspk"/>
       <column name="date" value="2017-05-07"/>
       <column name="titre" value="ARMAGZ - LA L"/>
@@ -158,26 +805,921 @@ and open the template in the editor.
       <column name="media_type" value="2"/>
     </insert>
     
+    <!-- lewis -->
     <insert tableName="media">
-      <column name="id" valueNumeric="14"/>
+      <column name="id" valueNumeric="72"/>
       <column name="url" value="https://youtu.be/XGBHJDHsEE4"/>
       <column name="date" value="2011-05-10"/>
-      <column name="titre" value="Frankie Lewis - L'anniversaire de Momo"/>
+      <column name="titre" value="L'anniversaire de Momo"/>
       <column name="keywords" value="canette fm anniversaire momo brasserie biere number one"/>
       <column name="auteur" value="2"/>
       <column name="media_type" value="2"/>
     </insert>
 
+    <!-- lewis -->
     <insert tableName="media">
-      <column name="id" valueNumeric="15"/>
+      <column name="id" valueNumeric="73"/>
       <column name="url" value="https://youtu.be/sivHX5APJhU"/>
       <column name="date" value="2020-01-01"/>
-      <column name="titre" value="Frankie Lewis - Le corbeau et le renard"/>
-      <column name="keywords" value=""/>
+      <column name="titre" value="Le corbeau et le renard"/>
       <column name="auteur" value="2"/>
       <column name="media_type" value="2"/>
     </insert>
- 
+    
+    <!-- lewis -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="74"/>
+      <column name="url" value="https://youtu.be/iXTmT4-6oV8"/>
+      <column name="date" value="2011-08-10"/>
+      <column name="titre" value="Le cercle des mecs valab' disparus"/>
+      <column name="auteur" value="2"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- lewis -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="75"/>
+      <column name="url" value="https://youtu.be/8AAeZeBTP6E"/>
+      <column name="date" value="2011-08-10"/>
+      <column name="titre" value="New pines on the block"/>
+      <column name="auteur" value="2"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <!-- lewis -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="76"/>
+      <column name="url" value="https://youtu.be/Nj817mZXCyY"/>
+      <column name="date" value="2011-08-10"/>
+      <column name="titre" value="Nadège"/>
+      <column name="auteur" value="2"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <!-- lewis -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="77"/>
+      <column name="url" value="https://youtu.be/HbV43q-p91E"/>
+      <column name="date" value="2011-08-10"/>
+      <column name="titre" value="La tendresse"/>
+      <column name="auteur" value="2"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <!-- lewis -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="78"/>
+      <column name="url" value="https://youtu.be/uZMxd1QUDBs"/>
+      <column name="date" value="2011-08-09"/>
+      <column name="titre" value="Abraham Cadabran"/>
+      <column name="auteur" value="2"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <!-- lewis -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="79"/>
+      <column name="url" value="https://youtu.be/4buVuddrLpI"/>
+      <column name="date" value="2011-08-09"/>
+      <column name="titre" value="Coupe du Monde 1994"/>
+      <column name="auteur" value="2"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <!-- lewis -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="80"/>
+      <column name="url" value="https://youtu.be/naeYjthGkuI"/>
+      <column name="date" value="2011-08-09"/>
+      <column name="titre" value="La cigale et la fourmi"/>
+      <column name="auteur" value="2"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <!-- lewis -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="81"/>
+      <column name="url" value="https://youtu.be/iXTmT4-6oV8"/>
+      <column name="date" value="2011-08-09"/>
+      <column name="titre" value="Miss Nakutakoin"/>
+      <column name="auteur" value="2"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <!-- lewis -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="82"/>
+      <column name="url" value="https://youtu.be/zAY1Z1JZZVs"/>
+      <column name="date" value="2011-08-09"/>
+      <column name="titre" value="Les 3 petits pocas"/>
+      <column name="auteur" value="2"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="83"/>
+      <column name="url" value="https://youtu.be/NAVOxl9K5aE?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-05-28"/>
+      <column name="titre" value="Le temps qu'il nous reste"/>
+      <column name="description" value="Extrait de son album &quot;Avini Ute&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="84"/>
+      <column name="url" value="https://youtu.be/kZEp7QkCAno?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-05-19"/>
+      <column name="titre" value="Marutea (Sud)"/>
+      <column name="description" value="Extrait de son album &quot;Keanu&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="85"/>
+      <column name="url" value="https://youtu.be/xCXY5k9WikE?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-05-16"/>
+      <column name="titre" value="Une Fleur Rien Qu'une Rose"/>
+      <column name="description" value="Extrait de son album &quot;Une fleur rien qu’une rose&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="86"/>
+      <column name="url" value="https://youtu.be/R6SNiBkFSZ4?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-05-15"/>
+      <column name="titre" value="Loco por amor"/>
+      <column name="description" value="Extrait de son album &quot;Souvenir souvenir&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="87"/>
+      <column name="url" value="https://youtu.be/70WHCMlnQEc?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-05-09"/>
+      <column name="titre" value="Aue te Tiare"/>
+      <column name="description" value="Extrait de son album &quot;Rairoa Iti E&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="88"/>
+      <column name="url" value="https://youtu.be/AHFdjUdquc0?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-05-08"/>
+      <column name="titre" value="O Tahiti nui"/>
+      <column name="description" value="Extrait de son album &quot;Fiu Te Ohipa&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="89"/>
+      <column name="url" value="https://youtu.be/30kRxpT_rt0?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-05-05"/>
+      <column name="titre" value="Nohoarii"/>
+      <column name="description" value="Extrait de son album &quot;Tahiti Remix&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="90"/>
+      <column name="url" value="https://youtu.be/irEyAy0ERR8?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-05-03"/>
+      <column name="titre" value="Au revoir au revoir Calédonie"/>
+      <column name="description" value="Extrait de son album &quot;Hotu Rau&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="91"/>
+      <column name="url" value="https://youtu.be/gTjfuVQrcNU?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-04-29"/>
+      <column name="titre" value="Tahiti mon exil"/>
+      <column name="description" value="Extrait de son album &quot;Homai – Heitea&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="92"/>
+      <column name="url" value="https://youtu.be/fLngtvVLHqE?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-04-28"/>
+      <column name="titre" value="Te Taere Maohi"/>
+      <column name="description" value="Extrait de son album &quot;Keanu&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="93"/>
+      <column name="url" value="https://youtu.be/SUHlbyDJVOw?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-04-27"/>
+      <column name="titre" value="Hianau"/>
+      <column name="description" value="Extrait de son album &quot;Liberte&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="94"/>
+      <column name="url" value="https://youtu.be/8oHcLjjfgYU?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-04-24"/>
+      <column name="titre" value="Moa Faatito"/>
+      <column name="description" value="Extrait de son album &quot;Liberte&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="95"/>
+      <column name="url" value="https://youtu.be/K_7GemaVpj4?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-04-13"/>
+      <column name="titre" value="Par Amour"/>
+      <column name="description" value="Extrait de son album &quot;Avini Ute&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="96"/>
+      <column name="url" value="https://youtu.be/mFvN6UuAsLs?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-04-12"/>
+      <column name="titre" value="La Ballade de Vairao"/>
+      <column name="description" value="Extrait de son album &quot;Hotu Rau&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="97"/>
+      <column name="url" value="https://youtu.be/okCZ2LxBNeU?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-03-17"/>
+      <column name="titre" value="I te ra ra tau"/>
+      <column name="description" value="Extrait de son album &quot;Le Fafaru&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="98"/>
+      <column name="url" value="https://youtu.be/H9YkOVsIu9U?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-03-19"/>
+      <column name="titre" value="Te Farereiraa"/>
+      <column name="description" value="Extrait de son album &quot;Jesus mon sauveur&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+    
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="99"/>
+      <column name="url" value="https://youtu.be/vYkUpyg-DOo?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-06-22"/>
+      <column name="titre" value="Tiare Hinano"/>
+      <column name="description" value="Extrait de son album &quot;Avini Ute&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="100"/>
+      <column name="url" value="https://youtu.be/nEwdNvkmjkM?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-08-22"/>
+      <column name="titre" value="Iri A'e Te Pahi"/>
+      <column name="description" value="Extrait de son album &quot;Une fleur rien qu’une rose&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="101"/>
+      <column name="url" value="https://youtu.be/KHnASnkTgKk?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-09-08"/>
+      <column name="titre" value="Te Koina Noere"/>
+      <column name="description" value="Extrait de son album &quot;Noera I Tahiti&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="102"/>
+      <column name="url" value="https://youtu.be/E5VtQG_673c?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-04-04"/>
+      <column name="titre" value="Matahiti Hiti Mano"/>
+      <column name="description" value="(chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="103"/>
+      <column name="url" value="https://youtu.be/H1vQZjz6Vho?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-10-03"/>
+      <column name="titre" value="Toetoe Ta'u Tino"/>
+      <column name="description" value="Extrait de son album &quot;Souvenirs&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="104"/>
+      <column name="url" value="https://youtu.be/chS4f_1CIjo?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-10-04"/>
+      <column name="titre" value="Tohivea Moorea"/>
+      <column name="description" value="Extrait de son album &quot;Potii no te Peho&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="105"/>
+      <column name="url" value="https://youtu.be/Oizu2HqYLTw?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-10-22"/>
+      <column name="titre" value="Tamara te pahi"/>
+      <column name="description" value="Extrait de son album &quot;Orchestre Petiot 22 Molokai&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="106"/>
+      <column name="url" value="https://youtu.be/NLW0XTlYVh8?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-10-29"/>
+      <column name="titre" value="Cette belle nuit étoilée"/>
+      <column name="description" value="Extrait de son album &quot;Best of Vol.2&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>
+    
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="107"/>
+      <column name="url" value="https://youtu.be/Oy9p6twS_iQ?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-11-03"/>
+      <column name="titre" value="Tei te ara tau tino"/>
+      <column name="description" value="Extrait de son album &quot;Avini Ute&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="108"/>
+      <column name="url" value="https://youtu.be/KmQxKuItE78?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-11-11"/>
+      <column name="titre" value="Avini Ute"/>
+      <column name="description" value="Extrait de son album &quot;Avini Ute&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="109"/>
+      <column name="url" value="https://youtu.be/a5xt7tUo6U8?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-11-18"/>
+      <column name="titre" value="Macao"/>
+      <column name="description" value="Extrait de son album &quot;Fiu Te Ohipa&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="110"/>
+      <column name="url" value="https://youtu.be/r_IKO8DDlEA?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-11-18"/>
+      <column name="titre" value="Faaa no Tahiti"/>
+      <column name="description" value="Extrait de son album &quot;Rohi Pehe&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="111"/>
+      <column name="url" value="https://youtu.be/4CsFET8rljw?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-12-05"/>
+      <column name="titre" value="Bain de Soleil - Petite île Sacrée &amp; Vaihiria"/>
+      <column name="description" value="Extrait de son double album &quot;Gabilou chante les Barefoot Boys&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="112"/>
+      <column name="url" value="https://youtu.be/swu_p3V6zPI?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-12-11"/>
+      <column name="titre" value="Te Koina Noere (Spécial Noël)"/>
+      <column name="description" value="Extrait de son album &quot;Noera I Tahiti&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="113"/>
+      <column name="url" value="https://youtu.be/O_3GDzoTbN8?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-12-24"/>
+      <column name="titre" value="Noera no te Tamarii (Spécial Noël)"/>
+      <column name="description" value="Extrait de son album &quot;Gabilou&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="114"/>
+      <column name="url" value="https://youtu.be/7-QBsjEeBfw?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-12-24"/>
+      <column name="titre" value="Petit Papa Noël (Spécial Noël)"/>
+      <column name="description" value="Extrait de son album &quot;Noera Tahiti&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="115"/>
+      <column name="url" value="https://youtu.be/4d4E8A12A8o?list=PLD914770741CDE88D"/>
+      <column name="date" value="2011-12-27"/>
+      <column name="titre" value="Matahiti Hiti"/>
+      <column name="description" value="Extrait de son album &quot;Hotu Rau&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="116"/>
+      <column name="url" value="https://youtu.be/lYGrgyBMCO0?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-01-16"/>
+      <column name="titre" value="Ma Chanson est Tahitienne"/>
+      <column name="description" value="(chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>		
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="117"/>
+      <column name="url" value="https://youtu.be/QVdkE7DyTIw?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-01-20"/>
+      <column name="titre" value="Melahi e"/>
+      <column name="description" value="Extrait de son album &quot;Fiu Te Ohipa&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="118"/>
+      <column name="url" value="https://youtu.be/TopKkArQojY?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-01-22"/>
+      <column name="titre" value="Ma Jolie île Natale"/>
+      <column name="description" value="Extrait de son album &quot;Nohoarii&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="119"/>
+      <column name="url" value="https://youtu.be/tfFH0MXnCeM?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-01-24"/>
+      <column name="titre" value="La Tiare"/>
+      <column name="description" value="Extrait de son album &quot;Gabilou contre Gabilou&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="120"/>
+      <column name="url" value="https://youtu.be/FyaGQKtiXAM?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-02-17"/>
+      <column name="titre" value="Tangi te Manu"/>
+      <column name="description" value="Extrait de son album &quot;enregistrement original 1969&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="121"/>
+      <column name="url" value="https://youtu.be/KQLCWa8yNPk?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-02-17"/>
+      <column name="titre" value="Mama Erena"/>
+      <column name="description" value="Extrait de son album &quot;Porii no te Peo&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="122"/>
+      <column name="url" value="https://youtu.be/kpWFBLac6QM?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-02-18"/>
+      <column name="titre" value="Noho"/>
+      <column name="description" value="Extrait de son album &quot;Taporo IV&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="123"/>
+      <column name="url" value="https://youtu.be/0wO_aXsP1Ko?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-02-22"/>
+      <column name="titre" value="Bella Bella me amor"/>
+      <column name="description" value="Extrait de son album &quot;Souvenir de Tahiti&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="124"/>
+      <column name="url" value="https://youtu.be/8SDnu_DZKv4?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-02-23"/>
+      <column name="titre" value="Kiaora - Tamure"/>
+      <column name="description" value="Extrait de son album &quot;Barefoot Boys Original n°13&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="125"/>
+      <column name="url" value="https://youtu.be/BctxlSpEguE?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-02-23"/>
+      <column name="titre" value="Pinoi"/>
+      <column name="description" value="Extrait de son album &quot;Barefoot Boys Vol.1&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="126"/>
+      <column name="url" value="https://youtu.be/JOLgRWpSm_8?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-02-29"/>
+      <column name="titre" value="Bora Bora nui"/>
+      <column name="description" value="Extrait de son album K7 &quot;Gabilou en public&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="127"/>
+      <column name="url" value="https://youtu.be/XpGBphXedVY?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-05-13"/>
+      <column name="titre" value="Raiatea nui no oe teie pehe"/>
+      <column name="description" value="Extrait de son album &quot;Rairoa Iti E&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="128"/>
+      <column name="url" value="https://youtu.be/JHYJ0W39dak?list=PLD914770741CDE88D"/>
+      <column name="date" value="2013-09-21"/>
+      <column name="titre" value="Te Hana"/>
+      <column name="description" value="Extrait de son album &quot;50 ans déjà&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="129"/>
+      <column name="url" value="https://youtu.be/WgJv0jDmnOc?list=PLD914770741CDE88D"/>
+      <column name="date" value="2013-09-17"/>
+      <column name="titre" value="50 ans déjà"/>
+      <column name="description" value="Extrait de son album &quot;Te Hana&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="130"/>
+      <column name="url" value="https://youtu.be/5f9NUeZRFpg?list=PLD914770741CDE88D"/>
+      <column name="date" value="2013-07-10"/>
+      <column name="titre" value="Papara nui"/>
+      <column name="description" value="Extrait de son album &quot;Porii no te Peo&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="131"/>
+      <column name="url" value="https://youtu.be/tFPGicbt_LQ?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-06-08"/>
+      <column name="titre" value="Ahi'a"/>
+      <column name="description" value="Extrait de son album &quot;Ahi’A&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="132"/>
+      <column name="url" value="https://youtu.be/_rf1COX8ACA?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-06-08"/>
+      <column name="titre" value="Puhihau te matai"/>
+      <column name="description" value="Extrait de son album &quot;Keanu&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="133"/>
+      <column name="url" value="https://youtu.be/jMWpw2dBFzo?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-06-12"/>
+      <column name="titre" value="Mauahi"/>
+      <column name="description" value="Extrait de son album &quot;Ahi’A&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="134"/>
+      <column name="url" value="https://youtu.be/nVVQkyr-gIs?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-06-12"/>
+      <column name="titre" value="La Banane"/>
+      <column name="description" value="Extrait de son album &quot;Hotu Rahu&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="135"/>
+      <column name="url" value="https://youtu.be/p_OKb6t8fgI?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-08-10"/>
+      <column name="titre" value="Tahatai Cigogne"/>
+      <column name="description" value="Extrait de son album &quot;Te Uru E Souviens-toi Lea&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="136"/>
+      <column name="url" value="https://youtu.be/njqJ27Bgu58?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-08-04"/>
+      <column name="titre" value="Voilà les Gars de la Marine"/>
+      <column name="description" value="Extrait de son album &quot;Porii no te Peo&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="137"/>
+      <column name="url" value="https://youtu.be/Rdq3qJ8CDMA?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-06-28"/>
+      <column name="titre" value="Tiare Teatea"/>
+      <column name="description" value="Extrait de son album &quot;Tapore IV&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="138"/>
+      <column name="url" value="https://youtu.be/zjC5j_XTBQw?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-06-28"/>
+      <column name="titre" value="Pikirunga"/>
+      <column name="description" value="Extrait de son album &quot;Avini Ute&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="139"/>
+      <column name="url" value="https://youtu.be/6tLFMBPUZlw?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-11-03"/>
+      <column name="titre" value="Aue te mamae"/>
+      <column name="description" value="Extrait de son album &quot;Ahi’A&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="140"/>
+      <column name="url" value="https://youtu.be/eHHY7WU5Gkw?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-09-30"/>
+      <column name="titre" value="Vinivini"/>
+      <column name="description" value="(chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="141"/>
+      <column name="url" value="https://youtu.be/3NMe76vXikk?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-12-21"/>
+      <column name="titre" value="Avant de nous dire adieu"/>
+      <column name="description" value="Extrait de son album &quot;Avini Ute&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="142"/>
+      <column name="url" value="https://youtu.be/hwODosB8WA8?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-12-22"/>
+      <column name="titre" value="Purotu Raimere"/>
+      <column name="description" value="Extrait de son album &quot;Porii no te Peo&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="143"/>
+      <column name="url" value="https://youtu.be/MfXua7MHuxk?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-12-22"/>
+      <column name="titre" value="Aue te nehenehe"/>
+      <column name="description" value="Extrait de son album &quot;Fiu Te Ohipa&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="144"/>
+      <column name="url" value="https://youtu.be/KNIi6ZFMivw?list=PLD914770741CDE88D"/>
+      <column name="date" value="2012-11-20"/>
+      <column name="titre" value="Met to Seize Mille"/>
+      <column name="description" value="Extrait de son album &quot;Hai’A&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="145"/>
+      <column name="url" value="https://youtu.be/tbEZpKMzxSo?list=PLD914770741CDE88D"/>
+      <column name="date" value="2013-03-26"/>
+      <column name="titre" value="Hei miri iti e"/>
+      <column name="description" value="(chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="146"/>
+      <column name="url" value="https://youtu.be/Zsrf1OYhn0s?list=PLD914770741CDE88D"/>
+      <column name="date" value="2013-03-07"/>
+      <column name="titre" value="Te Vahine Uturoa"/>
+      <column name="description" value="Extrait de son album &quot;Porii no te Peo&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="147"/>
+      <column name="url" value="https://youtu.be/jx1XwCkyhbo?list=PLD914770741CDE88D"/>
+      <column name="date" value="2013-02-25"/>
+      <column name="titre" value="Vini te Manu"/>
+      <column name="description" value="Extrait de son album &quot;Gabilou &amp; les Bananas Boys&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="148"/>
+      <column name="url" value="https://youtu.be/io2hqJct0js?list=PLD914770741CDE88D"/>
+      <column name="date" value="2013-01-22"/>
+      <column name="titre" value="Heimata"/>
+      <column name="description" value="Extrait de son album &quot;Fiu Te Ohipa&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="149"/>
+      <column name="url" value="https://youtu.be/qD-qjasp1xA?list=PLD914770741CDE88D"/>
+      <column name="date" value="2013-10-07"/>
+      <column name="titre" value="Aore koe e gnaro Makemo"/>
+      <column name="description" value="Extrait de son album &quot;Tahiti Remix&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="150"/>
+      <column name="url" value="https://youtu.be/ihqlUZRECiQ?list=PLD914770741CDE88D"/>
+      <column name="date" value="2013-10-07"/>
+      <column name="titre" value="Na oe Vairea"/>
+      <column name="description" value="Extrait de son album &quot;Te Uru E&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="151"/>
+      <column name="url" value="https://youtu.be/tRwaXUANHZc?list=PLD914770741CDE88D"/>
+      <column name="date" value="2013-10-08"/>
+      <column name="titre" value="De temps en temps"/>
+      <column name="description" value="Extrait de son album &quot;Te Uru E&quot; (chaîne Youtube : Timi Jarossay)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="152"/>
+      <column name="url" value="https://youtu.be/Qm_tdlE0ajs"/>
+      <column name="date" value="2010-04-30"/>
+      <column name="titre" value="Fakateretere"/>
+      <column name="description" value="Clip du succés de Gabilou &quot;Fakateretere&quot; tournée en Polynésie française (chaîne Youtube : SAMIRICO67 MOANA NUI)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="153"/>
+      <column name="url" value="https://youtu.be/9c6zrCs9rC4"/>
+      <column name="date" value="2016-06-28"/>
+      <column name="titre" value="Gabilou Apetahi"/>
+      <column name="description" value="(chaîne Youtube :  E N A E C O)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="154"/>
+      <column name="url" value="https://youtu.be/WQSUeCRSETo"/>
+      <column name="date" value="2018-12-24"/>
+      <column name="titre" value="Je t'aime"/>
+      <column name="description" value="Extrait de son album &quot;Hotu Rau&quot; (chaîne Youtube : John Gabilou)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>	
+
+    <!-- gabilou -->
+    <insert tableName="media">
+      <column name="id" valueNumeric="155"/>
+      <column name="url" value="https://youtu.be/E43ydiMPp8E"/>
+      <column name="date" value="2009-10-05"/>
+      <column name="titre" value="Calédonie Ensemble"/>
+      <column name="description" value="John Gabilou chante son amour pour ce deuxieme Fenua, &quot;Taratoni&quot;, qu'il a toujours connu depuis les années 60 à aujourd'hui (chaîne Youtube :  SAMIRICO67 MOANA NUI)"/>
+      <column name="auteur" value="5"/>
+      <column name="media_type" value="2"/>
+    </insert>
+
+    
   </changeSet>
   
 </databaseChangeLog>
