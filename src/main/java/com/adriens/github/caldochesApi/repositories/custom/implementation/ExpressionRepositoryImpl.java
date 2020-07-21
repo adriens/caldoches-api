@@ -78,7 +78,7 @@ public class ExpressionRepositoryImpl implements ExpressionRepositoryCustom {
         Query query = entityManager.createNativeQuery(
         "SELECT * "
         + "FROM EXPRESSION AS E "
-        + "WHERE E.TEXTE REGEXP '.*"+motcle+"*.' ",        
+        + "WHERE E.TEXTE LIKE '%"+motcle+"%' ",        
         Expression.class);
 
         List<Expression> exps = query.getResultList();
