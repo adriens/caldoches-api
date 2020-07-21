@@ -44,6 +44,12 @@ API de gestion des expressions caldoches à nous les mecs du caillou
 
 `/expressions/random` : Une expression au hasard
 
+`/expressions/keyword/{motscles}` : La liste de toutes les expressions contenant au moins un mot-clé de {motscles}
+(les mots-clés séparés par `,`)
+
+`/expressions/keyword/{motscles}/random` : Une expression au hasard contenant au moins un mot-clé de {motscles}
+(les mots-clés séparés par `,`)
+
 `/expressions/tag/{cleTag}` : La liste de toutes les expressions ayant pour tag {cleTag}
 
 `/expressions/tag/{cleTag}/expression/{idExpression}` : L'expression d'identifiant {idExpression} ayant pour tag {cleTag}
@@ -75,6 +81,10 @@ API de gestion des expressions caldoches à nous les mecs du caillou
 `/expressions`
 `/expressions/random`
 `/expressions/expression/11`
+`/expressions/keyword/{fin}`
+`/expressions/keyword/{bien}/random`
+`/expressions/keyword/{yossi,kalolo}`
+`/expressions/keyword/{ben,ça}/random`
 `/expressions/tag/joie`
 `/expressions/tag/joie/expression/113`
 `/expressions/tag/joie/random`
