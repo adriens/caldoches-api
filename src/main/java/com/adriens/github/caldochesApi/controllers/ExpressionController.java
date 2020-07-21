@@ -40,7 +40,21 @@ public class ExpressionController {
     public List<Expression> getAllExpressions() throws ResourceNotFoundException { 
         return expressionService.getExpressions();
     }
-
+    
+    /**
+     * get a random expression
+     * @return a random expression
+     * @throws ResourceNotFoundException
+     */
+    @GetMapping("/expressions/random")
+    public ResponseEntity<Expression> getRandomExpression() throws ResourceNotFoundException {
+        Expression exp = expressionService.getRandomExpression();
+        if(lastRandomExpression.getId()!=null) 
+            while(Objects.equals(exp.getId(), lastRandomExpression.getId())) { exp = expressionService.getRandomExpression(); }
+        lastRandomExpression = exp;
+        return ResponseEntity.ok().body(exp);
+    }
+    
     /**
      * get an expression by id
      * @param idExpression
@@ -53,14 +67,26 @@ public class ExpressionController {
     }
     
     /**
-     * get a random expression
-     * @return a random expression
+     * get the list of all the expressions with 'motscles' keywords in it
+     * @param motscles
+     * @return the expression's list corresponding to the motscles parameter
      * @throws ResourceNotFoundException
      */
-    @GetMapping("/expressions/random")
-    public ResponseEntity<Expression> getRandomExpression() throws ResourceNotFoundException {
-        Expression exp = expressionService.getRandomExpression();
-        if(lastRandomExpression.getId()!=null) 
+    @GetMapping("/expressions/keyword/{motscles}")
+    public ResponseEntity<List<Expression>> getExpressionsByMotscles(@PathVariable(value = "motscles") String motscles) throws ResourceNotFoundException {
+        return ResponseEntity.ok().body(expressionService.getExpressionsByMotscles(motscles));
+    }
+
+    /** 
+     * get a random expression with 'motscles' keywords in it
+     * @param motscles
+     * @return a random expression corresponding to the motscles parameter
+     * @throws ResourceNotFoundException
+     */
+    @GetMapping("/expressions/keyword/{motscles}/random")
+    public ResponseEntity<Expression> getRandomExpressionByMotscles(@PathVariable(value = "motscles") String motscles) throws ResourceNotFoundException {
+        Expression exp = expressionService.getRandomExpressionByMotscles(motscles);
+        if(lastRandomExpression.getId()!=null)
             while(Objects.equals(exp.getId(), lastRandomExpression.getId())) { exp = expressionService.getRandomExpression(); }
         lastRandomExpression = exp;
         return ResponseEntity.ok().body(exp);
