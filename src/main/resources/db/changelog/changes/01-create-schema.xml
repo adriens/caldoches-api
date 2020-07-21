@@ -88,7 +88,7 @@ and open the template in the editor.
         <constraints nullable="false"/>
       </column>
       <column name="points" type="int">
-        <constraints nullable="false"/>
+        <constraints nullable="true"/>
       </column>
     </createTable>
 
