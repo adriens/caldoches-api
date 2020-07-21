@@ -59,38 +59,20 @@ and open the template in the editor.
     
     <insert tableName="tag">
       <column name="id" valueNumeric="8"/>
-      <column name="nom" value="amour"/>
-      <column name="definition" value="amour"/>
-    </insert>
-    
-    <insert tableName="tag">
-      <column name="id" valueNumeric="9"/>
       <column name="nom" value="joie"/>
       <column name="definition" value="joie"/>
     </insert>
     
     <insert tableName="tag">
-      <column name="id" valueNumeric="10"/>
+      <column name="id" valueNumeric="9"/>
       <column name="nom" value="colere"/>
       <column name="definition" value="colère"/>
     </insert>
     
     <insert tableName="tag">
-      <column name="id" valueNumeric="11"/>
+      <column name="id" valueNumeric="10"/>
       <column name="nom" value="tristesse"/>
       <column name="definition" value="tristesse"/>
-    </insert>
-    
-    <insert tableName="tag">
-      <column name="id" valueNumeric="12"/>
-      <column name="nom" value="crainte"/>
-      <column name="definition" value="crainte"/>
-    </insert>
-    
-    <insert tableName="tag">
-      <column name="id" valueNumeric="13"/>
-      <column name="nom" value="honte"/>
-      <column name="definition" value="honte"/>
     </insert>
     
   </changeSet>
