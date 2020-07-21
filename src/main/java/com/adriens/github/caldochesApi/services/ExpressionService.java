@@ -38,6 +38,22 @@ public interface ExpressionService {
     public Expression getRandomExpression() throws ResourceNotFoundException;
     
     /**
+     * get a list of all the expression with motscles in it
+     * @param motscles
+     * @return an expression's list corresponding to motscles in parameter
+     * @throws ResourceNotFoundException
+     */
+    public List<Expression> getExpressionsByMotscles(String motscles) throws ResourceNotFoundException;
+    
+    /**
+     * get a random expression with motscles in it
+     * @param motscles
+     * @return a random expression corresponding to motscles in parameter
+     * @throws ResourceNotFoundException
+     */
+    public Expression getRandomExpressionByMotscles(String motscles) throws ResourceNotFoundException;
+    
+    /**
      * get the list of all the expressions for a tag
      * @param cleTag
      * @return the list of all the expressions corresponding to the tag corresponding to the cleTag parameter

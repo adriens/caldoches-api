@@ -9,6 +9,7 @@ import com.adriens.github.caldochesApi.entities.Expression;
 import com.adriens.github.caldochesApi.exception.ResourceNotFoundException;
 import com.adriens.github.caldochesApi.repositories.ExpressionRepository;
 import com.adriens.github.caldochesApi.services.ExpressionService;
+import java.util.ArrayList;
 
 import java.util.List;
 import java.util.Random;
@@ -61,12 +62,53 @@ public class ExpressionServiceImpl implements ExpressionService {
         return exp;
     }
     
+    /**
+     * get a random expression
+     * @return a random expression
+     * @throws ResourceNotFoundException
+     */
     @Override
     public Expression getRandomExpression() throws ResourceNotFoundException {
         int listSize;
         List<Expression> exps = expRepository.findAll();
         
         if (exps.isEmpty()) throw new ResourceNotFoundException("Aucune expression enregistrée");
+        else {
+            listSize = exps.size();
+            Random random = new Random();
+            int randomValue = random.nextInt(listSize);
+            return exps.get(randomValue);
+        }
+    }
+    
+    /**
+     * get a list of all the expression with motscles in it
+     * @param motscles
+     * @return an expression's list corresponding to motscles in parameter
+     * @throws ResourceNotFoundException
+     */
+    @Override
+    public List<Expression> getExpressionsByMotscles(String motscles) throws ResourceNotFoundException {
+        List<Expression> exps = new ArrayList<>();
+        String[] t_motcles = motscles.split(",");
+        for (String motcle : t_motcles) {
+            exps.addAll(expRepository.findByMotcle(motcle));
+        }
+        if (exps.isEmpty()) throw new ResourceNotFoundException("Aucune expression trouvée avec les mots-clés :: " + motscles);
+        else return exps;
+    }
+    
+    /**
+     * get a random expression with motscles in it
+     * @param motscles
+     * @return a random expression corresponding to motscles in parameter
+     * @throws ResourceNotFoundException
+     */
+    @Override
+    public Expression getRandomExpressionByMotscles(String motscles) throws ResourceNotFoundException {
+        int listSize;
+        List <Expression> exps = getExpressionsByMotscles(motscles);
+        if (exps.isEmpty()) throw new ResourceNotFoundException("Aucune expression trouvée pour les mots-clés :: " + motscles);
         else {
             listSize = exps.size();
             Random random = new Random();
@@ -111,7 +153,7 @@ public class ExpressionServiceImpl implements ExpressionService {
     @Override
     public Expression getRandomExpressionByTag(String cleTag) throws ResourceNotFoundException {
         int listSize;
-        List<Expression> exps = expRepository.findByTag(cleTag);
+        List<Expression> exps = getExpressionsByTag(cleTag);
         
         if (exps.isEmpty()) throw new ResourceNotFoundException("Aucune expression trouvée pour le tag :: " + cleTag);
         else {
