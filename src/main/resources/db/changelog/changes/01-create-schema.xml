@@ -31,7 +31,7 @@ and open the template in the editor.
         <constraints nullable="true"/>
       </column>
       <column name="keywords" type="clob">
-        <constraints nullable="false"/>
+        <constraints nullable="true"/>
       </column>
       <column name="auteur" type="int">
         <constraints nullable="false"/>
