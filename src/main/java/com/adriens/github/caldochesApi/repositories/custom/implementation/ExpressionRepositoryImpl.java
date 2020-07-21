@@ -72,5 +72,17 @@ public class ExpressionRepositoryImpl implements ExpressionRepositoryCustom {
         if (exps.isEmpty()) return null;
         else return exps.get(0);
     }
+
+    @Override
+    public List<Expression> findByMotcle(String motcle) {
+        Query query = entityManager.createNativeQuery(
+        "SELECT * "
+        + "FROM EXPRESSION AS E "
+        + "WHERE E.TEXTE REGEXP '.*"+motcle+"*.' ",        
+        Expression.class);
+
+        List<Expression> exps = query.getResultList();
+        return exps;
+    }
     
 }

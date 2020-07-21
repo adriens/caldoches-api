@@ -16,6 +16,13 @@ import java.util.List;
 public interface ExpressionRepositoryCustom {
     
     /**
+     * get an expression by id for a tag key
+     * @param motcle
+     * @return the expression corresponding to the expId parameter for the tag corresponding to the cleTag parameter
+     */
+    public List<Expression> findByMotcle(String motcle);
+    
+    /**
      * get the expression's list for a tag
      * @param cleTag
      * @return the expression's list corresponding to the tag with cleTag parameter
