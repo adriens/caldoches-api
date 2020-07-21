@@ -15,736 +15,1537 @@ and open the template in the editor.
       
     <comment>Insertion Expressions</comment>
     
+    
     <insert tableName="expression">
       <column name="id" valueNumeric="1"/>
-      <column name="texte" value="bourre-toi!"/>
+      <column name="texte" value="jamais fini cassé !"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="2"/>
-      <column name="texte" value="papaye des îles!"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="petit bâteau gros la cale"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="3"/>
-      <column name="texte" value="y'en a pour toi!"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="c’est l’heure du kaï-kaï"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="4"/>
-      <column name="texte" value="Bourre-le!"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="ben tontion la tête …"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="5"/>
-      <column name="texte" value="kilot' Marie Charlotte!"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="à fond loulou dans la caillasse"/>
+      <column name="points" value="1"/>
     </insert>
-    
+
     <insert tableName="expression">
       <column name="id" valueNumeric="6"/>
-      <column name="texte" value="Eh mais toi hein..."/>
+      <column name="texte" value="casse pas la tête…"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="7"/>
-      <column name="texte" value="Mais c'est qui qui veut quoi ?!"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="t’es un vrai bétail"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="8"/>
-      <column name="texte" value="Feu patate!"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="t’as entendu ça sur radio cocotier ?"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="9"/>
-      <column name="texte" value="Kalolo!"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="t’as pris le sentier coutumier ?"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="10"/>
-      <column name="texte" value="Kalolo i poun'!"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="allez Nouville direct !"/>
+      <column name="points" value="1"/>
     </insert>
-    
-        
+
     <insert tableName="expression">
       <column name="id" valueNumeric="11"/>
-      <column name="texte" value="Il est bon ou quoi ?"/>
+      <column name="texte" value="à bloc !"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="12"/>
-      <column name="texte" value="Il est good ?"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="à la gueule !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="13"/>
-      <column name="texte" value="C’est choc’"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="à la tôle !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="14"/>
-      <column name="texte" value="C'est fin choc'!"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="feu patate !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="15"/>
-      <column name="texte" value="Fin valab'"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="ben ça !"/>
+      <column name="points" value="1"/>
     </insert>
-    
+
     <insert tableName="expression">
       <column name="id" valueNumeric="16"/>
-      <column name="texte" value="Tata!"/>
+      <column name="texte" value="ben c’est ça !"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="17"/>
-      <column name="texte" value="AWA!"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="ben c’est ça aussi !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="18"/>
-      <column name="texte" value="Dézo pour toi!"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="c’est ça aussi !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="19"/>
-      <column name="texte" value="Dézo pour lui!"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="ben là !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="20"/>
-      <column name="texte" value="Bin lôngin !"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="ben là, ça claque !"/>
+      <column name="points" value="1"/>
     </insert>
-    
-        
+
     <insert tableName="expression">
       <column name="id" valueNumeric="21"/>
-      <column name="texte" value="Pine!"/>
+      <column name="texte" value="ben alors !"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="22"/>
-      <column name="texte" value="Tête de pine!"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="ben tiens …"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="23"/>
-      <column name="texte" value="Lônk'"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="choc !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="24"/>
-      <column name="texte" value="Lônkilé!"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="fin choc !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="25"/>
-      <column name="texte" value="A bloc"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="c’est choc !"/>
+      <column name="points" value="1"/>
     </insert>
-    
+
     <insert tableName="expression">
       <column name="id" valueNumeric="26"/>
-      <column name="texte" value="Lônculé!"/>
+      <column name="texte" value="c’est fin choc !"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="27"/>
-      <column name="texte" value="Ahouuuuuuhhhh !"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="net !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="28"/>
-      <column name="texte" value="Fin bân"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="fin net !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="29"/>
-      <column name="texte" value="Fin bon"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="c’est net !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="30"/>
-      <column name="texte" value="Tu barres en couille"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="c’est fin net !"/>
+      <column name="points" value="1"/>
     </insert>
-    
-        
+
     <insert tableName="expression">
       <column name="id" valueNumeric="31"/>
-      <column name="texte" value="Il barre en couille le mec"/>
+      <column name="texte" value="valab !"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="32"/>
-      <column name="texte" value="Pilla"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="fin valab !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="33"/>
-      <column name="texte" value="Mata Pilla"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="c’est valab !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="34"/>
-      <column name="texte" value="Je vais baigner le mer"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="c’est fin valab !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="35"/>
-      <column name="texte" value="Vas baigner la mer"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="ça bombarde !"/>
+      <column name="points" value="1"/>
     </insert>
-    
+
     <insert tableName="expression">
       <column name="id" valueNumeric="36"/>
-      <column name="texte" value="Woilaaaaaa"/>
+      <column name="texte" value="bombarde !"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="37"/>
-      <column name="texte" value="Ben tu connais!"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="ça de wizz !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="38"/>
-      <column name="texte" value="Je connais faire!"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="ça ké bon !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="39"/>
-      <column name="texte" value="Tu connais faire ?"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="c’est ça ké bon !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="40"/>
-      <column name="texte" value="Casse pas la tête..."/>
-      <column name="points" value="5"/>
+      <column name="texte" value="kalolo !"/>
+      <column name="points" value="1"/>
     </insert>
-    
-        
+
     <insert tableName="expression">
       <column name="id" valueNumeric="41"/>
-      <column name="texte" value="Ben là, ça claque!"/>
+      <column name="texte" value="kalolo i poun’ !"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="42"/>
-      <column name="texte" value="Claque un coup de pêche"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="tasses-moi ça !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="43"/>
-      <column name="texte" value="Claque un coup de chasse"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="kaiafou "/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="44"/>
-      <column name="texte" value="Claque-le cui'là!"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="kaillafou"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="45"/>
-      <column name="texte" value="Ca ké bon"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="kaya fou"/>
+      <column name="points" value="1"/>
     </insert>
-    
+
     <insert tableName="expression">
       <column name="id" valueNumeric="46"/>
-      <column name="texte" value="Ben c'est ça aussi!!!"/>
+      <column name="texte" value="kakoun !"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="47"/>
-      <column name="texte" value="Eh mais tu veux chier ?"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="y’en a pour toi"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="48"/>
-      <column name="texte" value="Ayaouééé...."/>
-      <column name="points" value="3"/>
+      <column name="texte" value="y’en a pour lui"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="49"/>
-      <column name="texte" value="Je suis fiou"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="woilaaa !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="50"/>
-      <column name="texte" value="Boulette ou quoi ?"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="woilà lui !"/>
+      <column name="points" value="1"/>
     </insert>
-    
-        
+
     <insert tableName="expression">
       <column name="id" valueNumeric="51"/>
-      <column name="texte" value="Tu vas brouter le coaltar"/>
+      <column name="texte" value="claque-le cui’là !"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="52"/>
-      <column name="texte" value="CA DEWIZZZZZZ !!!"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="astique-le cui’là !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="53"/>
-      <column name="texte" value="Fais péter un coup de coutume"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="bombarde-le cui’là !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="54"/>
-      <column name="texte" value="On va le damer"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="allume-le cui’là !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="55"/>
-      <column name="texte" value="Mon Dawa"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="roule-le cui’là !"/>
+      <column name="points" value="1"/>
     </insert>
-    
+
     <insert tableName="expression">
       <column name="id" valueNumeric="56"/>
-      <column name="texte" value="Ma saumonée"/>
+      <column name="texte" value="bourre-le cui’là !"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="57"/>
-      <column name="texte" value="Pique-moi ça"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="mouille-le cui’là !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="58"/>
-      <column name="texte" value="Ekolo ehi!"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="bourre-le !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="59"/>
-      <column name="texte" value="L'empété"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="bourre-toi !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="60"/>
-      <column name="texte" value="L'ômpété"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="bourre-tu !"/>
+      <column name="points" value="1"/>
     </insert>
-    
-        
+
     <insert tableName="expression">
       <column name="id" valueNumeric="61"/>
-      <column name="texte" value="T'as pris ta gamelle?"/>
+      <column name="texte" value="mange à lui"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="62"/>
-      <column name="texte" value="On fait péter une topette ?"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="va te faire bounane !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="63"/>
-      <column name="texte" value="Kakoun!"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="va faire un bougna avec tes calos !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="64"/>
-      <column name="texte" value="T'es un Kaiafou toi"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="tu vas pisser !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="65"/>
-      <column name="texte" value="Kaiafou"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="tu veux pisser ?!"/>
+      <column name="points" value="1"/>
     </insert>
-    
+
     <insert tableName="expression">
       <column name="id" valueNumeric="66"/>
-      <column name="texte" value="L'engin"/>
+      <column name="texte" value="tu vas chier !"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="67"/>
-      <column name="texte" value="Lôngin"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="tu veux chier ?!"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="68"/>
-      <column name="texte" value="Quoi ça ?!!!"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="pine !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="69"/>
-      <column name="texte" value="T'as entendu ça sur radio Cocotier ?"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="tête de pine !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="70"/>
-      <column name="texte" value="Aller tata!"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="chien !"/>
+      <column name="points" value="1"/>
     </insert>
-    
-        
+
     <insert tableName="expression">
       <column name="id" valueNumeric="71"/>
-      <column name="texte" value="Voila lui!"/>
+      <column name="texte" value="pédale !"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="72"/>
-      <column name="texte" value="Wanamatcha !"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="mata pilla !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="73"/>
-      <column name="texte" value="Tchaaaaa !!!"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="pilla !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="74"/>
-      <column name="texte" value="Yossi !"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="mata pia !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="75"/>
-      <column name="texte" value="y'en a pour toi"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="pia !"/>
+      <column name="points" value="1"/>
     </insert>
-    
+
     <insert tableName="expression">
       <column name="id" valueNumeric="76"/>
-      <column name="texte" value="Y'en a pour lui"/>
+      <column name="texte" value="taper la ouère"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="77"/>
-      <column name="texte" value="Tata bisous"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="tu tapes la ouère"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="78"/>
-      <column name="texte" value="A la gueule"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="taper la pine"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="79"/>
-      <column name="texte" value="A la tôle"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="tu tapes la pine"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="80"/>
-      <column name="texte" value="Alice!"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="il tape la pine"/>
+      <column name="points" value="1"/>
     </insert>
-    
-        
+
     <insert tableName="expression">
       <column name="id" valueNumeric="81"/>
-      <column name="texte" value="Mathias !"/>
+      <column name="texte" value="il tape la ouère"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="82"/>
-      <column name="texte" value="J'vais t'astiquer"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="babylone !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="83"/>
-      <column name="texte" value="Mon con"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="baptiste !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="84"/>
-      <column name="texte" value="Astiques le"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="alice !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="85"/>
-      <column name="texte" value="C'est bétail"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="mathias !"/>
+      <column name="points" value="1"/>
     </insert>
-    
+
     <insert tableName="expression">
       <column name="id" valueNumeric="86"/>
-      <column name="texte" value="C'es un vrai bétail"/>
+      <column name="texte" value="calice !"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="87"/>
-      <column name="texte" value="Babaille"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="katoun !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="88"/>
-      <column name="texte" value="A n'demain"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="catoune !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="89"/>
-      <column name="texte" value="Babane"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="bataillon !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="90"/>
-      <column name="texte" value="Petit bâteau gros la cale"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="papillon !"/>
+      <column name="points" value="1"/>
     </insert>
-    
-        
+
     <insert tableName="expression">
       <column name="id" valueNumeric="91"/>
-      <column name="texte" value="Tasses moi ça"/>
+      <column name="texte" value="papillon la lune !"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="92"/>
-      <column name="texte" value="Je vais te rouler"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="papaye des îles !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="93"/>
-      <column name="texte" value="Roules-le"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="yossi !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="94"/>
-      <column name="texte" value="Il a bavé la canne sur toi"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="yossi caillou !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="95"/>
-      <column name="texte" value="Bounane"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="weneyossi !"/>
+      <column name="points" value="1"/>
     </insert>
-    
+
     <insert tableName="expression">
       <column name="id" valueNumeric="96"/>
-      <column name="texte" value="Bourreur de poule"/>
+      <column name="texte" value="wanamatcha !"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="97"/>
-      <column name="texte" value="Kékesse"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="tchanem !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="98"/>
-      <column name="texte" value="fais péter la caillasse"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="tcha !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="99"/>
-      <column name="texte" value="Caillasses-le"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="tchaaaa !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="100"/>
-      <column name="texte" value="Cassis!"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="quoi ça ?!"/>
+      <column name="points" value="1"/>
     </insert>
-    
-        
+
     <insert tableName="expression">
       <column name="id" valueNumeric="101"/>
-      <column name="texte" value="Coup de plonge ?"/>
+      <column name="texte" value="natcha !"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="102"/>
-      <column name="texte" value="Coup de dérive ?"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="culotte !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="103"/>
-      <column name="texte" value="Coup d'coutume ?"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="kilot !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="104"/>
-      <column name="texte" value="Crasse de meule"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="kilot Marie Charlotte !"/>
+      <column name="points" value="1"/>
     </insert>
+    
     <insert tableName="expression">
       <column name="id" valueNumeric="105"/>
-      <column name="texte" value="On va le damer"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="yossi, trompé la route !"/>
+      <column name="points" value="1"/>
     </insert>
-    
+
     <insert tableName="expression">
       <column name="id" valueNumeric="106"/>
-      <column name="texte" value="Je vais te damer"/>
+      <column name="texte" value="y a moyen"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="107"/>
-      <column name="texte" value="Il est ban"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="y a moyen ?"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="108"/>
-      <column name="texte" value="Jamais fini cassé!"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="y a pas moyen !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="109"/>
-      <column name="texte" value="Mouilles-le"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="je connais faire"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="110"/>
-      <column name="texte" value="Natcha!"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="peau de balle"/>
+      <column name="points" value="1"/>
     </insert>
-    
-        
+
     <insert tableName="expression">
       <column name="id" valueNumeric="111"/>
-      <column name="texte" value="Peau de balle"/>
+      <column name="texte" value="peau d’balle"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="112"/>
-      <column name="texte" value="Peau d'balle"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="caillou !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="113"/>
-      <column name="texte" value="Tu vas ramasser"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="c’est peau de balle"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="114"/>
-      <column name="texte" value="T'as pris le sentier coutumier ?"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="c’est peau d’balle"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="115"/>
-      <column name="texte" value="Souque!"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="a n’demain"/>
+      <column name="points" value="1"/>
     </insert>
-    
+
     <insert tableName="expression">
       <column name="id" valueNumeric="116"/>
-      <column name="texte" value="Tinkyou bien"/>
+      <column name="texte" value="allez"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="117"/>
-      <column name="texte" value="Vout-vout"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="allez tata"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="118"/>
-      <column name="texte" value="Ayaoué"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="tata"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="119"/>
-      <column name="texte" value="Babylone"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="tata bisous"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="120"/>
-      <column name="texte" value="Système  Babylone"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="nana"/>
+      <column name="points" value="1"/>
     </insert>
-    
-        
+
     <insert tableName="expression">
       <column name="id" valueNumeric="121"/>
-      <column name="texte" value="Dis bien!"/>
+      <column name="texte" value="babaille"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="122"/>
-      <column name="texte" value="J'ai dit à lui"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="tal"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="123"/>
-      <column name="texte" value="Catoune"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="toul’"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="124"/>
-      <column name="texte" value="C'est ça aussi!"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="tal toul’"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="125"/>
-      <column name="texte" value=" Laiss'taleur"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="tal toul’ ma poule"/>
+      <column name="points" value="1"/>
     </insert>
-    
+
     <insert tableName="expression">
       <column name="id" valueNumeric="126"/>
-      <column name="texte" value="Oleti"/>
+      <column name="texte" value="laiss’taleur"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="127"/>
-      <column name="texte" value="Papillon la lune"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="je vais baigner la mer"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="128"/>
-      <column name="texte" value="Papillon!"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="va baigner !"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="129"/>
-      <column name="texte" value="Pinailles pas"/>
-      <column name="points" value="4"/>
+      <column name="texte" value="je vais baigner"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="130"/>
-      <column name="texte" value="Tal toul'"/>
-      <column name="points" value="5"/>
+      <column name="texte" value="tinkyou bien"/>
+      <column name="points" value="1"/>
     </insert>
-    
-        
+
     <insert tableName="expression">
       <column name="id" valueNumeric="131"/>
-      <column name="texte" value="Va baigner"/>
+      <column name="texte" value="olé"/>
       <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="132"/>
-      <column name="texte" value="Zoreil!"/>
-      <column name="points" value="2"/>
-    </insert>
-    <insert tableName="expression">
-      <column name="id" valueNumeric="133"/>
-      <column name="texte" value="Tu veux pisser ?"/>
-      <column name="points" value="3"/>
-    </insert>
-    <insert tableName="expression">
-      <column name="id" valueNumeric="134"/>
-      <column name="texte" value="Tu vas pisser !"/>
-      <column name="points" value="4"/>
-    </insert>
-    <insert tableName="expression">
-      <column name="id" valueNumeric="135"/>
-      <column name="texte" value="Tu veux chier ?"/>
-      <column name="points" value="5"/>
-    </insert>
-    
-    <insert tableName="expression">
-      <column name="id" valueNumeric="136"/>
-      <column name="texte" value="Chien !"/>
+      <column name="texte" value="oléti"/>
       <column name="points" value="1"/>
     </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="133"/>
+      <column name="texte" value="oléti bien"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="134"/>
+      <column name="texte" value="ekolo"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="135"/>
+      <column name="texte" value="ekolo ehi"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="136"/>
+      <column name="texte" value="boulette ?"/>
+      <column name="points" value="1"/>
+    </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="137"/>
-      <column name="texte" value="Vas faire un bougna avec tes calos"/>
-      <column name="points" value="2"/>
+      <column name="texte" value="boulette ou quoi ?"/>
+      <column name="points" value="1"/>
     </insert>
+
     <insert tableName="expression">
       <column name="id" valueNumeric="138"/>
-      <column name="texte" value="mon con d'calo"/>
-      <column name="points" value="3"/>
+      <column name="texte" value="il est bon ?"/>
+      <column name="points" value="1"/>
     </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="139"/>
+      <column name="texte" value="il est bon ou quoi ?"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="140"/>
+      <column name="texte" value="t’as la canne ou quoi ?"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="141"/>
+      <column name="texte" value="il est mou ou il est dur ?"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="142"/>
+      <column name="texte" value="shhhhh"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="143"/>
+      <column name="texte" value="shhhhh toi là !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="144"/>
+      <column name="texte" value="bave pas la canne"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="145"/>
+      <column name="texte" value="arrête de baver la canne"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="146"/>
+      <column name="texte" value="il a bavé la canne sur toi"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="147"/>
+      <column name="texte" value="tu pinailles là"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="148"/>
+      <column name="texte" value="arrête de pinailler"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="149"/>
+      <column name="texte" value="pinailles pas"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="150"/>
+      <column name="texte" value="pas de pinaillage"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="151"/>
+      <column name="texte" value="fais pas ton daguet !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="152"/>
+      <column name="texte" value="fais pas le kékesse !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="153"/>
+      <column name="texte" value="dis pas de malélevés"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="154"/>
+      <column name="texte" value="c’est pas les manières pour toi"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="155"/>
+      <column name="texte" value="ma couille"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="156"/>
+      <column name="texte" value="vielle couille"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="157"/>
+      <column name="texte" value="mon con"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="158"/>
+      <column name="texte" value="mon con d’calo"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="159"/>
+      <column name="texte" value="eh mais tu barres bien en couille"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="160"/>
+      <column name="texte" value="ça barre en couille"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="161"/>
+      <column name="texte" value="eh mais tu barres bien en papaye"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="162"/>
+      <column name="texte" value="ça barre en papaye"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="163"/>
+      <column name="texte" value="aïta"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="164"/>
+      <column name="texte" value="moi sé fort"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="165"/>
+      <column name="texte" value="moi c’est beaucoup la force"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="166"/>
+      <column name="texte" value="je vais t’astiquer"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="167"/>
+      <column name="texte" value="je vais te caillasser"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="168"/>
+      <column name="texte" value="je vais te bombarder"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="169"/>
+      <column name="texte" value="tu vas te faire astiquer"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="170"/>
+      <column name="texte" value="tu vas te faire caillasser"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="171"/>
+      <column name="texte" value="tu vas te faire bombarder"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="172"/>
+      <column name="texte" value="tu vas ramasser"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="173"/>
+      <column name="texte" value="il va ramasser"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="174"/>
+      <column name="texte" value="tu vas prendre un pônce"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="175"/>
+      <column name="texte" value="je vais te péter un réglage"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="176"/>
+      <column name="texte" value="je vais lui péter un réglage"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="177"/>
+      <column name="texte" value="vas lui péter un réglage"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="178"/>
+      <column name="texte" value="je vais te faire brouter le coaltar"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="179"/>
+      <column name="texte" value="je vais te faire bouffer le coaltar"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="180"/>
+      <column name="texte" value="t’es bon à peau"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="181"/>
+      <column name="texte" value="rien dans le coco !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="182"/>
+      <column name="texte" value="t’es pète-couilles"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="183"/>
+      <column name="texte" value="t’ès pète-claquettes"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="184"/>
+      <column name="texte" value="t’as un pète au compteur"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="185"/>
+      <column name="texte" value="moi sé colère fort"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="186"/>
+      <column name="texte" value="je suis fin colère !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="187"/>
+      <column name="texte" value="fin colère !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="188"/>
+      <column name="texte" value="je vais te courser !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="189"/>
+      <column name="texte" value="je vais te damer !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="190"/>
+      <column name="texte" value="je vais damer ta gueule !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="191"/>
+      <column name="texte" value="je vais te rouler !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="192"/>
+      <column name="texte" value="il est vert !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="193"/>
+      <column name="texte" value="je suis vert !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="194"/>
+      <column name="texte" value="vert le mec !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="195"/>
+      <column name="texte" value="fin canard !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="196"/>
+      <column name="texte" value="fin plein !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="197"/>
+      <column name="texte" value="fin bourré !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="198"/>
+      <column name="texte" value="fin pété !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="199"/>
+      <column name="texte" value="AWA !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="200"/>
+      <column name="texte" value="awa …"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="201"/>
+      <column name="texte" value="ayaoué"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="202"/>
+      <column name="texte" value="ayaouéé …"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="203"/>
+      <column name="texte" value="ahouuh !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="204"/>
+      <column name="texte" value="dézo pour lui"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="205"/>
+      <column name="texte" value="dézo pour toi"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="206"/>
+      <column name="texte" value="eh crochéé !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="207"/>
+      <column name="texte" value="j’ai dis à lui"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="208"/>
+      <column name="texte" value="dis bien !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="209"/>
+      <column name="texte" value="lôngin"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="210"/>
+      <column name="texte" value="l’enculé"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="211"/>
+      <column name="texte" value="l’enkilé"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="212"/>
+      <column name="texte" value="l’empété"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="213"/>
+      <column name="texte" value="l’ômpété"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="214"/>
+      <column name="texte" value="ah lôgin"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="215"/>
+      <column name="texte" value="ah l’enculé"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="216"/>
+      <column name="texte" value="ah l’empété"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="217"/>
+      <column name="texte" value="ah l’enkilé"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="218"/>
+      <column name="texte" value="ah l’ômpété"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="219"/>
+      <column name="texte" value="ben lôgin"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="220"/>
+      <column name="texte" value="ben l’enculé"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="221"/>
+      <column name="texte" value="ben l’enkilé"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="222"/>
+      <column name="texte" value="ben l’empété"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="223"/>
+      <column name="texte" value="ben l’ômpété"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="224"/>
+      <column name="texte" value="vas-y mouille !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="225"/>
+      <column name="texte" value="planter une chouchoute"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="226"/>
+      <column name="texte" value="planter un sikiss"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="227"/>
+      <column name="texte" value="planter un sikol"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="228"/>
+      <column name="texte" value="planter un canon"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="229"/>
+      <column name="texte" value="péter un coup de fête"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="230"/>
+      <column name="texte" value="péter un coup de coutune"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="231"/>
+      <column name="texte" value="péter un coup de chasse"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="232"/>
+      <column name="texte" value="péter un coup de pêche"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="233"/>
+      <column name="texte" value="péter un coup de dérive"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="234"/>
+      <column name="texte" value="péter un coup de plonge"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="235"/>
+      <column name="texte" value="péter une topette"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="236"/>
+      <column name="texte" value="claquer un coup de fête"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="237"/>
+      <column name="texte" value="claquer un coup de coutume"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="238"/>
+      <column name="texte" value="chaquer un coup de chasse"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="239"/>
+      <column name="texte" value="claquer un coup de pêche"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="240"/>
+      <column name="texte" value="claquer un coup de dérive"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="241"/>
+      <column name="texte" value="claquer un coup de plonge"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="242"/>
+      <column name="texte" value="t’as essayé de feinter ?"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="243"/>
+      <column name="texte" value="tu veux feinter ?"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="244"/>
+      <column name="texte" value="eh feinté !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="245"/>
+      <column name="texte" value="je suis fiu"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="246"/>
+      <column name="texte" value="je suis marré"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="247"/>
+      <column name="texte" value="iia !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="248"/>
+      <column name="texte" value="Iiaoué !"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="249"/>
+      <column name="texte" value="fin colère"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="250"/>
+      <column name="texte" value="fin beau"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="251"/>
+      <column name="texte" value="fin joli"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="252"/>
+      <column name="texte" value="fin bon"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="253"/>
+      <column name="texte" value="fin ban"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="254"/>
+      <column name="texte" value="fin nul"/>
+      <column name="points" value="1"/>
+    </insert>
+
+    <insert tableName="expression">
+      <column name="id" valueNumeric="255"/>
+      <column name="texte" value="fin drôle"/>
+      <column name="points" value="1"/>
+    </insert>
+
     
   </changeSet>
   
