@@ -1,6 +1,10 @@
 # Kalolo-api
 API de gestion des expressions caldoches à nous les mecs du caillou
 
+# Consommer l'API
+
+API dispo sur le [marketPlace Rapid API](https://rapidapi.com/adriens/api/kalolo)
+
 ## Démarrer le service
 `mvn spring-boot:run`
 
