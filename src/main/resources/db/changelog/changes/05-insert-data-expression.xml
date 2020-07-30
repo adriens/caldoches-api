@@ -948,7 +948,7 @@ and open the template in the editor.
 
     <insert tableName="expression">
       <column name="id" valueNumeric="156"/>
-      <column name="texte" value="vielle couille"/>
+      <column name="texte" value="vieille couille"/>
       <column name="points" value="1"/>
     </insert>
 
