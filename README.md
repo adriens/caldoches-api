@@ -5,6 +5,12 @@ API de gestion des expressions caldoches à nous les mecs du caillou
 
 API dispo sur le [marketPlace Rapid API](https://rapidapi.com/adriens/api/kalolo)
 
+# Démo et réalisations utilisant Kalolo-API
+
+- [Article linkedIn](https://www.linkedin.com/pulse/eaas-expressions-service-nos-ont-une-api-sont-fin-barr%C3%A9s-adrien-sales)
+- [Post de publication de l'article](https://www.linkedin.com/posts/adrien-sales_cagougeeks-noumea-nouvellecaledonie-activity-6694135449662971904-9biE)
+
+
 ## Démarrer le service
 `mvn spring-boot:run`
 
