@@ -5,6 +5,7 @@ API de gestion des expressions caldoches à nous les mecs du caillou.
 # Consommer l'API
 
 API dispo sur le [marketPlace Rapid API](https://rapidapi.com/adriens/api/kalolo)
+ainsi que sur [DockerHub](https://hub.docker.com/r/rastadidi/kalolo-api)
 
 # Démo et réalisations utilisant Kalolo-API
 
@@ -122,3 +123,26 @@ API dispo sur le [marketPlace Rapid API](https://rapidapi.com/adriens/api/kalolo
 /expressions/tag/joie/expression/113
 /expressions/tag/joie/random
 ```
+
+# jib build
+
+In your `~/.m2/settings.xml` put your Docker hub
+
+```xml
+<server>
+    <id>registry.hub.docker.com</id>
+    <username>rastadidi</username>
+    <password>XXXXXXX</password>
+</server>
+```
+
+Then build/push to DockerHub :
+
+`mvn compile jib:build`
+
+# Docker pull command
+
+```
+docker pull rastadidi/kalolo-api
+```
+
