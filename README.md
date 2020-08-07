@@ -145,6 +145,13 @@ Then build/push to DockerHub :
 # Docker pull command
 
 ```
-docker pull rastadidi/kalolo-api
+docker pull rastadidi/kalolo-api:latest
+docker images
+docker run -d -p 8080:8080 rastadidi/kalolo-api:latest
+sudo apt-get install jq boxes toilet cowsay fortune -y
+echo "We are ready" | boxes -d dog
+
+alias kalolo='clear && echo $(curl -sS http://localhost:8080/expressions/tag/bonjour/random | jq -r '.texte') | boxes -d boy | toilet --gay -f term'
+kalolo
 ```
 
