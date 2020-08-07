@@ -12,6 +12,7 @@ ainsi que sur [DockerHub](https://hub.docker.com/r/rastadidi/kalolo-api)
 - [Article linkedIn](https://www.linkedin.com/pulse/eaas-expressions-service-nos-ont-une-api-sont-fin-barr%C3%A9s-adrien-sales)
 - [Post de publication de l'article](https://www.linkedin.com/posts/adrien-sales_cagougeeks-noumea-nouvellecaledonie-activity-6694135449662971904-9biE)
 - [MEME de Kalolo in the shell](https://www.linkedin.com/posts/adrien-sales_shell-unix-linux-activity-6697227023942868992-Z26_)
+- [Article complet dédié à l'implémentation dans cowsay](https://www.linkedin.com/pulse/hacking-your-terminal-regional-slang-expressions-from-adrien-sales)
 
 
 ## Démarrer le service
