@@ -9,6 +9,7 @@ API dispo sur le [marketPlace Rapid API](https://rapidapi.com/adriens/api/kalolo
 
 - [Article linkedIn](https://www.linkedin.com/pulse/eaas-expressions-service-nos-ont-une-api-sont-fin-barr%C3%A9s-adrien-sales)
 - [Post de publication de l'article](https://www.linkedin.com/posts/adrien-sales_cagougeeks-noumea-nouvellecaledonie-activity-6694135449662971904-9biE)
+- [MEME de Kalolo in the shell](https://www.linkedin.com/posts/adrien-sales_shell-unix-linux-activity-6697227023942868992-Z26_)
 
 
 ## Démarrer le service
